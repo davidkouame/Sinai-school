@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table bootnetcrasher_school_actualite'
+    - builder_table_create_bootnetcrasher_school_actualite.php
+1.0.3:
+    - 'Created table bootnetcrasher_school_exame'
+    - builder_table_create_bootnetcrasher_school_exame.php
+1.0.4:
+    - 'Updated table bootnetcrasher_school_examen'
+    - builder_table_update_bootnetcrasher_school_examen.php
+1.0.5:
+    - 'Updated table bootnetcrasher_school_examen'
+    - builder_table_update_bootnetcrasher_school_examen_2.php

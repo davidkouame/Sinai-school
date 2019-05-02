@@ -1,0 +1,15 @@
+plugin:
+    name: 'bootnetcrasher.school::lang.plugin.name'
+    description: 'bootnetcrasher.school::lang.plugin.description'
+    author: 'Bootnet crasher'
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    actualites:
+        label: Actualites
+        url: bootnetcrasher/school/actualitecontroller
+        icon: icon-arrow-right
+    examens:
+        label: Examens
+        url: bootnetcrasher/school/examencontroller
+        icon: icon-life-ring

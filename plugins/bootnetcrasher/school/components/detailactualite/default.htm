@@ -1,0 +1,19 @@
+<div class="col-lg-9 col-12">
+        <section class="news">
+            <div class="section-content clearfix" style='padding-left: 0px;'>
+                <div id="news-carousel" class="news-carousel carousel slide">
+                    <div class="carousel-inner">
+                        <p>Cover : <img src="{{ actualite.cover.getpath }}" alt=""></p>
+                        <br>
+
+                       <p>title : {{ actualite.id }}</p>
+                       <br>
+
+                       <p>Content : {{ actualite.content|raw }}</p>
+    
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    </div>

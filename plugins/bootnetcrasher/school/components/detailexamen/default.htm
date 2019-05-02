@@ -1,0 +1,31 @@
+<div class="col-lg-9 col-12">
+    <section class="news">
+        <div class="section-content clearfix" style='padding-left: 0px;'>
+            <div id="news-carousel" class="news-carousel carousel slide">
+                <div class="carousel-inner">
+
+                    <p>name : {{ examen.name }}</p>
+                    <br>
+
+                    <p>Date de début : {{ examen.datedebut }}</p>
+                    <br>
+
+                    <p>Date de fin : {{ examen.datefin }}</p>
+                    <br>
+
+                    <p>Description : {{ examen.description|raw }}</p>
+                    <br>
+
+                    <p>
+                        {% if(examen.sujets) %} <a href="{{ examen.sujets.getpath }}" target="_blank">Sujets</a> /{% endif %}
+                        {% if(examen.corrections) %} <a href="{{ examen.corrections.getpath }}" target="_blank">Corrections</a>/{% endif %}
+                        {% if(examen.resultats) %} <a href="{{ examen.resultats.getpath }}" target="_blank">Resultats</a>{% endif %}
+                    </p>
+                    <br>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>

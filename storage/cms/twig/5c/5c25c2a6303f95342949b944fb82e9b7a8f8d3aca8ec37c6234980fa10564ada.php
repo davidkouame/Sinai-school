@@ -57,7 +57,7 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                             <ul>
                                 <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Reglement intérieur</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Infos aux élèves</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Emplois du temps élève</a></li>
+                                <li><a href=\"contact.html\"><i class=\"fas faa-caret-right\"></i>Emplois du temps élève</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Devoirs de niveaux</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Bibliothèques</a></li>
                             </ul>
@@ -175,7 +175,7 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                             <ul>
                                 <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Reglement intérieur</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Infos aux élèves</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Emplois du temps élève</a></li>
+                                <li><a href=\"contact.html\"><i class=\"fas faa-caret-right\"></i>Emplois du temps élève</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Devoirs de niveaux</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Bibliothèques</a></li>
                             </ul>

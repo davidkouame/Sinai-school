@@ -1,0 +1,127 @@
+title = "Demonstration"
+url = "/organigrame"
+layout = "default"
+is_hidden = 0
+
+organigrame
+==
+
+<link href="{{ 'assets/css/organigrame.css'|theme }}" rel="stylesheet">
+
+<div class="wrapper">
+
+    {% partial 'site/header' %}
+
+    <div class="content container">
+
+
+        <div class="row cols-wrapper">
+            <div class="col-lg-9 col-12">
+                    <div id="wrapper">
+                            <div id="container">
+                        
+                                <ol class="organizational-chart">
+                                    <li>
+                                        <div>
+                                            <h1>CE</h1>
+                                        </div>
+                                        <ol>
+                                            <li>
+                                                <div>
+                                                    <h2>Services Rattachés</h2>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <h2>Intendance</h2>
+                                                </div>
+                                                <ol>
+                                                    <li>
+                                                        <div>
+                                                            <h3>Services tech.et d'entretien</h3>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div>
+                                                            <h3>Elèvres</h3>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <h2>ACE</h2>
+                                                </div>
+                                                <ol>
+                                                    <li>
+                                                        <div>
+                                                            <h3>Insp.d'Orientation</h3>
+                                                        </div>
+                                                        <ol>
+                                                            <li>
+                                                                <div>
+                                                                    <h4>Elèves</h4>
+                                                                </div>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <div>
+                                                            <h3>Insp.d'Education</h3>
+                                                        </div>
+                                                        <ol>
+                                                            <li>
+                                                                <div>
+                                                                    <h5>Educateurs</h5>
+                                                                </div>
+                                                                <ol>
+                                                                    <li>
+                                                                        <div>
+                                                                            <h6>Elèves</h6>
+                                                                        </div>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <div>
+                                                            <h3>I.E.S</h3>
+                                                        </div>
+                                                        <ol>
+                                                            <li>
+                                                                <div>
+                                                                    <h5>Elèves</h5>
+                                                                </div>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <div>
+                                                            <h3>Enseignants</h3>
+                                                        </div>
+                                                        <ol>
+                                                            <li>
+                                                                <div>
+                                                                    <h5>Elèves</h5>
+                                                                </div>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                        
+                            </div>
+                        </div>
+            </div>
+            <div class="col-lg-3 col-12">
+                {% content 'mot_du_directeur' %}
+
+                {% content 'majeur_promotion' %}
+            </div>
+        </div>
+    </div>
+</div>

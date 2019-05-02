@@ -1,0 +1,133 @@
++ lancer un xampp local
++ test unit in java
++ 
+
+// recherche
++ recherche snap
+https://wiki.archlinux.org/index.php/Snap
++ install java
+
+
+// recherche digital
+2)Callback (en cours)
+1) Tout les champs créés dans le sisuel doivent etre créés dans le code
+3)Envoi email avec fichier (ok)
+4)QRCode generation
+5)PDF generation
+6)Re-font de axelor
+7)calendrier grisé
+8)Captcha sur login et inscription
+
+// process restant en laravel
++ envoi de mail avec fichier attache
++ recherche sur les job
++ enregistrement d'un utilisateur
++ envoi d'image
++ génération de Qrcode
++ afficher la liste des demandes 
++ la gestion du processus de nouvelle demande 
++ enregistrement d'un bon mot de passe  (ok)
++ changer le statut de connexion de la page d'acceuil lorsque l'utilisateur est connecte
++ revoir le process de prise de rendez vous
++ revoir a quoi sert le button sauvegarder dans la demande de renouvell
++ lien pour revenir sur la page d'acceuil à partir de la page de conne
++ ajout de captacha dans la page de connexion  au nieau de axelor 
+
+13h02
+13h20-10
+13h10
+
+// user lamdard
+email : fdsfbsdfhdsf@yopmail.com
+password :azertyuiop
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+curl -i -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d '{"username":"admin","password":"admin"}' http://178.33.227.9:43418/backoff2/login.jsp
+curl -i -H "Content-Type: application/json" -H "Accept: application/json" -v --cookie "JSESSIONID=0C8D66F8B1A2EC7DAD9ED0D0E5F6048B" -X GET http://178.33.227.9:43418/backoff2/ws/rest/com.axelor.auth.User/customUser/search-by-telephone/22508039386
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+tache de 00h00 à 02h00
++ fournir un centre d'enrolement apres avoir enregistre une demande
++ gerer le process de paiement (ussd)
+	- vérification du password(telephone, password)
+	- recueperation des informations de l'utilisteur
+	- generer une reference sauvegarder dans la requetepaiement  
+	- appel a l'api de digipay et fourni les informations
+	- enregistrement dans la table paiement apres le retour de la part de digipay
+	- retourne les informations de paiement 
++ prendre en compte les différentes étap du type de demande (avoir plus d'informations)
+	- annulé 
+	- enregistre
+	- initie
+	- livre
+	- payement effectue
+	- produit 
++ api pour proposer un rendez à l'utilisateur (num_demande)
++ api pour confirmer le rendez vous proposer (ajouter un champ heure_rendez_vous, rang_rendez_vous)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+IP : 178.33.227.9
+Port : 43419
+login/password bdd : onipre/e8rtSBzftg45ro1@
+https://www.digipaygateway.com:44328/dAtMySDocMinKer
+http://oni.com/callback?referenceId=78758744&status=100&digipayId=4&amount=50&description=Operation+echouee+%7C-+La+Reference+de+la+transaction+existe+deja+dans+notre+base+de+donnees+%21
+http://178.33.227.9:43418/backoff2/#/ds/paiement.all/list/1
+
+
+callback http://oni.com/callback?referenceId=d15afb7fb2b14b289496753c5a2e8171&status=100&amount=50
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
++ api de paiment en blanc de creation d'une demande 
+	retourne les informations concernant la demande, le paiement, le rendez vous
++ api de paiement en blanc pour les 100fcfa
+	retourne les informations du paiements(voir l'email de M. Ouatt)
++ Afficher le detail en consultation avec un bouton permettant de changer les statuts (workflow)
++ Liste des payement (date, montant, no predemande, nom, prenom, etc…)
++ redirection in java avec retrofit
++ Affichage de la liste des demandes de l'utilisateur connecte
+- Afficher le statut de la demande
+- Bouton : Payer / Prendre un rendez vous 
+- Payer affiche la demande en consultation avec un bouton Payer qui va effectuer la redirection vers laravel avec l'id de la demande
+- Prendre un rendez vous affiche la vue Rendez vous, Notification email axelor sans pj, sms. 
++ Notification envoi d'email sans pj, sms, redirection vers page laravel avec id de la demande, puis redirection vers la page de prise de rendez vous. 
+Si echec payement creation d'une view axelor erreur pour la redirection de l'erreur Digipay si applicable:
+
+
+////////////////
+git config credential.helper store
+///////////////
+
+/////////////////////////////////////////////////////////
+// Serveur Bi
+Hostname : dotsvrtest1.groupedat.com
+Port : 61501
+Login : jaurestchimou
+Pwd : jefsgr84@dp@odf
+Password root : vMwzrBED1yNb
+ssh jaurestchimou@dotsvrtest1.groupedat.com -p 61501
+
+http://178.33.227.9:43416/OniPredemance/bo/file/qrcode.png
+
+// log serveur 
+https://www.digipaygateway.com:44323/logsOni/
+
+sinai-school.sh
+
+
+*****************Accès svn
+username : david.kouame  
+password : etdc7aURcjf4
+
+// code pour compiler en java avec d'autre bO
+./gradlew --include-build ../axelor-adk-back --no-daemon run
+
+/////////////////////////////
+demodat18@gmail.com
+demo2018
+
+///////////////////////////////////////////////
+lien pour download
+https://youtubeplaylist.cc/

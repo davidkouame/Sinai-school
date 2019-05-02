@@ -1,4 +1,5 @@
-1556242945a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:7244:"        <div class="footer-content">
+1556783839a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:7343:"==
+<div class="footer-content">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about" style="margin-right: 24px;">
@@ -35,7 +36,7 @@
                             <ul>
                                 <li><a href="about.html"><i class="fas fa-caret-right"></i>Reglement intérieur</a></li>
                                 <li><a href="contact.html"><i class="fas fa-caret-right"></i>Infos aux élèves</a></li>
-                                <li><a href="contact.html"><i class="fas fa-caret-right"></i>Emplois du temps élève</a></li>
+                                <li><a href="contact.html"><i class="fas faa-caret-right"></i>Emplois du temps élève</a></li>
                                 <li><a href="contact.html"><i class="fas fa-caret-right"></i>Devoirs de niveaux</a></li>
                                 <li><a href="contact.html"><i class="fas fa-caret-right"></i>Bibliothèques</a></li>
                             </ul>
@@ -101,7 +102,7 @@
                     </ul><!--//social-->
                 </div><!--//row-->
             </div><!--//container-->
-        </div><!--//bottom-bar-->";s:5:"mtime";i:1555865592;s:6:"markup";s:7236:"<div class="footer-content">
+        </div><!--//bottom-bar-->";s:5:"mtime";i:1556673302;s:6:"markup";s:7340:"<div class="footer-content">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about" style="margin-right: 24px;">
@@ -138,7 +139,7 @@
                             <ul>
                                 <li><a href="about.html"><i class="fas fa-caret-right"></i>Reglement intérieur</a></li>
                                 <li><a href="contact.html"><i class="fas fa-caret-right"></i>Infos aux élèves</a></li>
-                                <li><a href="contact.html"><i class="fas fa-caret-right"></i>Emplois du temps élève</a></li>
+                                <li><a href="contact.html"><i class="fas faa-caret-right"></i>Emplois du temps élève</a></li>
                                 <li><a href="contact.html"><i class="fas fa-caret-right"></i>Devoirs de niveaux</a></li>
                                 <li><a href="contact.html"><i class="fas fa-caret-right"></i>Bibliothèques</a></li>
                             </ul>
@@ -204,4 +205,4 @@
                     </ul><!--//social-->
                 </div><!--//row-->
             </div><!--//container-->
-        </div><!--//bottom-bar-->";s:4:"code";N;}}
+        </div><!--//bottom-bar-->";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

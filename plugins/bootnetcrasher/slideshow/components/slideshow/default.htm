@@ -1,0 +1,12 @@
+<div id="promo-slider" class="slider flexslider" style='margin-bottom: 23px;'>
+    <ul class="slides">
+        {% for slideshow in slideshows %}
+            <li>
+                <img src="{{ slideshow.slide.getpath  }}" alt="" />
+                <p class="flex-caption">
+                        {{ slideshow.text_slide|raw  }}
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

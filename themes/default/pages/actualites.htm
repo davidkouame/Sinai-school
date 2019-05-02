@@ -1,0 +1,26 @@
+title = "Demonstration"
+url = "/actualites"
+layout = "default"
+is_hidden = 0
+
+[actualites]
+[actualitesall]
+==
+
+<div class="wrapper">
+    {% partial 'site/header' %}
+
+    <div class="content container">
+
+            {% component 'SlideShow' %}
+    
+            <div class="row cols-wrapper">
+                    {% component 'actualitesall' %}
+                <div class="col-lg-3 col-12">
+                    {% content 'mot_du_directeur' %}
+                    
+                    {% content 'majeur_promotion' %}
+                </div>
+            </div>
+        </div>
+</div>

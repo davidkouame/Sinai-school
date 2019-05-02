@@ -1,0 +1,26 @@
+fields:
+    slide:
+        label: Image
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    name:
+        label: Name
+        span: auto
+        required: 1
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: auto
+        type: textarea
+    text_slide:
+        label: 'Text Slide'
+        size: ''
+        span: auto
+        type: textarea
