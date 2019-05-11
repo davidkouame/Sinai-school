@@ -99,8 +99,14 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                                         <span class=\"country-name\">UK</span>
                                     </span>
                                 </p> -->
-                                <p class=\"tel col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 4px;\"><i class=\"fas fa-phone\"></i>0800 123 4567</p>
-                                <p class=\"email col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 14px;\"><i class=\"fas fa-envelope\"></i><a href=\"#\">enquires@website.com</a></p>  
+                                <p class=\"tel col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 4px;\"><i class=\"fas fa-phone\"></i>";
+        // line 80
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["parametrages"] ?? null), "number_front", []), "html", null, true);
+        echo "</p>
+                                <p class=\"email col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 14px;\"><i class=\"fas fa-envelope\"></i><a href=\"#\">";
+        // line 81
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["parametrages"] ?? null), "email_front", []), "html", null, true);
+        echo "</a></p>  
                             </div> 
                         </div>            
                     </div>  
@@ -110,7 +116,7 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
         <div class=\"bottom-bar\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <small class=\"copyright col-lg-6 col-12\">Template Copyright @ <a href=\"#\">3rd Wave Media</a></small>
+                    <small class=\"copyright col-lg-6 col-12\">Sinai 2019 @ <a href=\"http://www.sinai.com\">www.sinai.com</a></small>
                     <ul class=\"social float-right col-lg-6 col-12\">
                         <li><a href=\"#\" ><i class=\"fab fa-twitter\"></i></a></li>
                         <li><a href=\"#\" ><i class=\"fab fa-facebook-f\"></i></a></li>
@@ -131,9 +137,14 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
         return "/opt/lampp/htdocs/sinai_school_october_cms/themes/default/partials/site/footer.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  23 => 1,);
+        return array (  108 => 81,  104 => 80,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -217,8 +228,8 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                                         <span class=\"country-name\">UK</span>
                                     </span>
                                 </p> -->
-                                <p class=\"tel col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 4px;\"><i class=\"fas fa-phone\"></i>0800 123 4567</p>
-                                <p class=\"email col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 14px;\"><i class=\"fas fa-envelope\"></i><a href=\"#\">enquires@website.com</a></p>  
+                                <p class=\"tel col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 4px;\"><i class=\"fas fa-phone\"></i>{{ parametrages.number_front }}</p>
+                                <p class=\"email col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 14px;\"><i class=\"fas fa-envelope\"></i><a href=\"#\">{{ parametrages.email_front }}</a></p>  
                             </div> 
                         </div>            
                     </div>  
@@ -228,7 +239,7 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
         <div class=\"bottom-bar\">
             <div class=\"container\">
                 <div class=\"row\">
-                    <small class=\"copyright col-lg-6 col-12\">Template Copyright @ <a href=\"#\">3rd Wave Media</a></small>
+                    <small class=\"copyright col-lg-6 col-12\">Sinai 2019 @ <a href=\"http://www.sinai.com\">www.sinai.com</a></small>
                     <ul class=\"social float-right col-lg-6 col-12\">
                         <li><a href=\"#\" ><i class=\"fab fa-twitter\"></i></a></li>
                         <li><a href=\"#\" ><i class=\"fab fa-facebook-f\"></i></a></li>

@@ -1,4 +1,5 @@
-1556783839a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:5291:"description = "Default layout"
+1557616313a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:5317:"description = "Default layout"
+[parametrages]
 ==
 <!DOCTYPE html>
 <html>
@@ -114,6 +115,7 @@
 
         <!-- Content -->
         <section id="layout-content">
+          
             {% page %}
         </section>
 
@@ -142,7 +144,7 @@
 
     </body>
 </html>
-";s:5:"mtime";i:1555868219;s:6:"markup";s:5256:"<!DOCTYPE html>
+";s:5:"mtime";i:1557475672;s:6:"markup";s:5267:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -256,6 +258,7 @@
 
         <!-- Content -->
         <section id="layout-content">
+          
             {% page %}
         </section>
 
@@ -283,4 +286,4 @@
         {% scripts %}
 
     </body>
-</html>";s:4:"code";N;s:11:"description";s:14:"Default layout";}}
+</html>";s:4:"code";N;s:11:"description";s:14:"Default layout";s:12:"parametrages";a:0:{}}}

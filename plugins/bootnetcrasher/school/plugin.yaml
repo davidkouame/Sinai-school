@@ -13,3 +13,31 @@ navigation:
         label: Examens
         url: bootnetcrasher/school/examencontroller
         icon: icon-life-ring
+    clubs:
+        label: Clubs
+        url: bootnetcrasher/school/clubcontroller
+        icon: icon-life-ring
+    professeurs:
+        label: Professeurs
+        url: bootnetcrasher/school/professeurmodel
+        icon: icon-life-ring
+    classes:
+        label: Classes
+        url: bootnetcrasher/school/classecontroller
+        icon: icon-life-ring
+    niveaux:
+        label: Niveaux
+        url: bootnetcrasher/school/niveauclassecontroller
+        icon: icon-life-ring
+    series:
+        label: Series
+        url: bootnetcrasher/school/serieclassecontroller
+        icon: icon-life-ring
+    parametrages:
+        label: Parametrages
+        url: bootnetcrasher/school/parametragecontroller
+        icon: icon-life-ring
+    sujets:
+        label: Sujets
+        url: bootnetcrasher/school/sujetcontroller
+        icon: icon-life-ring

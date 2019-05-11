@@ -171,69 +171,70 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
 
         <!-- Content -->
         <section id=\"layout-content\">
+          
             ";
-        // line 115
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 116
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 117
         echo "        </section>
 
         <!-- Footer -->
         <footer class=\"footer\">
             ";
-        // line 120
+        // line 121
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 121
+        // line 122
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 124
+        // line 125
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 125
+        // line 126
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 126
+        // line 127
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
         echo "\"></script>
 
        <!-- JS --> 
        <script src=\"";
-        // line 129
+        // line 130
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/jquery/jquery-3.3.1.min.js");
         echo "\"></script>
        <script src=\"";
-        // line 130
+        // line 131
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/bootstrap/js/bootstrap.min.js");
         echo "\"></script>
        <script src=\"";
-        // line 131
+        // line 132
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/back-to-top.js");
         echo "\"></script>
        <script src=\"";
-        // line 132
+        // line 133
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/flexslider/js/jquery.flexslider-min.js");
         echo "\"></script>
        <script src=\"";
-        // line 133
+        // line 134
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jflickrfeed.min.js");
         echo "\"></script>
        <script src=\"";
-        // line 134
+        // line 135
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.js");
         echo "\"></script>
     
     <!-- Theme Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
     <script src=\"";
-        // line 137
+        // line 138
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/theme-switcher.js");
         echo "\"></script>
         ";
-        // line 138
+        // line 139
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="'. Request::getBasePath()
@@ -248,11 +249,11 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 139
+        // line 140
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 140
+        // line 141
         echo "
     </body>
 </html>";
@@ -276,7 +277,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
 
     public function getDebugInfo()
     {
-        return array (  262 => 16,  256 => 140,  252 => 139,  237 => 138,  233 => 137,  227 => 134,  223 => 133,  219 => 132,  215 => 131,  211 => 130,  207 => 129,  201 => 126,  197 => 125,  193 => 124,  188 => 121,  184 => 120,  178 => 116,  176 => 115,  166 => 109,  163 => 108,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  263 => 16,  257 => 141,  253 => 140,  238 => 139,  234 => 138,  228 => 135,  224 => 134,  220 => 133,  216 => 132,  212 => 131,  208 => 130,  202 => 127,  198 => 126,  194 => 125,  189 => 122,  185 => 121,  179 => 117,  177 => 116,  166 => 109,  163 => 108,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
     }
 
     public function getSourceContext()
@@ -395,6 +396,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
 
         <!-- Content -->
         <section id=\"layout-content\">
+          
             {% page %}
         </section>
 

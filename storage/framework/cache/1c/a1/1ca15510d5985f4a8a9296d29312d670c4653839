@@ -1,10 +1,11 @@
-1556783839a:1:{s:8:"home.htm";a:11:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:639:"title = "Demonstration"
+1557616313a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:655:"title = "Demonstration"
 url = "/"
 layout = "default"
 is_hidden = 0
 
 [SlideShow]
 [actualites]
+[parametrages]
 ==
 <div class="wrapper">
 
@@ -27,7 +28,7 @@ is_hidden = 0
             </div>
         </div>
     </div>
-</div>";s:5:"mtime";i:1556750379;s:6:"markup";s:535:"<div class="wrapper">
+</div>";s:5:"mtime";i:1557475659;s:6:"markup";s:535:"<div class="wrapper">
 
     {% partial 'site/header' %}
 
@@ -48,4 +49,4 @@ is_hidden = 0
             </div>
         </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"SlideShow";a:0:{}s:10:"actualites";a:0:{}}}
+</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"SlideShow";a:0:{}s:10:"actualites";a:0:{}s:12:"parametrages";a:0:{}}}

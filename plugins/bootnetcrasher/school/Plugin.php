@@ -12,7 +12,15 @@ class Plugin extends PluginBase
             '\Bootnetcrasher\School\Components\DetailActualite' => 'detailactualite',
             '\Bootnetcrasher\School\Components\ExamensAll' => 'examensall',
             '\Bootnetcrasher\School\Components\DetailExamen' => 'detailexamen',
-            
+            '\Bootnetcrasher\School\Components\ClubsActivitesAll' => 'clubsActivites',
+            '\Bootnetcrasher\School\Components\DetailClubsActivites' => 'detailClubsActivites',
+            '\Bootnetcrasher\School\Components\ProfesseursAll' => 'professeursAll',
+            '\Bootnetcrasher\School\Components\DetailProfesseur' => 'detailProfesseur',
+            '\Bootnetcrasher\School\Components\EmploisDuTemps' => 'emploisDuTemps',
+            '\Bootnetcrasher\School\Components\Parametrages' => 'parametrages',
+            '\Bootnetcrasher\School\Components\SujetsAll' => 'sujetsall',
+            '\Bootnetcrasher\School\Components\Contact' => 'contact',
+            '\Bootnetcrasher\School\Components\DetailSujet' => 'detailsujet',
         ];
     }
 

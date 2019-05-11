@@ -1,0 +1,41 @@
+1557616313a:1:{s:24:"detailclubsactivites.htm";a:10:{s:8:"fileName";s:24:"detailclubsactivites.htm";s:7:"content";s:627:"title = "Demonstration"
+url = "/clubs-activites/:club_activite_id"
+layout = "default"
+is_hidden = 0
+
+[detailClubsActivites]
+==
+
+<div class="wrapper">
+    {% partial 'site/header' %}
+
+    <div class="content container">
+
+            <div class="row cols-wrapper">
+                <div class="col-lg-9 col-12">
+                    {% component 'detailClubsActivites' %}
+                </div>
+                <div class="col-lg-3 col-12">
+                    {% content 'mot_du_directeur' %}
+                    
+                    {% content 'majeur_promotion' %}
+                </div>
+            </div>
+        </div>
+</div>";s:5:"mtime";i:1557092757;s:6:"markup";s:499:"<div class="wrapper">
+    {% partial 'site/header' %}
+
+    <div class="content container">
+
+            <div class="row cols-wrapper">
+                <div class="col-lg-9 col-12">
+                    {% component 'detailClubsActivites' %}
+                </div>
+                <div class="col-lg-3 col-12">
+                    {% content 'mot_du_directeur' %}
+                    
+                    {% content 'majeur_promotion' %}
+                </div>
+            </div>
+        </div>
+</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:34:"/clubs-activites/:club_activite_id";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:20:"detailClubsActivites";a:0:{}}}
