@@ -20,24 +20,40 @@ class __TwigTemplate_4c707226debe549741316394f3a26bfcf7112ac1453ad2568ea4f84ab09
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "<div id=\"promo-slider\" class=\"slider flexslider\" style='margin-bottom: 23px;'>
+        echo "<style type=\"text/css\">
+    .flex-control-nav.flex-control-paging{
+        position: unset;
+    }
+</style>
+<div id=\"promo-slider\" class=\"slider flexslider\" style='margin-bottom: 23px;'>
     <ul class=\"slides\">
         ";
-        // line 3
+        // line 8
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["slideshows"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["slideshow"]) {
-            // line 4
+            // line 9
             echo "            <li>
                 <img src=\"";
-            // line 5
+            // line 10
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["slideshow"], "slide", []), "getpath", []), "html", null, true);
             echo "\" alt=\"\" />
                 <p class=\"flex-caption\">
-                        ";
-            // line 7
-            echo twig_get_attribute($this->env, $this->source, $context["slideshow"], "text_slide", []);
+                    <p class=\"flex-caption\">
+                        <span class=\"main\">
+                            ";
+            // line 14
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["slideshow"], "title_cover", []), "html", null, true);
             echo "
+                        </span>
+                        <br>
+                        <span class=\"secondary clearfix\">
+                            ";
+            // line 18
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["slideshow"], "description_cover", []), "html", null, true);
+            echo "
+                        </span>
+                    </p>
                 </p>
             </li>
         ";
@@ -45,7 +61,7 @@ class __TwigTemplate_4c707226debe549741316394f3a26bfcf7112ac1453ad2568ea4f84ab09
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['slideshow'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 11
+        // line 24
         echo "    </ul>
 </div>";
     }
@@ -62,18 +78,31 @@ class __TwigTemplate_4c707226debe549741316394f3a26bfcf7112ac1453ad2568ea4f84ab09
 
     public function getDebugInfo()
     {
-        return array (  49 => 11,  39 => 7,  34 => 5,  31 => 4,  27 => 3,  23 => 1,);
+        return array (  65 => 24,  53 => 18,  46 => 14,  39 => 10,  36 => 9,  32 => 8,  23 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div id=\"promo-slider\" class=\"slider flexslider\" style='margin-bottom: 23px;'>
+        return new Twig_Source("<style type=\"text/css\">
+    .flex-control-nav.flex-control-paging{
+        position: unset;
+    }
+</style>
+<div id=\"promo-slider\" class=\"slider flexslider\" style='margin-bottom: 23px;'>
     <ul class=\"slides\">
         {% for slideshow in slideshows %}
             <li>
                 <img src=\"{{ slideshow.slide.getpath  }}\" alt=\"\" />
                 <p class=\"flex-caption\">
-                        {{ slideshow.text_slide|raw  }}
+                    <p class=\"flex-caption\">
+                        <span class=\"main\">
+                            {{ slideshow.title_cover }}
+                        </span>
+                        <br>
+                        <span class=\"secondary clearfix\">
+                            {{ slideshow.description_cover }}
+                        </span>
+                    </p>
                 </p>
             </li>
         {% endfor %}

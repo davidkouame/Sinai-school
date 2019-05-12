@@ -83,7 +83,7 @@ description = "Default layout"
         }
         
 
-        img {
+        /*img {
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
@@ -92,7 +92,7 @@ description = "Default layout"
 
         img:hover {
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-        }
+        }*/
 
         .profile:hover{
             box-shadow: initial;
@@ -142,5 +142,12 @@ description = "Default layout"
         {% framework extras %}
         {% scripts %}
 
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $(".carousel-item div.row").click(function(e){
+              window.location.href = "{{ url('actualites') }}/"+$(this).data('id');
+            })
+          });
+        </script>
     </body>
 </html>

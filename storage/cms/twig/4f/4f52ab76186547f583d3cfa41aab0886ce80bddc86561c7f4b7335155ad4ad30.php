@@ -133,7 +133,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         }
         
 
-        img {
+        /*img {
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
@@ -142,7 +142,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
 
         img:hover {
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-        }
+        }*/
 
         .profile:hover{
             box-shadow: initial;
@@ -255,6 +255,16 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
         // line 141
         echo "
+        <script type=\"text/javascript\">
+          \$(document).ready(function(){
+            \$(\".carousel-item div.row\").click(function(e){
+              window.location.href = \"";
+        // line 145
+        echo url("actualites");
+        echo "/\"+\$(this).data('id');
+            })
+          });
+        </script>
     </body>
 </html>";
     }
@@ -277,7 +287,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
 
     public function getDebugInfo()
     {
-        return array (  263 => 16,  257 => 141,  253 => 140,  238 => 139,  234 => 138,  228 => 135,  224 => 134,  220 => 133,  216 => 132,  212 => 131,  208 => 130,  202 => 127,  198 => 126,  194 => 125,  189 => 122,  185 => 121,  179 => 117,  177 => 116,  166 => 109,  163 => 108,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  273 => 16,  263 => 145,  257 => 141,  253 => 140,  238 => 139,  234 => 138,  228 => 135,  224 => 134,  220 => 133,  216 => 132,  212 => 131,  208 => 130,  202 => 127,  198 => 126,  194 => 125,  189 => 122,  185 => 121,  179 => 117,  177 => 116,  166 => 109,  163 => 108,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
     }
 
     public function getSourceContext()
@@ -364,7 +374,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         }
         
 
-        img {
+        /*img {
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
@@ -373,7 +383,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
 
         img:hover {
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-        }
+        }*/
 
         .profile:hover{
             box-shadow: initial;
@@ -423,6 +433,13 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         {% framework extras %}
         {% scripts %}
 
+        <script type=\"text/javascript\">
+          \$(document).ready(function(){
+            \$(\".carousel-item div.row\").click(function(e){
+              window.location.href = \"{{ url('actualites') }}/\"+\$(this).data('id');
+            })
+          });
+        </script>
     </body>
 </html>", "/opt/lampp/htdocs/sinai_school_october_cms/themes/default/layouts/default.htm", "");
     }

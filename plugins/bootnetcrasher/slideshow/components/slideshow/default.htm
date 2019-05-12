@@ -1,10 +1,23 @@
+<style type="text/css">
+    .flex-control-nav.flex-control-paging{
+        position: unset;
+    }
+</style>
 <div id="promo-slider" class="slider flexslider" style='margin-bottom: 23px;'>
     <ul class="slides">
         {% for slideshow in slideshows %}
             <li>
                 <img src="{{ slideshow.slide.getpath  }}" alt="" />
                 <p class="flex-caption">
-                        {{ slideshow.text_slide|raw  }}
+                    <p class="flex-caption">
+                        <span class="main">
+                            {{ slideshow.title_cover }}
+                        </span>
+                        <br>
+                        <span class="secondary clearfix">
+                            {{ slideshow.description_cover }}
+                        </span>
+                    </p>
                 </p>
             </li>
         {% endfor %}

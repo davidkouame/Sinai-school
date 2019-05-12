@@ -19,8 +19,12 @@ fields:
         size: ''
         span: auto
         type: textarea
-    text_slide:
-        label: 'Text Slide'
+    title_cover:
+        label: 'Titre cover'
         size: ''
         span: auto
         type: textarea
+    description_cover:
+        label: 'Descriiption Cover'
+        span: auto
+        type: text

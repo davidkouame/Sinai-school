@@ -38,31 +38,43 @@ class __TwigTemplate_f0590ef7bd76f5de471a465e1ebf889155a84008256c3c7c52a85b0db30
         unset($context['__cms_component_params']);
         // line 8
         echo "
+        <section class=\"promo box box-dark\" style=\"padding-top: 15px;padding-left: 15px;padding-bottom: 15px;padding-right: 15px;\">        
+                <div class=\"row\">
+                    <div class=\"col-md-9\">
+                <h1 class=\"section-heading\">Why College Green</h1>
+                    <p style=\"margin-bottom: 0px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum orci eget nulla mattis, quis viverra tellus porta. Donec vitae neque ut velit eleifend commodo. Maecenas turpis odio, placerat eu lorem ut, suscipit commodo augue.  </p>   
+                </div>  
+                <div class=\"col-md-3\">
+                    <a class=\"btn btn-cta\" href=\"index.html#\"><i class=\"fa fa-play-circle\"></i>Apply Now</a>  
+                </div>
+                </div>
+            </section><!--//promo-->
+
         <div class=\"row cols-wrapper\">
 
             ";
-        // line 11
+        // line 23
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("actualites"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 12
+        // line 24
         echo "
             <div class=\"col-lg-3 col-12\">
                 <!-- Mot du directeur-->
                 ";
-        // line 15
+        // line 27
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("mot_du_directeur"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 16
+        // line 28
         echo "                
                 <!-- Majeur de promotion -->
                 ";
-        // line 18
+        // line 30
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("majeur_promotion"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 19
+        // line 31
         echo "            </div>
         </div>
     </div>
@@ -81,7 +93,7 @@ class __TwigTemplate_f0590ef7bd76f5de471a465e1ebf889155a84008256c3c7c52a85b0db30
 
     public function getDebugInfo()
     {
-        return array (  66 => 19,  62 => 18,  58 => 16,  54 => 15,  49 => 12,  45 => 11,  40 => 8,  36 => 7,  31 => 4,  27 => 3,  23 => 1,);
+        return array (  78 => 31,  74 => 30,  70 => 28,  66 => 27,  61 => 24,  57 => 23,  40 => 8,  36 => 7,  31 => 4,  27 => 3,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -93,6 +105,18 @@ class __TwigTemplate_f0590ef7bd76f5de471a465e1ebf889155a84008256c3c7c52a85b0db30
     <div class=\"content container\">
         
         {% component 'SlideShow' %}
+
+        <section class=\"promo box box-dark\" style=\"padding-top: 15px;padding-left: 15px;padding-bottom: 15px;padding-right: 15px;\">        
+                <div class=\"row\">
+                    <div class=\"col-md-9\">
+                <h1 class=\"section-heading\">Why College Green</h1>
+                    <p style=\"margin-bottom: 0px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum orci eget nulla mattis, quis viverra tellus porta. Donec vitae neque ut velit eleifend commodo. Maecenas turpis odio, placerat eu lorem ut, suscipit commodo augue.  </p>   
+                </div>  
+                <div class=\"col-md-3\">
+                    <a class=\"btn btn-cta\" href=\"index.html#\"><i class=\"fa fa-play-circle\"></i>Apply Now</a>  
+                </div>
+                </div>
+            </section><!--//promo-->
 
         <div class=\"row cols-wrapper\">
 
