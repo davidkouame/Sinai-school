@@ -40,20 +40,33 @@ class __TwigTemplate_4c707226debe549741316394f3a26bfcf7112ac1453ad2568ea4f84ab09
             echo "\" alt=\"\" />
                 <p class=\"flex-caption\">
                     <p class=\"flex-caption\">
-                        <span class=\"main\">
-                            ";
-            // line 14
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["slideshow"], "title_cover", []), "html", null, true);
-            echo "
-                        </span>
-                        <br>
-                        <span class=\"secondary clearfix\">
-                            ";
-            // line 18
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["slideshow"], "description_cover", []), "html", null, true);
-            echo "
-                        </span>
-                    </p>
+                        ";
+            // line 13
+            if (twig_get_attribute($this->env, $this->source, $context["slideshow"], "title_cover", [])) {
+                // line 14
+                echo "                            <span class=\"main\">
+                                ";
+                // line 15
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["slideshow"], "title_cover", []), "html", null, true);
+                echo "
+                            </span>
+                            <br>
+                        ";
+            }
+            // line 19
+            echo "                        ";
+            if (twig_get_attribute($this->env, $this->source, $context["slideshow"], "description_cover", [])) {
+                // line 20
+                echo "                            <span class=\"secondary clearfix\">
+                                ";
+                // line 21
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["slideshow"], "description_cover", []), "html", null, true);
+                echo "
+                            </span>
+                        ";
+            }
+            // line 24
+            echo "                    </p>
                 </p>
             </li>
         ";
@@ -61,7 +74,7 @@ class __TwigTemplate_4c707226debe549741316394f3a26bfcf7112ac1453ad2568ea4f84ab09
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['slideshow'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 24
+        // line 28
         echo "    </ul>
 </div>";
     }
@@ -78,7 +91,7 @@ class __TwigTemplate_4c707226debe549741316394f3a26bfcf7112ac1453ad2568ea4f84ab09
 
     public function getDebugInfo()
     {
-        return array (  65 => 24,  53 => 18,  46 => 14,  39 => 10,  36 => 9,  32 => 8,  23 => 1,);
+        return array (  78 => 28,  69 => 24,  63 => 21,  60 => 20,  57 => 19,  50 => 15,  47 => 14,  45 => 13,  39 => 10,  36 => 9,  32 => 8,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -95,13 +108,17 @@ class __TwigTemplate_4c707226debe549741316394f3a26bfcf7112ac1453ad2568ea4f84ab09
                 <img src=\"{{ slideshow.slide.getpath  }}\" alt=\"\" />
                 <p class=\"flex-caption\">
                     <p class=\"flex-caption\">
-                        <span class=\"main\">
-                            {{ slideshow.title_cover }}
-                        </span>
-                        <br>
-                        <span class=\"secondary clearfix\">
-                            {{ slideshow.description_cover }}
-                        </span>
+                        {% if slideshow.title_cover %}
+                            <span class=\"main\">
+                                {{ slideshow.title_cover }}
+                            </span>
+                            <br>
+                        {% endif %}
+                        {% if slideshow.description_cover %}
+                            <span class=\"secondary clearfix\">
+                                {{ slideshow.description_cover }}
+                            </span>
+                        {% endif %}
                     </p>
                 </p>
             </li>

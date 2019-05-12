@@ -36,7 +36,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                     <div class=\"form-group\">
                         <input type=\"text\" class=\"form-control\" placeholder=\"Rechercher sur le site ...\">
                     </div>
-                    <button type=\"submit\" class=\"btn btn-theme\">Go</button>
+                    <button type=\"submit\" class=\"btn btn-theme\">Recherchez</button>
                 </form>
             </div>
         </div>
@@ -60,7 +60,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                     <li class=\"divider\"><a href=\"";
         // line 33
         echo url("/");
-        echo "\">Home</a></li>
+        echo "\">Accueil</a></li>
                     <!-- <li class=\"divider\"><a href=\"faq.html\">FAQ</a></li> -->
                     <li><a href=\"";
         // line 35
@@ -104,7 +104,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                     <li class=\"nav-item\"><a class=\"active nav-link\" href=\"";
         // line 65
         echo url("/");
-        echo "\">Home</a></li>
+        echo "\">Accueil</a></li>
 
                     <li class=\"nav-item dropdown\">
                         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown-1\" role=\"button\" data-toggle=\"dropdown\"
@@ -133,7 +133,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                             <a class=\"dropdown-item\" href=\"";
         // line 82
         echo url("/activites-fin-trimestre");
-        echo "\" style=\"width: 109%;\">Activites de
+        echo "\" style=\"width: 109%;\">Activités de
                                 fin de trimestre</a>
                         </div>
                     </li>
@@ -145,7 +145,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                             <a class=\"dropdown-item\" href=\"";
         // line 91
         echo url("clubs-activites");
-        echo "\">Clubs d'activites</a>
+        echo "\">Clubs d'activités</a>
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Conseil scolaire</a>
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Galerie</a>
                         </div>
@@ -168,7 +168,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                             <a class=\"dropdown-item\" href=\"";
         // line 105
         echo url("/sujets");
-        echo "\">Sujets</a>
+        echo "\">Bibliothèque numérique</a>
                         </div>
                     </li>
 
@@ -179,7 +179,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                             <a class=\"dropdown-item\" href=\"";
         // line 113
         echo url("/suivre-mes-eleves");
-        echo "\">Suivre mes élèves </a>
+        echo "\">Suivre mon élèves </a>
                             <!-- c'est programme qui a pour de suivre les moyennes de son enfant 
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Notes-Moyennes-Bulletins</a>-->
                         </div>
@@ -234,7 +234,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                     <div class=\"form-group\">
                         <input type=\"text\" class=\"form-control\" placeholder=\"Rechercher sur le site ...\">
                     </div>
-                    <button type=\"submit\" class=\"btn btn-theme\">Go</button>
+                    <button type=\"submit\" class=\"btn btn-theme\">Recherchez</button>
                 </form>
             </div>
         </div>
@@ -250,7 +250,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
             <!--//logo-->
             <div class=\"info col-md-8 col-12\">
                 <ul class=\"menu-top float-right d-none d-md-block\">
-                    <li class=\"divider\"><a href=\"{{ url('/') }}\">Home</a></li>
+                    <li class=\"divider\"><a href=\"{{ url('/') }}\">Accueil</a></li>
                     <!-- <li class=\"divider\"><a href=\"faq.html\">FAQ</a></li> -->
                     <li><a href=\"{{ url('/contact') }}\">Contact</a></li>
                 </ul>
@@ -282,7 +282,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
 
             <div class=\"navbar-collapse collapse\" id=\"navbar-collapse\">
                 <ul class=\"nav navbar-nav\">
-                    <li class=\"nav-item\"><a class=\"active nav-link\" href=\"{{ url('/') }}\">Home</a></li>
+                    <li class=\"nav-item\"><a class=\"active nav-link\" href=\"{{ url('/') }}\">Accueil</a></li>
 
                     <li class=\"nav-item dropdown\">
                         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown-1\" role=\"button\" data-toggle=\"dropdown\"
@@ -299,7 +299,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                             aria-haspopup=\"true\" aria-expanded=\"false\">Enseignants <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown-2\">
                             <a class=\"dropdown-item\" href=\"{{ url('/professeurs') }}\">Infos aux Enseignants</a>
-                            <a class=\"dropdown-item\" href=\"{{ url('/activites-fin-trimestre') }}\" style=\"width: 109%;\">Activites de
+                            <a class=\"dropdown-item\" href=\"{{ url('/activites-fin-trimestre') }}\" style=\"width: 109%;\">Activités de
                                 fin de trimestre</a>
                         </div>
                     </li>
@@ -308,7 +308,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                         <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
                             data-close-others=\"false\" href=\"#\">Vie scolaire <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
-                            <a class=\"dropdown-item\" href=\"{{ url('clubs-activites')}}\">Clubs d'activites</a>
+                            <a class=\"dropdown-item\" href=\"{{ url('clubs-activites')}}\">Clubs d'activités</a>
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Conseil scolaire</a>
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Galerie</a>
                         </div>
@@ -322,7 +322,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                             <!--<a class=\"dropdown-item\" href=\"javascript:void(0)\">Infos aux élèves</a>-->
                             <a class=\"dropdown-item\" href=\"{{ url('/emplois-du-temps') }}\">Emplois du temps eleve</a>
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Devoirs de niveau</a>
-                            <a class=\"dropdown-item\" href=\"{{ url('/sujets') }}\">Sujets</a>
+                            <a class=\"dropdown-item\" href=\"{{ url('/sujets') }}\">Bibliothèque numérique</a>
                         </div>
                     </li>
 
@@ -330,7 +330,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                         <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
                             data-close-others=\"false\" href=\"#\">Parents d'Elèves <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
-                            <a class=\"dropdown-item\" href=\"{{ url('/suivre-mes-eleves') }}\">Suivre mes élèves </a>
+                            <a class=\"dropdown-item\" href=\"{{ url('/suivre-mes-eleves') }}\">Suivre mon élèves </a>
                             <!-- c'est programme qui a pour de suivre les moyennes de son enfant 
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Notes-Moyennes-Bulletins</a>-->
                         </div>

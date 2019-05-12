@@ -37,7 +37,7 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                             <h3>Enseignants</h3>
                             <ul>
                                 <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Infos aux Enseignants</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Activites de fin de trimestre</a></li>
+                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Activités de fin de trimestre</a></li>
                             </ul>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                         <div class=\"footer-col-inner no-padding-left-and-right\">
                             <h3>Vie Scolaire</h3>
                             <ul>
-                                <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Clubs d'activites</a></li>
+                                <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Clubs d'activités</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Conseil Scolaire</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Galerie</a></li>
                             </ul>
@@ -55,11 +55,13 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                         <div class=\"footer-col-inner no-padding-left-and-right\">
                             <h3>Espace Elèves</h3>
                             <ul>
-                                <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Reglement intérieur</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Infos aux élèves</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas faa-caret-right\"></i>Emplois du temps élève</a></li>
+                                <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Règlement intérieur</a></li>
+                                <li><a href=\"";
+        // line 37
+        echo url("emplois-du-temps");
+        echo "\"><i class=\"fas fa-caret-right\"></i>Emplois du temps élève</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Devoirs de niveaux</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Bibliothèques</a></li>
+                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Bibliothèque numérique</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,46 +70,36 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                             <h3>Parents d'élèves</h3>
                             <ul>
                                 <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Suivre mon élève</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Notes-Moyennes-Bulletins</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class=\"row\">
-                    <div class=\"footer-col col-lg-9 col-md-4 col-12 no-padding-left-and-right newsletter\">
+                    <div class=\"footer-col col-lg-8 col-md-4 col-12 no-padding-left-and-right newsletter\">
                         <div class=\"footer-col-inner no-padding-left-and-right\">
                             <h3 style=\"margin-bottom: 2px;\">Joignez-vous à notre liste d'envoi</h3>
                             <p style=\"margin-bottom: 6px;border-bottom-width: 1px;\">Abonnez-vous pour recevoir notre lettre d'information</p>
                             <form class=\"subscribe-form\">
                                 <div class=\"form-group\">
-                                    <input type=\"email\" class=\"form-control\" placeholder=\"Enter your email\" />
+                                    <input type=\"email\" class=\"form-control\" placeholder=\"Entrez votre mail\" />
                                 </div>
-                                <input class=\"btn btn-theme btn-subscribe\" type=\"submit\" value=\"Subscribe\">
+                                <input class=\"btn btn-theme btn-subscribe\" type=\"submit\" value=\"Abonnez-vous\">
                             </form>
                         </div>
                     </div>
-                    <div class=\"footer-col col-lg-3 col-12 contact\">
-                        <div class=\"footer-col-inner\">
+                    <div class=\"footer-col col-lg-4 col-12 contact\">
+                        <div class=\"footer-col-inner\" style=\"margin-left: 12%;\">
                             <h3 style=\"margin-bottom: 12px;\">Contactez-nous</h3>
                             <div class=\"row\">
-                                <!-- <p class=\"adr clearfix col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 4px;\">
-                                    <i class=\"fas fa-map-marker-alt float-left\"></i>        
-                                    <span class=\"adr-group float-left\">       
-                                        <span class=\"street-address\">College Green</span><br>
-                                        <span class=\"region\">56 College Green Road</span><br>
-                                        <span class=\"postal-code\">BS16 AP18</span><br>
-                                        <span class=\"country-name\">UK</span>
-                                    </span>
-                                </p> -->
                                 <p class=\"tel col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 4px;\"><i class=\"fas fa-phone\"></i>";
-        // line 80
+        // line 69
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["parametrages"] ?? null), "number_front", []), "html", null, true);
         echo "</p>
                                 <p class=\"email col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 14px;\"><i class=\"fas fa-envelope\"></i><a href=\"#\">";
-        // line 81
+        // line 70
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["parametrages"] ?? null), "email_front", []), "html", null, true);
         echo "</a></p>  
-                            </div> 
+                            </div>
                         </div>            
                     </div>  
                 </div>   
@@ -144,7 +136,7 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
 
     public function getDebugInfo()
     {
-        return array (  108 => 81,  104 => 80,  23 => 1,);
+        return array (  100 => 70,  96 => 69,  61 => 37,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -166,7 +158,7 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                             <h3>Enseignants</h3>
                             <ul>
                                 <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Infos aux Enseignants</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Activites de fin de trimestre</a></li>
+                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Activités de fin de trimestre</a></li>
                             </ul>
                         </div>
                     </div>
@@ -174,7 +166,7 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                         <div class=\"footer-col-inner no-padding-left-and-right\">
                             <h3>Vie Scolaire</h3>
                             <ul>
-                                <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Clubs d'activites</a></li>
+                                <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Clubs d'activités</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Conseil Scolaire</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Galerie</a></li>
                             </ul>
@@ -184,11 +176,10 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                         <div class=\"footer-col-inner no-padding-left-and-right\">
                             <h3>Espace Elèves</h3>
                             <ul>
-                                <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Reglement intérieur</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Infos aux élèves</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas faa-caret-right\"></i>Emplois du temps élève</a></li>
+                                <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Règlement intérieur</a></li>
+                                <li><a href=\"{{ url('emplois-du-temps') }}\"><i class=\"fas fa-caret-right\"></i>Emplois du temps élève</a></li>
                                 <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Devoirs de niveaux</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Bibliothèques</a></li>
+                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Bibliothèque numérique</a></li>
                             </ul>
                         </div>
                     </div>
@@ -197,40 +188,30 @@ class __TwigTemplate_6d88ee7ff12f2701f5f42900bc6b2c967de095f172eabe1f1bc8c7eecbe
                             <h3>Parents d'élèves</h3>
                             <ul>
                                 <li><a href=\"about.html\"><i class=\"fas fa-caret-right\"></i>Suivre mon élève</a></li>
-                                <li><a href=\"contact.html\"><i class=\"fas fa-caret-right\"></i>Notes-Moyennes-Bulletins</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class=\"row\">
-                    <div class=\"footer-col col-lg-9 col-md-4 col-12 no-padding-left-and-right newsletter\">
+                    <div class=\"footer-col col-lg-8 col-md-4 col-12 no-padding-left-and-right newsletter\">
                         <div class=\"footer-col-inner no-padding-left-and-right\">
                             <h3 style=\"margin-bottom: 2px;\">Joignez-vous à notre liste d'envoi</h3>
                             <p style=\"margin-bottom: 6px;border-bottom-width: 1px;\">Abonnez-vous pour recevoir notre lettre d'information</p>
                             <form class=\"subscribe-form\">
                                 <div class=\"form-group\">
-                                    <input type=\"email\" class=\"form-control\" placeholder=\"Enter your email\" />
+                                    <input type=\"email\" class=\"form-control\" placeholder=\"Entrez votre mail\" />
                                 </div>
-                                <input class=\"btn btn-theme btn-subscribe\" type=\"submit\" value=\"Subscribe\">
+                                <input class=\"btn btn-theme btn-subscribe\" type=\"submit\" value=\"Abonnez-vous\">
                             </form>
                         </div>
                     </div>
-                    <div class=\"footer-col col-lg-3 col-12 contact\">
-                        <div class=\"footer-col-inner\">
+                    <div class=\"footer-col col-lg-4 col-12 contact\">
+                        <div class=\"footer-col-inner\" style=\"margin-left: 12%;\">
                             <h3 style=\"margin-bottom: 12px;\">Contactez-nous</h3>
                             <div class=\"row\">
-                                <!-- <p class=\"adr clearfix col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 4px;\">
-                                    <i class=\"fas fa-map-marker-alt float-left\"></i>        
-                                    <span class=\"adr-group float-left\">       
-                                        <span class=\"street-address\">College Green</span><br>
-                                        <span class=\"region\">56 College Green Road</span><br>
-                                        <span class=\"postal-code\">BS16 AP18</span><br>
-                                        <span class=\"country-name\">UK</span>
-                                    </span>
-                                </p> -->
                                 <p class=\"tel col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 4px;\"><i class=\"fas fa-phone\"></i>{{ parametrages.number_front }}</p>
                                 <p class=\"email col-lg-12 col-md-4 col-12\" style=\"margin-bottom: 14px;\"><i class=\"fas fa-envelope\"></i><a href=\"#\">{{ parametrages.email_front }}</a></p>  
-                            </div> 
+                            </div>
                         </div>            
                     </div>  
                 </div>   
