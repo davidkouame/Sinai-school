@@ -1,4 +1,4 @@
-1557699441a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:5591:"description = "Default layout"
+1557926282a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:5877:"description = "Default layout"
 [parametrages]
 ==
 <!DOCTYPE html>
@@ -36,6 +36,9 @@
         <!-- Theme CSS -->  
         <link id="theme-style" rel="stylesheet" href="./static/assets/css/theme-1.css">
         <link href="{{ 'assets/css/theme-1.css'|theme }}" rel="stylesheet">
+        
+        <!-- APP css-->
+        <link rel="stylesheet" href="{{ 'assets/css/app.css'|theme }}">
 
 
         <!-- Facebook Pixel Code -->
@@ -146,12 +149,16 @@
           $(document).ready(function(){
             $(".carousel-item div.row").click(function(e){
               window.location.href = "{{ url('actualites') }}/"+$(this).data('id');
+            });
+            
+            $(".carousel-item div.row").click(function(e){
+              window.location.href = "{{ url('clubs-activites') }}/"+$(this).data('idclub');
             })
           });
         </script>
     </body>
 </html>
-";s:5:"mtime";i:1557647254;s:6:"markup";s:5541:"<!DOCTYPE html>
+";s:5:"mtime";i:1557917157;s:6:"markup";s:5827:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -186,6 +193,9 @@
         <!-- Theme CSS -->  
         <link id="theme-style" rel="stylesheet" href="./static/assets/css/theme-1.css">
         <link href="{{ 'assets/css/theme-1.css'|theme }}" rel="stylesheet">
+        
+        <!-- APP css-->
+        <link rel="stylesheet" href="{{ 'assets/css/app.css'|theme }}">
 
 
         <!-- Facebook Pixel Code -->
@@ -296,6 +306,10 @@
           $(document).ready(function(){
             $(".carousel-item div.row").click(function(e){
               window.location.href = "{{ url('actualites') }}/"+$(this).data('id');
+            });
+            
+            $(".carousel-item div.row").click(function(e){
+              window.location.href = "{{ url('clubs-activites') }}/"+$(this).data('idclub');
             })
           });
         </script>

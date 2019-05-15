@@ -126,10 +126,10 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown-2\" role=\"button\" data-toggle=\"dropdown\"
                             aria-haspopup=\"true\" aria-expanded=\"false\">Enseignants <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown-2\">
-                            <a class=\"dropdown-item\" href=\"";
+                            <!--<a class=\"dropdown-item\" href=\"";
         // line 81
         echo url("/professeurs");
-        echo "\">Infos aux Enseignants</a>
+        echo "\">Infos aux Enseignants</a>-->
                             <a class=\"dropdown-item\" href=\"";
         // line 82
         echo url("/activites-fin-trimestre");
@@ -146,7 +146,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
         // line 91
         echo url("clubs-activites");
         echo "\">Clubs d'activités</a>
-                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Conseil scolaire</a>
+<!--                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Conseil scolaire</a>-->
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Galerie</a>
                         </div>
                     </li>
@@ -160,15 +160,15 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
         echo url("/reglement-interieur");
         echo "\">Règlement intérieur</a>
                             <!--<a class=\"dropdown-item\" href=\"javascript:void(0)\">Infos aux élèves</a>-->
-                            <a class=\"dropdown-item\" href=\"";
+<!--                            <a class=\"dropdown-item\" href=\"";
         // line 103
         echo url("/emplois-du-temps");
-        echo "\">Emplois du temps eleve</a>
-                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Devoirs de niveau</a>
-                            <a class=\"dropdown-item\" href=\"";
+        echo "\">Emplois du temps eleve</a>-->
+<!--                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Devoirs de niveau</a>-->
+<!--                            <a class=\"dropdown-item\" href=\"";
         // line 105
         echo url("/sujets");
-        echo "\">Bibliothèque numérique</a>
+        echo "\">Bibliothèque numérique</a>-->
                         </div>
                     </li>
 
@@ -298,7 +298,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown-2\" role=\"button\" data-toggle=\"dropdown\"
                             aria-haspopup=\"true\" aria-expanded=\"false\">Enseignants <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown-2\">
-                            <a class=\"dropdown-item\" href=\"{{ url('/professeurs') }}\">Infos aux Enseignants</a>
+                            <!--<a class=\"dropdown-item\" href=\"{{ url('/professeurs') }}\">Infos aux Enseignants</a>-->
                             <a class=\"dropdown-item\" href=\"{{ url('/activites-fin-trimestre') }}\" style=\"width: 109%;\">Activités de
                                 fin de trimestre</a>
                         </div>
@@ -309,7 +309,7 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                             data-close-others=\"false\" href=\"#\">Vie scolaire <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"{{ url('clubs-activites')}}\">Clubs d'activités</a>
-                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Conseil scolaire</a>
+<!--                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Conseil scolaire</a>-->
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Galerie</a>
                         </div>
                     </li>
@@ -320,9 +320,9 @@ class __TwigTemplate_8423bb07acf847a499175a1d7154ec43e178d7e5d81f320c303a91839d8
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"{{ url('/reglement-interieur') }}\">Règlement intérieur</a>
                             <!--<a class=\"dropdown-item\" href=\"javascript:void(0)\">Infos aux élèves</a>-->
-                            <a class=\"dropdown-item\" href=\"{{ url('/emplois-du-temps') }}\">Emplois du temps eleve</a>
-                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Devoirs de niveau</a>
-                            <a class=\"dropdown-item\" href=\"{{ url('/sujets') }}\">Bibliothèque numérique</a>
+<!--                            <a class=\"dropdown-item\" href=\"{{ url('/emplois-du-temps') }}\">Emplois du temps eleve</a>-->
+<!--                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Devoirs de niveau</a>-->
+<!--                            <a class=\"dropdown-item\" href=\"{{ url('/sujets') }}\">Bibliothèque numérique</a>-->
                         </div>
                     </li>
 

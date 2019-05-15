@@ -1,5 +1,5 @@
 <?php 
-class Cms5cd752ef9b0d2550099802_4a7b4ff6dc34dea24c37f04fbde8b229Class extends Cms\Classes\PageCode
+class Cms5cdc0ac0e3833637704839_d6218be72af4b2ecc1e8783959e16663Class extends Cms\Classes\PageCode
 {
 
 }

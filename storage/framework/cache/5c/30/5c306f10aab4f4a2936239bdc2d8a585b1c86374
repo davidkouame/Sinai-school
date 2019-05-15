@@ -1,121 +1,21 @@
-1557699441a:1:{s:15:"organigrame.htm";a:9:{s:8:"fileName";s:15:"organigrame.htm";s:7:"content";s:6646:"title = "Demonstration"
+1557926282a:1:{s:15:"organigrame.htm";a:10:{s:8:"fileName";s:15:"organigrame.htm";s:7:"content";s:600:"title = "Demonstration"
 url = "/organigrame"
 layout = "default"
 is_hidden = 0
 
-organigrame
+[Organigrame]
 ==
 
 <link href="{{ 'assets/css/organigrame.css'|theme }}" rel="stylesheet">
 
 <div class="wrapper">
-
     {% partial 'site/header' %}
 
     <div class="content container">
 
-
         <div class="row cols-wrapper">
             <div class="col-lg-9 col-12">
-                    <div id="wrapper">
-                            <div id="container">
-                        
-                                <ol class="organizational-chart">
-                                    <li>
-                                        <div>
-                                            <h1>CE</h1>
-                                        </div>
-                                        <ol>
-                                            <li>
-                                                <div>
-                                                    <h2>Services Rattachés</h2>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <h2>Intendance</h2>
-                                                </div>
-                                                <ol>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Services tech.et d'entretien</h3>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Elèvres</h3>
-                                                        </div>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <h2>ACE</h2>
-                                                </div>
-                                                <ol>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Insp.d'Orientation</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h4>Elèves</h4>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Insp.d'Education</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Educateurs</h5>
-                                                                </div>
-                                                                <ol>
-                                                                    <li>
-                                                                        <div>
-                                                                            <h6>Elèves</h6>
-                                                                        </div>
-                                                                    </li>
-                                                                </ol>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>I.E.S</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Elèves</h5>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Enseignants</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Elèves</h5>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                        </ol>
-                                    </li>
-                                </ol>
-                        
-                            </div>
-                        </div>
+                {% component 'Organigrame' %}
             </div>
             <div class="col-lg-3 col-12">
                 {% content 'mot_du_directeur' %}
@@ -124,116 +24,16 @@ organigrame
             </div>
         </div>
     </div>
-</div>";s:5:"mtime";i:1556725955;s:6:"markup";s:6551:"<link href="{{ 'assets/css/organigrame.css'|theme }}" rel="stylesheet">
+</div>";s:5:"mtime";i:1557896032;s:6:"markup";s:503:"<link href="{{ 'assets/css/organigrame.css'|theme }}" rel="stylesheet">
 
 <div class="wrapper">
-
     {% partial 'site/header' %}
 
     <div class="content container">
 
-
         <div class="row cols-wrapper">
             <div class="col-lg-9 col-12">
-                    <div id="wrapper">
-                            <div id="container">
-                        
-                                <ol class="organizational-chart">
-                                    <li>
-                                        <div>
-                                            <h1>CE</h1>
-                                        </div>
-                                        <ol>
-                                            <li>
-                                                <div>
-                                                    <h2>Services Rattachés</h2>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <h2>Intendance</h2>
-                                                </div>
-                                                <ol>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Services tech.et d'entretien</h3>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Elèvres</h3>
-                                                        </div>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <h2>ACE</h2>
-                                                </div>
-                                                <ol>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Insp.d'Orientation</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h4>Elèves</h4>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Insp.d'Education</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Educateurs</h5>
-                                                                </div>
-                                                                <ol>
-                                                                    <li>
-                                                                        <div>
-                                                                            <h6>Elèves</h6>
-                                                                        </div>
-                                                                    </li>
-                                                                </ol>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>I.E.S</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Elèves</h5>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Enseignants</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Elèves</h5>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                        </ol>
-                                    </li>
-                                </ol>
-                        
-                            </div>
-                        </div>
+                {% component 'Organigrame' %}
             </div>
             <div class="col-lg-3 col-12">
                 {% content 'mot_du_directeur' %}
@@ -242,4 +42,4 @@ organigrame
             </div>
         </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:12:"/organigrame";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:12:"/organigrame";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"Organigrame";a:0:{}}}

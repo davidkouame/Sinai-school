@@ -57,3 +57,12 @@
 1.0.20:
     - 'Created table bootnetcrasher_school_sujets'
     - builder_table_create_bootnetcrasher_school_sujets.php
+1.0.21:
+    - 'Created table bootnetcrasher_school_organigrame'
+    - builder_table_create_bootnetcrasher_school_organigrame.php
+1.0.22:
+    - 'Updated table bootnetcrasher_school_organigrame'
+    - builder_table_update_bootnetcrasher_school_organigrame.php
+1.0.23:
+    - 'Updated table bootnetcrasher_school_organigrame'
+    - builder_table_update_bootnetcrasher_school_organigrame_2.php

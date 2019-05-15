@@ -4,6 +4,7 @@ layout = "default"
 is_hidden = 0
 
 [detailClubsActivites]
+[filAriane]
 ==
 
 <div class="wrapper">
@@ -11,15 +12,17 @@ is_hidden = 0
 
     <div class="content container">
 
-            <div class="row cols-wrapper">
-                <div class="col-lg-9 col-12">
-                    {% component 'detailClubsActivites' %}
-                </div>
-                <div class="col-lg-3 col-12">
-                    {% content 'mot_du_directeur' %}
-                    
-                    {% content 'majeur_promotion' %}
-                </div>
+        {% component 'filAriane' %}
+
+        <div class="row cols-wrapper">
+            <div class="col-lg-9 col-12">
+                {% component 'detailClubsActivites' %}
+            </div>
+            <div class="col-lg-3 col-12">
+                {% content 'mot_du_directeur' %}
+
+                {% content 'majeur_promotion' %}
             </div>
         </div>
+    </div>
 </div>

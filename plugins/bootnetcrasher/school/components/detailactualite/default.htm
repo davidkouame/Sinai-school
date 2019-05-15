@@ -1,19 +1,17 @@
 <div class="col-lg-9 col-12">
-        <section class="news">
-            <div class="section-content clearfix" style='padding-left: 0px;'>
-                <div id="news-carousel" class="news-carousel carousel slide">
-                    <div class="carousel-inner">
-                        <p>Cover : <img src="{{ actualite.cover.getpath }}" alt=""></p>
-                        <br>
+    <section class="news" style="margin-bottom: 0px;">
+        <div class="section-content clearfix" style='padding-left: 0px;'>
+            <div id="news-carousel" class="news-carousel carousel slide">
+                <div class="carousel-inner">
+                    <!-- <img src="{{'assets/images/slide-2.jpg' | theme }}" class="img-fluid" alt="Responsive image">-->
+                    <img src="{{ actualite.cover.getpath }}" class="img-fluid" alt="Responsive image">
 
-                       <p>title : {{ actualite.id }}</p>
-                       <br>
+                    <h3 style="margin-top: 2%;">{{ actualite.title }}</h3>
+                    <p style="text-align: justify;">{{ actualite.content|raw }}</p>
 
-                       <p>Content : {{ actualite.content|raw }}</p>
-    
-                    </div>
                 </div>
-    
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <div class="float-right" style="margin-right: 12px;"><b>Publié le {{ actualite.created_at|date("d-m-Y") }}</b></div>
+</div>

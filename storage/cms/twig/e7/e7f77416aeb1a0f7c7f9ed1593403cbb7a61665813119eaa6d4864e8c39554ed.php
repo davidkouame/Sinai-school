@@ -25,133 +25,38 @@ class __TwigTemplate_4d5a5b1df12822e124e79b7d5ea3b4b0fced952a93659398f7ed947c2fd
         echo "\" rel=\"stylesheet\">
 
 <div class=\"wrapper\">
-
     ";
-        // line 5
+        // line 4
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 6
+        // line 5
         echo "
     <div class=\"content container\">
 
-
         <div class=\"row cols-wrapper\">
             <div class=\"col-lg-9 col-12\">
-                    <div id=\"wrapper\">
-                            <div id=\"container\">
-                        
-                                <ol class=\"organizational-chart\">
-                                    <li>
-                                        <div>
-                                            <h1>CE</h1>
-                                        </div>
-                                        <ol>
-                                            <li>
-                                                <div>
-                                                    <h2>Services Rattachés</h2>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <h2>Intendance</h2>
-                                                </div>
-                                                <ol>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Services tech.et d'entretien</h3>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Elèvres</h3>
-                                                        </div>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <h2>ACE</h2>
-                                                </div>
-                                                <ol>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Insp.d'Orientation</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h4>Elèves</h4>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Insp.d'Education</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Educateurs</h5>
-                                                                </div>
-                                                                <ol>
-                                                                    <li>
-                                                                        <div>
-                                                                            <h6>Elèves</h6>
-                                                                        </div>
-                                                                    </li>
-                                                                </ol>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>I.E.S</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Elèves</h5>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Enseignants</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Elèves</h5>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                        </ol>
-                                    </li>
-                                </ol>
-                        
-                            </div>
-                        </div>
-            </div>
+                ";
+        // line 10
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("Organigrame"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 11
+        echo "            </div>
             <div class=\"col-lg-3 col-12\">
                 ";
-        // line 113
+        // line 13
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("mot_du_directeur"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 114
+        // line 14
         echo "
                 ";
-        // line 115
+        // line 15
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("majeur_promotion"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 116
+        // line 16
         echo "            </div>
         </div>
     </div>
@@ -170,7 +75,7 @@ class __TwigTemplate_4d5a5b1df12822e124e79b7d5ea3b4b0fced952a93659398f7ed947c2fd
 
     public function getDebugInfo()
     {
-        return array (  155 => 116,  151 => 115,  148 => 114,  144 => 113,  35 => 6,  31 => 5,  23 => 1,);
+        return array (  60 => 16,  56 => 15,  53 => 14,  49 => 13,  45 => 11,  41 => 10,  34 => 5,  30 => 4,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -178,113 +83,13 @@ class __TwigTemplate_4d5a5b1df12822e124e79b7d5ea3b4b0fced952a93659398f7ed947c2fd
         return new Twig_Source("<link href=\"{{ 'assets/css/organigrame.css'|theme }}\" rel=\"stylesheet\">
 
 <div class=\"wrapper\">
-
     {% partial 'site/header' %}
 
     <div class=\"content container\">
 
-
         <div class=\"row cols-wrapper\">
             <div class=\"col-lg-9 col-12\">
-                    <div id=\"wrapper\">
-                            <div id=\"container\">
-                        
-                                <ol class=\"organizational-chart\">
-                                    <li>
-                                        <div>
-                                            <h1>CE</h1>
-                                        </div>
-                                        <ol>
-                                            <li>
-                                                <div>
-                                                    <h2>Services Rattachés</h2>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <h2>Intendance</h2>
-                                                </div>
-                                                <ol>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Services tech.et d'entretien</h3>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Elèvres</h3>
-                                                        </div>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <h2>ACE</h2>
-                                                </div>
-                                                <ol>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Insp.d'Orientation</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h4>Elèves</h4>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Insp.d'Education</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Educateurs</h5>
-                                                                </div>
-                                                                <ol>
-                                                                    <li>
-                                                                        <div>
-                                                                            <h6>Elèves</h6>
-                                                                        </div>
-                                                                    </li>
-                                                                </ol>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>I.E.S</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Elèves</h5>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                    <li>
-                                                        <div>
-                                                            <h3>Enseignants</h3>
-                                                        </div>
-                                                        <ol>
-                                                            <li>
-                                                                <div>
-                                                                    <h5>Elèves</h5>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                        </ol>
-                                    </li>
-                                </ol>
-                        
-                            </div>
-                        </div>
+                {% component 'Organigrame' %}
             </div>
             <div class=\"col-lg-3 col-12\">
                 {% content 'mot_du_directeur' %}

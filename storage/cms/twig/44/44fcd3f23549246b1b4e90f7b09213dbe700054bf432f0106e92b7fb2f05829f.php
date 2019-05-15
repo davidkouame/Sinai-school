@@ -42,7 +42,10 @@ class __TwigTemplate_4abec36643e6e71454ffa6c7bc745c871aa412aefefa3544671ba550a2a
         foreach ($context['_seq'] as $context["_key"] => $context["actualite"]) {
             // line 17
             echo "                            <div class=\"item carousel-item active\">
-                                <div class=\"row\">
+                                <div class=\"row\" data-id=\"";
+            // line 18
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["actualite"], "id", []), "html", null, true);
+            echo "\">
                                     <div class=\"col-lg-3\">
                                         <figure class='jss374' style='background-image: url(\"";
             // line 20
@@ -55,7 +58,7 @@ class __TwigTemplate_4abec36643e6e71454ffa6c7bc745c871aa412aefefa3544671ba550a2a
             echo url("actualites");
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["actualite"], "id", []), "html", null, true);
-            echo "\">";
+            echo "\" style=\"color: #6091ba;\">";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["actualite"], "title", []), "html", null, true);
             echo "</a></h2>
                                         <p>
@@ -100,7 +103,7 @@ class __TwigTemplate_4abec36643e6e71454ffa6c7bc745c871aa412aefefa3544671ba550a2a
 
     public function getDebugInfo()
     {
-        return array (  82 => 35,  77 => 32,  64 => 25,  55 => 23,  49 => 20,  44 => 17,  40 => 16,  23 => 1,);
+        return array (  85 => 35,  80 => 32,  67 => 25,  58 => 23,  52 => 20,  47 => 18,  44 => 17,  40 => 16,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -122,12 +125,12 @@ class __TwigTemplate_4abec36643e6e71454ffa6c7bc745c871aa412aefefa3544671ba550a2a
     
                         {% for actualite in actualitesall %}
                             <div class=\"item carousel-item active\">
-                                <div class=\"row\">
+                                <div class=\"row\" data-id=\"{{ actualite.id }}\">
                                     <div class=\"col-lg-3\">
                                         <figure class='jss374' style='background-image: url(\"{{ actualite.cover.getpath }}\");'></figure>
                                     </div>
                                     <div class=\"col-lg-9\">
-                                        <h2 class=\"title\"><a href=\"{{ url('actualites')}}/{{ actualite.id }}\">{{ actualite.title }}</a></h2>
+                                        <h2 class=\"title\"><a href=\"{{ url('actualites')}}/{{ actualite.id }}\" style=\"color: #6091ba;\">{{ actualite.title }}</a></h2>
                                         <p>
                                             {{ actualite.content|truncate(235, false, \" ...\") }}
                                         </p>

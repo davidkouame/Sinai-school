@@ -36,6 +36,9 @@ description = "Default layout"
         <!-- Theme CSS -->  
         <link id="theme-style" rel="stylesheet" href="./static/assets/css/theme-1.css">
         <link href="{{ 'assets/css/theme-1.css'|theme }}" rel="stylesheet">
+        
+        <!-- APP css-->
+        <link rel="stylesheet" href="{{ 'assets/css/app.css'|theme }}">
 
 
         <!-- Facebook Pixel Code -->
@@ -146,6 +149,10 @@ description = "Default layout"
           $(document).ready(function(){
             $(".carousel-item div.row").click(function(e){
               window.location.href = "{{ url('actualites') }}/"+$(this).data('id');
+            });
+            
+            $(".carousel-item div.row").click(function(e){
+              window.location.href = "{{ url('clubs-activites') }}/"+$(this).data('idclub');
             })
           });
         </script>

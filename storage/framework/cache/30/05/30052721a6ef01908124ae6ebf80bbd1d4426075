@@ -1,9 +1,10 @@
-1557699441a:1:{s:20:"detailsactualite.htm";a:10:{s:8:"fileName";s:20:"detailsactualite.htm";s:7:"content";s:584:"title = "Demonstration"
+1557926282a:1:{s:20:"detailsactualite.htm";a:11:{s:8:"fileName";s:20:"detailsactualite.htm";s:7:"content";s:596:"title = "Demonstration"
 url = "/actualites/:actualite_id"
 layout = "default"
 is_hidden = 0
 
 [detailactualite]
+[filAriane]
 ==
 
 <div class="wrapper">
@@ -11,7 +12,7 @@ is_hidden = 0
 
     <div class="content container">
 
-            {% component 'SlideShow' %}
+            {% component 'filAriane' %}
     
             <div class="row cols-wrapper">
                     {% component 'detailactualite' %}
@@ -22,12 +23,12 @@ is_hidden = 0
                 </div>
             </div>
         </div>
-</div>";s:5:"mtime";i:1557614215;s:6:"markup";s:470:"<div class="wrapper">
+</div>";s:5:"mtime";i:1557910452;s:6:"markup";s:470:"<div class="wrapper">
     {% partial 'site/header' %}
 
     <div class="content container">
 
-            {% component 'SlideShow' %}
+            {% component 'filAriane' %}
     
             <div class="row cols-wrapper">
                     {% component 'detailactualite' %}
@@ -38,4 +39,4 @@ is_hidden = 0
                 </div>
             </div>
         </div>
-</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:25:"/actualites/:actualite_id";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:15:"detailactualite";a:0:{}}}
+</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:25:"/actualites/:actualite_id";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:15:"detailactualite";a:0:{}s:9:"filAriane";a:0:{}}}

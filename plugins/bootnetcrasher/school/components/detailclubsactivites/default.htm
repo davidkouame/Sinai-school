@@ -1,23 +1,15 @@
-<div class="col-lg-9 col-12">
-    <section class="news">
-        <div class="section-content clearfix" style='padding-left: 0px;'>
-            <div id="news-carousel" class="news-carousel carousel slide">
-                <div class="carousel-inner">
-                    <p>Logo : <img src="{{ clubActivite.logo.getpath }}" alt=""></p>
-                    <br>
+<section class="news" style="margin-bottom: 0px;">
+    <div class="section-content clearfix" style='padding-left: 0px;'>
+        <div id="news-carousel" class="news-carousel carousel slide">
+            <div class="carousel-inner">
+                <!-- <img src="{{'assets/images/slide-2.jpg' | theme }}" class="img-fluid" alt="Responsive image">-->
+                <img src="{{ clubActivite.logo.getpath }}" class="img-fluid" alt="Responsive image">
 
-                   <p>Name : {{ clubActivite.name }}</p>
-                   <br>
+                <h3 style="margin-top: 2%;">{{ clubActivite.name }}</h3>
+                <p style="text-align: justify;">{{ clubActivite.content|raw }}</p>
 
-                   <p>Description : {{ clubActivite.description }}</p>
-                   <br>
-
-                   <p>Content : {{ clubActivite.content|raw }}</p>
-                   <br>
-
-                </div>
             </div>
-
         </div>
-    </section>
-</div>
+    </div>
+</section>
+<div class="float-right" style="margin-right: 12px;"><b>Publié le {{ clubActivite.created_at|date("d-m-Y") }}</b></div>

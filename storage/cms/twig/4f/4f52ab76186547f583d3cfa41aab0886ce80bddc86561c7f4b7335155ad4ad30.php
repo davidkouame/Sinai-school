@@ -86,6 +86,12 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         // line 35
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/theme-1.css");
         echo "\" rel=\"stylesheet\">
+        
+        <!-- APP css-->
+        <link rel=\"stylesheet\" href=\"";
+        // line 38
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/app.css");
+        echo "\">
 
 
         <!-- Facebook Pixel Code -->
@@ -159,10 +165,10 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
 
         </style>
         ";
-        // line 108
+        // line 111
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 109
+        // line 112
         echo "        <script src=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/popover/popper.min.js");
         echo "\"></script>
@@ -173,68 +179,68 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         <section id=\"layout-content\">
           
             ";
-        // line 116
+        // line 119
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 117
+        // line 120
         echo "        </section>
 
         <!-- Footer -->
         <footer class=\"footer\">
             ";
-        // line 121
+        // line 124
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 122
+        // line 125
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 125
+        // line 128
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 126
+        // line 129
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 127
+        // line 130
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
         echo "\"></script>
 
        <!-- JS --> 
        <script src=\"";
-        // line 130
+        // line 133
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/jquery/jquery-3.3.1.min.js");
         echo "\"></script>
        <script src=\"";
-        // line 131
+        // line 134
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/bootstrap/js/bootstrap.min.js");
         echo "\"></script>
        <script src=\"";
-        // line 132
+        // line 135
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/back-to-top.js");
         echo "\"></script>
        <script src=\"";
-        // line 133
+        // line 136
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/flexslider/js/jquery.flexslider-min.js");
         echo "\"></script>
        <script src=\"";
-        // line 134
+        // line 137
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jflickrfeed.min.js");
         echo "\"></script>
        <script src=\"";
-        // line 135
+        // line 138
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.js");
         echo "\"></script>
     
     <!-- Theme Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
     <script src=\"";
-        // line 138
+        // line 141
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/theme-switcher.js");
         echo "\"></script>
         ";
-        // line 139
+        // line 142
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="'. Request::getBasePath()
@@ -249,19 +255,26 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 140
+        // line 143
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 141
+        // line 144
         echo "
         <script type=\"text/javascript\">
           \$(document).ready(function(){
             \$(\".carousel-item div.row\").click(function(e){
               window.location.href = \"";
-        // line 145
+        // line 148
         echo url("actualites");
         echo "/\"+\$(this).data('id');
+            });
+            
+            \$(\".carousel-item div.row\").click(function(e){
+              window.location.href = \"";
+        // line 152
+        echo url("clubs-activites");
+        echo "/\"+\$(this).data('idclub');
             })
           });
         </script>
@@ -287,7 +300,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
 
     public function getDebugInfo()
     {
-        return array (  273 => 16,  263 => 145,  257 => 141,  253 => 140,  238 => 139,  234 => 138,  228 => 135,  224 => 134,  220 => 133,  216 => 132,  212 => 131,  208 => 130,  202 => 127,  198 => 126,  194 => 125,  189 => 122,  185 => 121,  179 => 117,  177 => 116,  166 => 109,  163 => 108,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  286 => 16,  276 => 152,  269 => 148,  263 => 144,  259 => 143,  244 => 142,  240 => 141,  234 => 138,  230 => 137,  226 => 136,  222 => 135,  218 => 134,  214 => 133,  208 => 130,  204 => 129,  200 => 128,  195 => 125,  191 => 124,  185 => 120,  183 => 119,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
     }
 
     public function getSourceContext()
@@ -327,6 +340,9 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         <!-- Theme CSS -->  
         <link id=\"theme-style\" rel=\"stylesheet\" href=\"./static/assets/css/theme-1.css\">
         <link href=\"{{ 'assets/css/theme-1.css'|theme }}\" rel=\"stylesheet\">
+        
+        <!-- APP css-->
+        <link rel=\"stylesheet\" href=\"{{ 'assets/css/app.css'|theme }}\">
 
 
         <!-- Facebook Pixel Code -->
@@ -437,6 +453,10 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
           \$(document).ready(function(){
             \$(\".carousel-item div.row\").click(function(e){
               window.location.href = \"{{ url('actualites') }}/\"+\$(this).data('id');
+            });
+            
+            \$(\".carousel-item div.row\").click(function(e){
+              window.location.href = \"{{ url('clubs-activites') }}/\"+\$(this).data('idclub');
             })
           });
         </script>

@@ -1,4 +1,4 @@
-1557699441a:1:{s:25:"activitesfintrimestre.htm";a:9:{s:8:"fileName";s:25:"activitesfintrimestre.htm";s:7:"content";s:577:"title = "activitesfintrimestre"
+1557926282a:1:{s:25:"activitesfintrimestre.htm";a:9:{s:8:"fileName";s:25:"activitesfintrimestre.htm";s:7:"content";s:691:"title = "activitesfintrimestre"
 url = "/activites-fin-trimestre"
 layout = "default"
 is_hidden = 0
@@ -8,9 +8,10 @@ is_hidden = 0
     {% partial 'site/header' %}
 
     <div class="content container">
-
+        <div class="row">
+            <h3 style="margin-left: 17px;">Activités de fin trimestre<h3>
+        </div>
         <div class="row cols-wrapper">
-
             <div class="col-lg-9 col-12">
                 <img src="{{ 'assets/images/capture.png'|theme }}" style="width: 100%;"/>
             </div>
@@ -21,13 +22,14 @@ is_hidden = 0
             </div>
         </div>
     </div>
-</div>";s:5:"mtime";i:1557098512;s:6:"markup";s:475:"<div class="wrapper">
+</div>";s:5:"mtime";i:1557911972;s:6:"markup";s:589:"<div class="wrapper">
     {% partial 'site/header' %}
 
     <div class="content container">
-
+        <div class="row">
+            <h3 style="margin-left: 17px;">Activités de fin trimestre<h3>
+        </div>
         <div class="row cols-wrapper">
-
             <div class="col-lg-9 col-12">
                 <img src="{{ 'assets/images/capture.png'|theme }}" style="width: 100%;"/>
             </div>

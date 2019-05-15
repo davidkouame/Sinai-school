@@ -21,6 +21,8 @@ class Plugin extends PluginBase
             '\Bootnetcrasher\School\Components\SujetsAll' => 'sujetsall',
             '\Bootnetcrasher\School\Components\Contact' => 'contact',
             '\Bootnetcrasher\School\Components\DetailSujet' => 'detailsujet',
+            '\Bootnetcrasher\School\Components\Organigrame' => 'Organigrame',
+            '\Bootnetcrasher\School\Components\FilAriane' => 'filAriane'
         ];
     }
 

@@ -29,29 +29,30 @@ class __TwigTemplate_e50539f59cad3c02a23c18c1c5234319487e18decb7ced512c82bd97881
         // line 3
         echo "
     <div class=\"content container\">
-
+        <div class=\"row\">
+            <h3 style=\"margin-left: 17px;\">Activités de fin trimestre<h3>
+        </div>
         <div class=\"row cols-wrapper\">
-
             <div class=\"col-lg-9 col-12\">
                 <img src=\"";
-        // line 9
+        // line 10
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/capture.png");
         echo "\" style=\"width: 100%;\"/>
             </div>
             <div class=\"col-lg-3 col-12\">
                 ";
-        // line 12
+        // line 13
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("mot_du_directeur"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 13
+        // line 14
         echo "
                 ";
-        // line 14
+        // line 15
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("majeur_promotion"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 15
+        // line 16
         echo "            </div>
         </div>
     </div>
@@ -70,7 +71,7 @@ class __TwigTemplate_e50539f59cad3c02a23c18c1c5234319487e18decb7ced512c82bd97881
 
     public function getDebugInfo()
     {
-        return array (  55 => 15,  51 => 14,  48 => 13,  44 => 12,  38 => 9,  30 => 3,  26 => 2,  23 => 1,);
+        return array (  56 => 16,  52 => 15,  49 => 14,  45 => 13,  39 => 10,  30 => 3,  26 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -79,9 +80,10 @@ class __TwigTemplate_e50539f59cad3c02a23c18c1c5234319487e18decb7ced512c82bd97881
     {% partial 'site/header' %}
 
     <div class=\"content container\">
-
+        <div class=\"row\">
+            <h3 style=\"margin-left: 17px;\">Activités de fin trimestre<h3>
+        </div>
         <div class=\"row cols-wrapper\">
-
             <div class=\"col-lg-9 col-12\">
                 <img src=\"{{ 'assets/images/capture.png'|theme }}\" style=\"width: 100%;\"/>
             </div>

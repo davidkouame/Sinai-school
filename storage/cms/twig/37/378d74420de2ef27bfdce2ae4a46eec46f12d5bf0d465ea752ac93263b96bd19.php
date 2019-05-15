@@ -30,31 +30,40 @@ class __TwigTemplate_a8efefc02d980c490d5e370e0036c743c68073cfdb88e1599df6017710c
         echo "
     <div class=\"content container\">
 
-            <div class=\"row cols-wrapper\">
-                <div class=\"col-lg-9 col-12\">
+        <div class=\"row cols-wrapper\">
+            <div class=\"col-lg-9 col-12\">
+                <p style=\"text-align: justify;\">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nullam condimentum dui quis dignissim lacinia. Fusce mi felis, 
+                maximus vel dui non, accumsan semper eros. Donec molestie 
+                gravida augue sit amet lacinia. Phasellus condimentum vulputate 
+                ipsum. Donec commodo urna nulla, nec blandit tortor fermentum 
+                vel. Donec vitae scelerisque odio. Aenean scelerisque mi purus, 
+                id pretium turpis blandit vel. Praesent bibendum nisi eget elit 
+                dignissim vulputate. Morbi efficitur augue id ante blandit, ac 
+                auctor enim tincidunt. Praesent vehicula eget risus eu cursus. 
+                Phasellus eu consectetur neque.
+                </p>
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum dui quis dignissim lacinia. Fusce mi felis, maximus vel dui non, accumsan semper eros. Donec molestie gravida augue sit amet lacinia. Phasellus condimentum vulputate ipsum. Donec commodo urna nulla, nec blandit tortor fermentum vel. Donec vitae scelerisque odio. Aenean scelerisque mi purus, id pretium turpis blandit vel. Praesent bibendum nisi eget elit dignissim vulputate. Morbi efficitur augue id ante blandit, ac auctor enim tincidunt. Praesent vehicula eget risus eu cursus. Phasellus eu consectetur neque.
-
-\t\t\t\t\t<a href=\"http://www.suivre-eleve.com/\" class=\"btn btn-primary\">accèder</a>
-                </div>
-                <div class=\"col-lg-3 col-12\">
-                    ";
-        // line 15
+                <a href=\"http://www.suivre-eleve.com/\">Accèder mon espace -></a>
+            </div>
+            <div class=\"col-lg-3 col-12\">
+                ";
+        // line 24
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("mot_du_directeur"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 16
-        echo "                    
-                    ";
-        // line 17
+        // line 25
+        echo "
+                ";
+        // line 26
         $context['__cms_content_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("majeur_promotion"        , $context['__cms_content_params']        );
         unset($context['__cms_content_params']);
-        // line 18
-        echo "                </div>
-            </div>
+        // line 27
+        echo "            </div>
         </div>
+    </div>
 </div>";
     }
 
@@ -70,7 +79,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum dui 
 
     public function getDebugInfo()
     {
-        return array (  55 => 18,  51 => 17,  48 => 16,  44 => 15,  30 => 3,  26 => 2,  23 => 1,);
+        return array (  64 => 27,  60 => 26,  57 => 25,  53 => 24,  30 => 3,  26 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -80,21 +89,30 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum dui 
 
     <div class=\"content container\">
 
-            <div class=\"row cols-wrapper\">
-                <div class=\"col-lg-9 col-12\">
+        <div class=\"row cols-wrapper\">
+            <div class=\"col-lg-9 col-12\">
+                <p style=\"text-align: justify;\">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nullam condimentum dui quis dignissim lacinia. Fusce mi felis, 
+                maximus vel dui non, accumsan semper eros. Donec molestie 
+                gravida augue sit amet lacinia. Phasellus condimentum vulputate 
+                ipsum. Donec commodo urna nulla, nec blandit tortor fermentum 
+                vel. Donec vitae scelerisque odio. Aenean scelerisque mi purus, 
+                id pretium turpis blandit vel. Praesent bibendum nisi eget elit 
+                dignissim vulputate. Morbi efficitur augue id ante blandit, ac 
+                auctor enim tincidunt. Praesent vehicula eget risus eu cursus. 
+                Phasellus eu consectetur neque.
+                </p>
 
+                <a href=\"http://www.suivre-eleve.com/\">Accèder mon espace -></a>
+            </div>
+            <div class=\"col-lg-3 col-12\">
+                {% content 'mot_du_directeur' %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum dui quis dignissim lacinia. Fusce mi felis, maximus vel dui non, accumsan semper eros. Donec molestie gravida augue sit amet lacinia. Phasellus condimentum vulputate ipsum. Donec commodo urna nulla, nec blandit tortor fermentum vel. Donec vitae scelerisque odio. Aenean scelerisque mi purus, id pretium turpis blandit vel. Praesent bibendum nisi eget elit dignissim vulputate. Morbi efficitur augue id ante blandit, ac auctor enim tincidunt. Praesent vehicula eget risus eu cursus. Phasellus eu consectetur neque.
-
-\t\t\t\t\t<a href=\"http://www.suivre-eleve.com/\" class=\"btn btn-primary\">accèder</a>
-                </div>
-                <div class=\"col-lg-3 col-12\">
-                    {% content 'mot_du_directeur' %}
-                    
-                    {% content 'majeur_promotion' %}
-                </div>
+                {% content 'majeur_promotion' %}
             </div>
         </div>
+    </div>
 </div>", "/opt/lampp/htdocs/sinai_school_october_cms/themes/default/pages/suivre-mes-eleves.htm", "");
     }
 }

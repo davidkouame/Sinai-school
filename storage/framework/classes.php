@@ -294,4 +294,7 @@
   'Raviraj\\Rjgallery\\Components\\Gallery' => 'plugins/raviraj/rjgallery/components/Gallery.php',
   'Raviraj\\Rjgallery\\Components\\GallerySlug' => 'plugins/raviraj/rjgallery/components/GallerySlug.php',
   'Raviraj\\Rjgallery\\Components\\GalleriesList' => 'plugins/raviraj/rjgallery/components/GalleriesList.php',
+  'BootnetCrasher\\School\\Models\\OrganigrameModel' => 'plugins/bootnetcrasher/school/models/OrganigrameModel.php',
+  'Bootnetcrasher\\School\\Components\\Organigrame' => 'plugins/bootnetcrasher/school/components/Organigrame.php',
+  'Bootnetcrasher\\School\\Components\\FilAriane' => 'plugins/bootnetcrasher/school/components/FilAriane.php',
 );

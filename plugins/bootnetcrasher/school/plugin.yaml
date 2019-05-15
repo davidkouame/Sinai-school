@@ -41,3 +41,7 @@ navigation:
         label: Sujets
         url: bootnetcrasher/school/sujetcontroller
         icon: icon-life-ring
+    organigrame:
+        label: Organigrames
+        url: bootnetcrasher/school/organigramecontroller
+        icon: icon-life-ring
