@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
-        'name' => 'slideshow',
+        'name' => 'Slideshow',
         'description' => ''
     ]
 ];

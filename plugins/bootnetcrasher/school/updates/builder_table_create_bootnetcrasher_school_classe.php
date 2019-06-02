@@ -11,9 +11,9 @@ class BuilderTableCreateBootnetcrasherSchoolClasse extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('libelle', 255);
+            $table->string('libelle');
             $table->integer('niveau_id');
-            $table->integer('serie_id')->nullable();
+            $table->integer('serie_id');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('deleted_at')->nullable();

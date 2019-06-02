@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://127.0.0.1/sinai_school_october_cms/',
+    'url' => 'http://localhost:8888/install-master/',
 
     /*
     |--------------------------------------------------------------------------
@@ -101,7 +101,7 @@ return [
     |
     */
 
-    'key' => 'y8nmY1pDMqoE0r0TWkuisqa06yh7qO5p',
+    'key' => 'dHg46jraLjdWJAjfTDKyjRzJEMnOZVPm',
 
     'cipher' => 'AES-256-CBC',
 

@@ -1,0 +1,42 @@
+1559436136a:1:{s:14:"actualites.htm";a:11:{s:8:"fileName";s:14:"actualites.htm";s:7:"content";s:579:"title = "Demonstration"
+url = "/actualites"
+layout = "default"
+is_hidden = 0
+
+[actualites]
+[actualitesall]
+==
+
+<div class="wrapper">
+    {% partial 'site/header' %}
+
+    <div class="content container">
+
+            {% component 'SlideShow' %}
+    
+            <div class="row cols-wrapper">
+                    {% component 'actualitesall' %}
+                <div class="col-lg-3 col-12">
+                    {% content 'mot_du_directeur' %}
+                    
+                    {% content 'majeur_promotion' %}
+                </div>
+            </div>
+        </div>
+</div>";s:5:"mtime";i:1559117420;s:6:"markup";s:468:"<div class="wrapper">
+    {% partial 'site/header' %}
+
+    <div class="content container">
+
+            {% component 'SlideShow' %}
+    
+            <div class="row cols-wrapper">
+                    {% component 'actualitesall' %}
+                <div class="col-lg-3 col-12">
+                    {% content 'mot_du_directeur' %}
+                    
+                    {% content 'majeur_promotion' %}
+                </div>
+            </div>
+        </div>
+</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:11:"/actualites";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"actualites";a:0:{}s:13:"actualitesall";a:0:{}}}

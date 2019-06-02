@@ -11,7 +11,7 @@ class BuilderTableCreateBootnetcrasherSlideshowSlideshow extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('name', 255);
+            $table->string('name');
             $table->text('description')->nullable();
         });
     }

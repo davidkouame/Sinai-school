@@ -11,12 +11,15 @@ class BuilderTableCreateBootnetcrasherSchoolProfesseur extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('nom', 255);
-            $table->string('prenom', 255);
-            $table->string('email', 255);
+            $table->string('nom');
+            $table->string('prenom');
+            $table->string('email');
             $table->string('telephone', 10);
-            $table->string('matiere', 255);
-            $table->text('description')->nullable();
+            $table->string('matiere');
+            $table->string('description')->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
     

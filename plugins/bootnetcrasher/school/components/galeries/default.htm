@@ -1,0 +1,37 @@
+
+        <section class="news">
+            <div class='section-header clearfix'>
+                <div class="col-md-12">
+                    <div class="row" style="padding-bottom: 5px;border-bottom: 2px #e2e2e2 solid;margin-bottom: 20px;">
+                        <div class="col-lg-10" style="padding-left: 0px;">
+                            <h1 class="section-title title col-md-2" style="font-size: 1.2rem;padding-left: 0px;margin-bottom: 0px;">Actualités</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content clearfix" style='padding-left: 0px;'>
+                <div id="news-carousel" class="news-carousel carousel slide">
+                    <div class="carousel-inner">
+                        
+                        <div class="row">
+                        {% for galerie in galeries %}
+                             <div class="col-md-6 col-12 text-center">
+                            <div class="album-cover">
+                                <a href="{{ url('galeries')}}/{{ galerie.slug }}"><img class="img-fluid" src="{{ galerie.images[0].getpath }}" alt=""></a>
+                                <div class="desc">
+                                    <h4><small><a href="#">{{ galerie.name }}</a></small></h4>
+                                    <p>{{ galerie.description|raw }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        </div>
+                        
+                    </div>
+
+                    {{ galeries|raw }}
+                </div>
+    
+            </div>
+        </section>
+   

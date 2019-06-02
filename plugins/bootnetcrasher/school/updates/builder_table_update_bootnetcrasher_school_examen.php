@@ -7,19 +7,17 @@ class BuilderTableUpdateBootnetcrasherSchoolExamen extends Migration
 {
     public function up()
     {
-        Schema::rename('bootnetcrasher_school_exame', 'bootnetcrasher_school_examen');
         Schema::table('bootnetcrasher_school_examen', function($table)
         {
-            $table->increments('id')->unsigned(false)->change();
+            $table->renameColumn('datedeut', 'datedebut');
         });
     }
     
     public function down()
     {
-        Schema::rename('bootnetcrasher_school_examen', 'bootnetcrasher_school_exame');
-        Schema::table('bootnetcrasher_school_exame', function($table)
+        Schema::table('bootnetcrasher_school_examen', function($table)
         {
-            $table->increments('id')->unsigned()->change();
+            $table->renameColumn('datedebut', 'datedeut');
         });
     }
 }
