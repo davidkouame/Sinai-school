@@ -1,43 +1,8 @@
-1559436544a:1:{s:18:"clubsactivites.htm";a:10:{s:8:"fileName";s:18:"clubsactivites.htm";s:7:"content";s:618:"title = "Demonstration"
+1560231038a:1:{s:18:"clubsactivites.htm";a:10:{s:8:"fileName";s:18:"clubsactivites.htm";s:7:"content";s:135:"title = "Demonstration"
 url = "/clubs-activites"
 layout = "default"
 is_hidden = 0
 
 [clubsActivites]
 ==
-
-<div class="wrapper">
-    {% partial 'site/header' %}
-
-    <div class="content container">
-    
-            <div class="row cols-wrapper">
-                
-                <div class="col-lg-9 col-12">
-                    {% component 'clubsActivites' %}
-                </div>
-                <div class="col-lg-3 col-12">
-                    {% content 'mot_du_directeur' %}
-                    
-                    {% content 'majeur_promotion' %}
-                </div>
-            </div>
-        </div>
-</div>";s:5:"mtime";i:1559117420;s:6:"markup";s:514:"<div class="wrapper">
-    {% partial 'site/header' %}
-
-    <div class="content container">
-    
-            <div class="row cols-wrapper">
-                
-                <div class="col-lg-9 col-12">
-                    {% component 'clubsActivites' %}
-                </div>
-                <div class="col-lg-3 col-12">
-                    {% content 'mot_du_directeur' %}
-                    
-                    {% content 'majeur_promotion' %}
-                </div>
-            </div>
-        </div>
-</div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:16:"/clubs-activites";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:14:"clubsActivites";a:0:{}}}
+{% component 'clubsActivites' %}";s:5:"mtime";i:1560227425;s:6:"markup";s:32:"{% component 'clubsActivites' %}";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:16:"/clubs-activites";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:14:"clubsActivites";a:0:{}}}

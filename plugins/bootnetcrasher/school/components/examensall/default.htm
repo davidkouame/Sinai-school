@@ -1,10 +1,10 @@
 {% for examen in examensall %}
     <div class="item carousel2-item active">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <h2 class="title" style="margin-bottom: 0rem;"><a href="{{ url('examens')}}/{{ examen.id }}">{{ examen.name }}</a></h2>
                 <p style="margin-bottom: 0rem;">
-                    {{ examen.description|truncate(210, false, " ...") }}
+                    {{ examen.description|truncate(400, false, " ...") }}
                 </p>
             </div>
             <div class="col-lg-12">

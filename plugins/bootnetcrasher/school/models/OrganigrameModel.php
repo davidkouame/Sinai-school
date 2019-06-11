@@ -23,6 +23,9 @@ class OrganigrameModel extends Model
      * @var array Validation rules
      */
     public $rules = [
+        "niveau" => "required",
+        "parent_organigrame_id" => "required",
+        "libelle" => "required|max:100"
     ];
     
     public $belongsTo = [

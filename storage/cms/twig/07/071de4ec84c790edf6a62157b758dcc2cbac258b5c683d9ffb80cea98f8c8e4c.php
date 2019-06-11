@@ -69,7 +69,7 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
         // line 27
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/all.js");
         echo "\" integrity=\"sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9\" crossorigin=\"anonymous\"></script>
-        
+
         <!-- Global CSS -->
         <link href=\"";
         // line 30
@@ -86,7 +86,7 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
         // line 35
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/theme-1.css");
         echo "\" rel=\"stylesheet\">
-        
+
         <!-- APP css-->
         <link rel=\"stylesheet\" href=\"";
         // line 38
@@ -107,22 +107,22 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
           fbq('init', '1506230579705064');
           fbq('track', 'PageView');
         </script>-->
-        <noscript><img height=\"1\" width=\"1\" style=\"display:none\"
-          src=\"https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1\"
-        /></noscript>
-        <!-- End Facebook Pixel Code -->
+    <noscript><img height=\"1\" width=\"1\" style=\"display:none\"
+                   src=\"https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1\"
+                   /></noscript>
+    <!-- End Facebook Pixel Code -->
 
-        <!-- css add -->
-        <style type=\"text/css\">
-          .home-page section.news {
-              background: #fff;
-          }
+    <!-- css add -->
+    <style type=\"text/css\">
+        .home-page section.news {
+            background: #fff;
+        }
 
-          .home-page .news .news-item {
+        .home-page .news .news-item {
             margin-bottom: 36px;
-          }
-          
-          .jss374 {
+        }
+
+        .jss374 {
             width: 100%;
             height: auto;
             margin: 0;
@@ -133,11 +133,11 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
             background-color: #d2d2d2;
             background-position: center;
         }
-        
+
         .item.carousel-item.active{
             margin-bottom: 2%;
         }
-        
+
 
         /*img {
         border: 1px solid #ddd;
@@ -163,87 +163,110 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
             padding-right: 0px !important;
         }
 
-        </style>
-        ";
+    </style>
+    ";
         // line 111
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
         // line 112
-        echo "        <script src=\"";
+        echo "    <script src=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/popover/popper.min.js");
         echo "\"></script>
-        
-        <!-- Scripts -->
-        <script src=\"";
+
+    <!-- Scripts -->
+    <script src=\"";
         // line 115
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
-        <script src=\"";
+    <script src=\"";
         // line 116
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
-        <script src=\"";
+    <script src=\"";
         // line 117
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
         echo "\"></script>
 
-       <!-- JS --> 
-       <script src=\"";
+    <!-- JS --> 
+    <!--    <script src=\"";
         // line 120
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/jquery/jquery-3.3.1.min.js");
-        echo "\"></script>
-       <script src=\"";
+        echo "\"></script>-->
+    <script src=\"";
         // line 121
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/bootstrap/js/bootstrap.min.js");
         echo "\"></script>
-       <script src=\"";
+    <script src=\"";
         // line 122
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/back-to-top.js");
         echo "\"></script>
-       <script src=\"";
+    <script src=\"";
         // line 123
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/jquery-placeholder/jquery.placeholder.js");
+        echo "\"></script>
+    <script src=\"";
+        // line 124
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/pretty-photo/js/jquery.prettyPhoto.js");
+        echo "\"></script>
+    <script src=\"";
+        // line 125
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/flexslider/js/jquery.flexslider-min.js");
         echo "\"></script>
-       <script src=\"";
-        // line 124
+    <script src=\"";
+        // line 126
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jflickrfeed.min.js");
         echo "\"></script>
-       <script src=\"";
-        // line 125
+    <script src=\"";
+        // line 127
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.js");
         echo "\"></script>
-       
-    </head>
-    <body class=\"home-page\">
 
-        <!-- Content -->
-        <section id=\"layout-content\">
-          
-            ";
-        // line 133
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 134
-        echo "        </section>
+</head>
+<body class=\"home-page\">
 
-        <!-- Footer -->
-        <footer class=\"footer\">
+    <!-- Content -->
+    <section id=\"layout-content\">
+        <div class=\"wrapper\">
             ";
+        // line 135
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header1"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 136
+        echo "            <div class=\"content container\">
+                <div class=\"row cols-wrapper\">
+                    <div class=\"col-lg-9 col-12\">";
         // line 138
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        echo "</div>
+                    <div class=\"col-lg-3 col-12\">";
+        // line 139
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/navabar-right"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        echo "</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=\"footer\">
+        ";
+        // line 147
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 139
-        echo "        </footer>
+        // line 148
+        echo "    </footer>
 
-        
-    
     <!-- Theme Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
     <script src=\"";
-        // line 144
+        // line 151
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/theme-switcher.js");
         echo "\"></script>
-        ";
-        // line 145
+    ";
+        // line 152
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="'. Request::getBasePath()
@@ -258,30 +281,83 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 146
-        echo "        ";
+        // line 153
+        echo "    ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 147
+        // line 154
         echo "
-        <script type=\"text/javascript\">
-          \$(document).ready(function(){
-            \$(\".carousel-item div.row\").click(function(e){
-              window.location.href = \"";
-        // line 151
+    <script type=\"text/javascript\">
+\$(document).ready(function () {
+    \$(\".carousel-item div.row\").click(function (e) {
+        window.location.href = \"";
+        // line 158
         echo url("actualites");
-        echo "/\"+\$(this).data('id');
-            });
-            
-            \$(\".carousel-item div.row\").click(function(e){
-              window.location.href = \"";
-        // line 155
+        echo "/\" + \$(this).data('id');
+    });
+
+    \$(\".carousel-item div.row\").click(function (e) {
+        window.location.href = \"";
+        // line 162
         echo url("clubs-activites");
-        echo "/\"+\$(this).data('idclub');
-            })
-          });
-        </script>
-    </body>
+        echo "/\" + \$(this).data('idclub');
+    });
+
+    /*('.link-mot-directeur').click(function(){
+     console.log(\$(this).data('click'))
+     
+     });*/
+
+    // alert(\"dsds\");
+
+    /* ======= Flexslider ======= */
+    \$('.flexslider').flexslider({
+        animation: \"fade\"
+    });
+
+    /* ======= jQuery Placeholder ======= */
+    \$('input, textarea').placeholder();
+
+
+    /* ======= Carousels ======= */
+    \$('#news-carousel').carousel({interval: false});
+    \$('#videos-carousel').carousel({interval: false});
+    \$('#testimonials-carousel').carousel({interval: 6000, pause: \"hover\"});
+    \$('#awards-carousel').carousel({interval: false});
+
+
+    /* ======= Flickr PhotoStream ======= */
+    \$('#flickr-photos').jflickrfeed({
+        limit: 12,
+        qstrings: {
+            id: '32104790@N02' /* Use idGettr.com to find the flickr user id */
+        },
+        itemTemplate:
+                '<li>' +
+                '<a rel=\"prettyPhoto[flickr]\" href=\"";
+        // line 196
+        echo twig_escape_filter($this->env, ($context["image"] ?? null), "html", null, true);
+        echo "\" title=\"";
+        echo twig_escape_filter($this->env, ($context["title"] ?? null), "html", null, true);
+        echo "\">' +
+                '<img src=\"";
+        // line 197
+        echo twig_escape_filter($this->env, ($context["image_s"] ?? null), "html", null, true);
+        echo "\" alt=\"";
+        echo twig_escape_filter($this->env, ($context["title"] ?? null), "html", null, true);
+        echo "\" />' +
+                '</a>' +
+                '</li>'
+
+    }, function (data) {
+        \$('#flickr-photos a').prettyPhoto();
+    });
+
+    /* ======= Pretty Photo ======= */
+    \$('a.prettyphoto').prettyPhoto();
+});
+    </script>
+</body>
 </html>";
     }
 
@@ -303,7 +379,7 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
 
     public function getDebugInfo()
     {
-        return array (  289 => 16,  279 => 155,  272 => 151,  266 => 147,  262 => 146,  247 => 145,  243 => 144,  236 => 139,  232 => 138,  226 => 134,  224 => 133,  213 => 125,  209 => 124,  205 => 123,  201 => 122,  197 => 121,  193 => 120,  187 => 117,  183 => 116,  179 => 115,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  365 => 16,  345 => 197,  339 => 196,  302 => 162,  295 => 158,  289 => 154,  285 => 153,  270 => 152,  266 => 151,  261 => 148,  257 => 147,  244 => 139,  240 => 138,  236 => 136,  232 => 135,  221 => 127,  217 => 126,  213 => 125,  209 => 124,  205 => 123,  201 => 122,  197 => 121,  193 => 120,  187 => 117,  183 => 116,  179 => 115,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
     }
 
     public function getSourceContext()
@@ -335,7 +411,7 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
         <!--x<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>-->
         <!-- FontAwesome JS-->
         <script defer src=\"{{ 'assets/js/all.js'|theme }}\" integrity=\"sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9\" crossorigin=\"anonymous\"></script>
-        
+
         <!-- Global CSS -->
         <link href=\"{{ 'assets/plugins/bootstrap/css/bootstrap.css'|theme }}\" rel=\"stylesheet\">
         <!-- Plugins CSS -->
@@ -343,7 +419,7 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
         <!-- Theme CSS -->  
         <link id=\"theme-style\" rel=\"stylesheet\" href=\"./static/assets/css/theme-1.css\">
         <link href=\"{{ 'assets/css/theme-1.css'|theme }}\" rel=\"stylesheet\">
-        
+
         <!-- APP css-->
         <link rel=\"stylesheet\" href=\"{{ 'assets/css/app.css'|theme }}\">
 
@@ -361,22 +437,22 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
           fbq('init', '1506230579705064');
           fbq('track', 'PageView');
         </script>-->
-        <noscript><img height=\"1\" width=\"1\" style=\"display:none\"
-          src=\"https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1\"
-        /></noscript>
-        <!-- End Facebook Pixel Code -->
+    <noscript><img height=\"1\" width=\"1\" style=\"display:none\"
+                   src=\"https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1\"
+                   /></noscript>
+    <!-- End Facebook Pixel Code -->
 
-        <!-- css add -->
-        <style type=\"text/css\">
-          .home-page section.news {
-              background: #fff;
-          }
+    <!-- css add -->
+    <style type=\"text/css\">
+        .home-page section.news {
+            background: #fff;
+        }
 
-          .home-page .news .news-item {
+        .home-page .news .news-item {
             margin-bottom: 36px;
-          }
-          
-          .jss374 {
+        }
+
+        .jss374 {
             width: 100%;
             height: auto;
             margin: 0;
@@ -387,11 +463,11 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
             background-color: #d2d2d2;
             background-position: center;
         }
-        
+
         .item.carousel-item.active{
             margin-bottom: 2%;
         }
-        
+
 
         /*img {
         border: 1px solid #ddd;
@@ -417,56 +493,106 @@ class __TwigTemplate_0d86a792088c8c7552d52ac51f92e9e4f6b41729129fdb57844f53ad97f
             padding-right: 0px !important;
         }
 
-        </style>
-        {% styles %}
-        <script src=\"{{ 'assets/plugins/popover/popper.min.js'|theme }}\"></script>
-        
-        <!-- Scripts -->
-        <script src=\"{{ 'assets/vendor/jquery.js'|theme }}\"></script>
-        <script src=\"{{ 'assets/vendor/bootstrap.js'|theme }}\"></script>
-        <script src=\"{{ 'assets/javascript/app.js'|theme }}\"></script>
+    </style>
+    {% styles %}
+    <script src=\"{{ 'assets/plugins/popover/popper.min.js'|theme }}\"></script>
 
-       <!-- JS --> 
-       <script src=\"{{ 'assets/plugins/jquery/jquery-3.3.1.min.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/plugins/bootstrap/js/bootstrap.min.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/js/back-to-top.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/plugins/flexslider/js/jquery.flexslider-min.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/js/jflickrfeed.min.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/js/main.js'|theme }}\"></script>
-       
-    </head>
-    <body class=\"home-page\">
+    <!-- Scripts -->
+    <script src=\"{{ 'assets/vendor/jquery.js'|theme }}\"></script>
+    <script src=\"{{ 'assets/vendor/bootstrap.js'|theme }}\"></script>
+    <script src=\"{{ 'assets/javascript/app.js'|theme }}\"></script>
 
-        <!-- Content -->
-        <section id=\"layout-content\">
-          
-            {% page %}
-        </section>
+    <!-- JS --> 
+    <!--    <script src=\"{{ 'assets/plugins/jquery/jquery-3.3.1.min.js'|theme }}\"></script>-->
+    <script src=\"{{ 'assets/plugins/bootstrap/js/bootstrap.min.js'|theme }}\"></script>
+    <script src=\"{{ 'assets/js/back-to-top.js'|theme }}\"></script>
+    <script src=\"{{ 'assets/plugins/jquery-placeholder/jquery.placeholder.js'|theme }}\"></script>
+    <script src=\"{{ 'assets/plugins/pretty-photo/js/jquery.prettyPhoto.js'|theme }}\"></script>
+    <script src=\"{{ 'assets/plugins/flexslider/js/jquery.flexslider-min.js'|theme }}\"></script>
+    <script src=\"{{ 'assets/js/jflickrfeed.min.js'|theme }}\"></script>
+    <script src=\"{{ 'assets/js/main.js'|theme }}\"></script>
 
-        <!-- Footer -->
-        <footer class=\"footer\">
-            {% partial 'site/footer' %}
-        </footer>
+</head>
+<body class=\"home-page\">
 
-        
-    
+    <!-- Content -->
+    <section id=\"layout-content\">
+        <div class=\"wrapper\">
+            {% partial 'site/header1' %}
+            <div class=\"content container\">
+                <div class=\"row cols-wrapper\">
+                    <div class=\"col-lg-9 col-12\">{% page %}</div>
+                    <div class=\"col-lg-3 col-12\">{% partial 'site/navabar-right' %}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=\"footer\">
+        {% partial 'site/footer' %}
+    </footer>
+
     <!-- Theme Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
     <script src=\"{{ 'assets/js/theme-switcher.js'|theme }}\"></script>
-        {% framework extras %}
-        {% scripts %}
+    {% framework extras %}
+    {% scripts %}
 
-        <script type=\"text/javascript\">
-          \$(document).ready(function(){
-            \$(\".carousel-item div.row\").click(function(e){
-              window.location.href = \"{{ url('actualites') }}/\"+\$(this).data('id');
-            });
-            
-            \$(\".carousel-item div.row\").click(function(e){
-              window.location.href = \"{{ url('clubs-activites') }}/\"+\$(this).data('idclub');
-            })
-          });
-        </script>
-    </body>
+    <script type=\"text/javascript\">
+\$(document).ready(function () {
+    \$(\".carousel-item div.row\").click(function (e) {
+        window.location.href = \"{{ url('actualites') }}/\" + \$(this).data('id');
+    });
+
+    \$(\".carousel-item div.row\").click(function (e) {
+        window.location.href = \"{{ url('clubs-activites') }}/\" + \$(this).data('idclub');
+    });
+
+    /*('.link-mot-directeur').click(function(){
+     console.log(\$(this).data('click'))
+     
+     });*/
+
+    // alert(\"dsds\");
+
+    /* ======= Flexslider ======= */
+    \$('.flexslider').flexslider({
+        animation: \"fade\"
+    });
+
+    /* ======= jQuery Placeholder ======= */
+    \$('input, textarea').placeholder();
+
+
+    /* ======= Carousels ======= */
+    \$('#news-carousel').carousel({interval: false});
+    \$('#videos-carousel').carousel({interval: false});
+    \$('#testimonials-carousel').carousel({interval: 6000, pause: \"hover\"});
+    \$('#awards-carousel').carousel({interval: false});
+
+
+    /* ======= Flickr PhotoStream ======= */
+    \$('#flickr-photos').jflickrfeed({
+        limit: 12,
+        qstrings: {
+            id: '32104790@N02' /* Use idGettr.com to find the flickr user id */
+        },
+        itemTemplate:
+                '<li>' +
+                '<a rel=\"prettyPhoto[flickr]\" href=\"{{image}}\" title=\"{{title}}\">' +
+                '<img src=\"{{image_s}}\" alt=\"{{title}}\" />' +
+                '</a>' +
+                '</li>'
+
+    }, function (data) {
+        \$('#flickr-photos a').prettyPhoto();
+    });
+
+    /* ======= Pretty Photo ======= */
+    \$('a.prettyphoto').prettyPhoto();
+});
+    </script>
+</body>
 </html>", "/Applications/MAMP/htdocs/Sinai-school/themes/default/layouts/default.htm", "");
     }
 }

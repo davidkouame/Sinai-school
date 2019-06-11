@@ -1,25 +1,8 @@
 title = "Demonstration"
 url = "/galeries"
-layout = "default"
+layout = "galerie"
 is_hidden = 0
 
 [galeriesAll]
 ==
-
-<div class="wrapper">
-    {% partial 'site/header' %}
-
-    <div class="content container">
-
-        <div class="row cols-wrapper">
-            <div class="col-lg-9 col-12">
-                {% component 'galeriesAll' %}
-            </div>
-            <div class="col-lg-3 col-12">
-                {% content 'mot_du_directeur' %}
-
-                {% content 'majeur_promotion' %}
-            </div>
-        </div>
-    </div>
-</div>
+{% component 'galeriesAll' %}

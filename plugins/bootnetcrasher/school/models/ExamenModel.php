@@ -23,6 +23,10 @@ class ExamenModel extends Model
      * @var array Validation rules
      */
     public $rules = [
+        "name" => "required|max:150",
+        "description" => "required|max:400",
+        "datedebut" => "required",
+        "datefin" => "required"
     ];
 
     public $attachOne = [

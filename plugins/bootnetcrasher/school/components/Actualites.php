@@ -25,6 +25,7 @@ class Actualites extends ComponentBase
         
         // recuperation de toutes les actualites
         $actualites = ActualiteModel::paginate(4);
+        
 
         $this->page["actualites"] = $actualites;
     }

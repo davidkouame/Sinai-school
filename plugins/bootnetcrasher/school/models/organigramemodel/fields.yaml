@@ -22,5 +22,5 @@ fields:
         nameFrom: libelle
         descriptionFrom: description
         span: auto
+        required: 1
         type: relation
-        placeholder: 'Selectionnez un parent'

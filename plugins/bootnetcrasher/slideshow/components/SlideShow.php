@@ -33,7 +33,7 @@ class SlideShow extends ComponentBase
         
         // recuperation de touts les slideshow
         $slideshows = SlideShowModel::all();
-
+        
         $this->page["slideshows"] = $slideshows;
     }
 }

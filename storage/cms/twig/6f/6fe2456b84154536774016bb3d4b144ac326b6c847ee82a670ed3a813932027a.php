@@ -20,7 +20,8 @@ class __TwigTemplate_45a8f65c8f80eb92298f7a1c8999b5a908c33d69b05d7197894d72f6ea0
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "<div class=\"col-lg-9 col-12\">
+        echo "<div class=\"row\">
+<div class=\"col-lg-12 col-12\">
     <section class=\"news\">
         <div class='section-header clearfix'>
             <div class=\"col-md-12\">
@@ -30,7 +31,7 @@ class __TwigTemplate_45a8f65c8f80eb92298f7a1c8999b5a908c33d69b05d7197894d72f6ea0
                     </div>
                     <div class=\"col-lg-3\" style=\"padding-right: 0px;\">
                         <a class=\"read-more float-right\" href=\"";
-        // line 10
+        // line 11
         echo url("actualites");
         echo "\">Voir toutes les actualités<i class=\"fa fa-chevron-right\"></i></a>
                     </div>
@@ -42,25 +43,25 @@ class __TwigTemplate_45a8f65c8f80eb92298f7a1c8999b5a908c33d69b05d7197894d72f6ea0
                 <div class=\"carousel-inner\">
 
                     ";
-        // line 19
+        // line 20
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["actualites"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["actualite"]) {
-            // line 20
+            // line 21
             echo "                        <div class=\"item carousel-item active\">
                             <div class=\"row\" data-id=\"";
-            // line 21
+            // line 22
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["actualite"], "id", []), "html", null, true);
             echo "\">
                                 <div class=\"col-lg-3\">
                                     <figure class='jss374' style='background-image: url(\"";
-            // line 23
+            // line 24
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["actualite"], "cover", []), "getpath", []), "html", null, true);
             echo "\");'></figure>
                                 </div>
                                 <div class=\"col-lg-9\">
                                     <h2 class=\"title\"><a href=\"";
-            // line 26
+            // line 27
             echo url("/actualites");
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["actualite"], "id", []), "html", null, true);
@@ -69,7 +70,7 @@ class __TwigTemplate_45a8f65c8f80eb92298f7a1c8999b5a908c33d69b05d7197894d72f6ea0
             echo "</a></h2>
                                     <p>
                                         ";
-            // line 28
+            // line 29
             echo call_user_func_array($this->env->getFilter('truncate')->getCallable(), [twig_get_attribute($this->env, $this->source, $context["actualite"], "content", []), 235, false, " ..."]);
             echo "
                                     </p>
@@ -82,21 +83,21 @@ class __TwigTemplate_45a8f65c8f80eb92298f7a1c8999b5a908c33d69b05d7197894d72f6ea0
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['actualite'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 35
+        // line 36
         echo "
                 </div>
             </div>
 
             <!--<div class=\"pagination\" style=\"margin-bottom: 0px;margin-top: 0px;\">
                 ";
-        // line 40
+        // line 41
         echo ($context["actualites"] ?? null);
         echo "
             </div>-->
 
         </div>
     </section>
-</div>";
+</div></div>";
     }
 
     public function getTemplateName()
@@ -111,12 +112,13 @@ class __TwigTemplate_45a8f65c8f80eb92298f7a1c8999b5a908c33d69b05d7197894d72f6ea0
 
     public function getDebugInfo()
     {
-        return array (  93 => 40,  86 => 35,  73 => 28,  64 => 26,  58 => 23,  53 => 21,  50 => 20,  46 => 19,  34 => 10,  23 => 1,);
+        return array (  94 => 41,  87 => 36,  74 => 29,  65 => 27,  59 => 24,  54 => 22,  51 => 21,  47 => 20,  35 => 11,  23 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"col-lg-9 col-12\">
+        return new Twig_Source("<div class=\"row\">
+<div class=\"col-lg-12 col-12\">
     <section class=\"news\">
         <div class='section-header clearfix'>
             <div class=\"col-md-12\">
@@ -160,6 +162,6 @@ class __TwigTemplate_45a8f65c8f80eb92298f7a1c8999b5a908c33d69b05d7197894d72f6ea0
 
         </div>
     </section>
-</div>", "/Applications/MAMP/htdocs/Sinai-school/plugins/bootnetcrasher/school/components/actualites/default.htm", "");
+</div></div>", "/Applications/MAMP/htdocs/Sinai-school/plugins/bootnetcrasher/school/components/actualites/default.htm", "");
     }
 }

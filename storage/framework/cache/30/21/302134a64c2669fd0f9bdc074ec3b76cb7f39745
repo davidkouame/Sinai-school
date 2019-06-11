@@ -1,4 +1,4 @@
-1559436544a:1:{s:21:"suivre-mes-eleves.htm";a:9:{s:8:"fileName";s:21:"suivre-mes-eleves.htm";s:7:"content";s:1392:"title = "suivre-mes-eleves"
+1560231059a:1:{s:21:"suivre-mes-eleves.htm";a:9:{s:8:"fileName";s:21:"suivre-mes-eleves.htm";s:7:"content";s:1292:"title = "suivre-mes-eleves"
 url = "/suivre-mes-eleves"
 layout = "default"
 is_hidden = 0
@@ -26,14 +26,11 @@ is_hidden = 0
 
                 <a href="http://www.suivre-eleve.com/">Accèder mon espace -></a>
             </div>
-            <div class="col-lg-3 col-12">
-                {% content 'mot_du_directeur' %}
-
-                {% content 'majeur_promotion' %}
-            </div>
+            
+            {% partial 'site/navabar-right' %}
         </div>
     </div>
-</div>";s:5:"mtime";i:1559117420;s:6:"markup";s:1300:"<div class="wrapper">
+</div>";s:5:"mtime";i:1559894972;s:6:"markup";s:1200:"<div class="wrapper">
     {% partial 'site/header' %}
 
     <div class="content container">
@@ -55,11 +52,8 @@ is_hidden = 0
 
                 <a href="http://www.suivre-eleve.com/">Accèder mon espace -></a>
             </div>
-            <div class="col-lg-3 col-12">
-                {% content 'mot_du_directeur' %}
-
-                {% content 'majeur_promotion' %}
-            </div>
+            
+            {% partial 'site/navabar-right' %}
         </div>
     </div>
 </div>";s:4:"code";N;s:5:"title";s:17:"suivre-mes-eleves";s:3:"url";s:18:"/suivre-mes-eleves";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
