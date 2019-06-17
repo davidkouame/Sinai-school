@@ -1,4 +1,4 @@
-1560229853a:1:{s:7:"app.htm";a:8:{s:8:"fileName";s:7:"app.htm";s:7:"content";s:7607:"[staticPage]
+1560727754a:1:{s:7:"app.htm";a:8:{s:8:"fileName";s:7:"app.htm";s:7:"content";s:7617:"[staticPage]
 useContent = 1
 default = 0
 
@@ -171,6 +171,8 @@ $(document).ready(function () {
     $(".carousel-item div.row").click(function (e) {
         window.location.href = "{{ url('actualites') }}/" + $(this).data('id');
     });
+    
+    
 
     $(".carousel-item div.row").click(function (e) {
         window.location.href = "{{ url('clubs-activites') }}/" + $(this).data('idclub');
@@ -221,7 +223,7 @@ $(document).ready(function () {
 });
     </script>
 </body>
-</html>";s:5:"mtime";i:1560228577;s:6:"markup";s:7362:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1560703685;s:6:"markup";s:7372:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -380,6 +382,8 @@ $(document).ready(function () {
     $(".carousel-item div.row").click(function (e) {
         window.location.href = "{{ url('actualites') }}/" + $(this).data('id');
     });
+    
+    
 
     $(".carousel-item div.row").click(function (e) {
         window.location.href = "{{ url('clubs-activites') }}/" + $(this).data('idclub');

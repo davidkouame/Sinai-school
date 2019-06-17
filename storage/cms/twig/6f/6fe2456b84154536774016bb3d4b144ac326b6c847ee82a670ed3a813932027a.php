@@ -66,7 +66,7 @@ class __TwigTemplate_45a8f65c8f80eb92298f7a1c8999b5a908c33d69b05d7197894d72f6ea0
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["actualite"], "id", []), "html", null, true);
             echo "\" style=\"color: #6091ba;\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["actualite"], "title", []), "html", null, true);
+            echo call_user_func_array($this->env->getFilter('truncate')->getCallable(), [twig_get_attribute($this->env, $this->source, $context["actualite"], "title", []), 142, false, " ..."]);
             echo "</a></h2>
                                     <p>
                                         ";
@@ -143,7 +143,7 @@ class __TwigTemplate_45a8f65c8f80eb92298f7a1c8999b5a908c33d69b05d7197894d72f6ea0
                                     <figure class='jss374' style='background-image: url(\"{{ actualite.cover.getpath }}\");'></figure>
                                 </div>
                                 <div class=\"col-lg-9\">
-                                    <h2 class=\"title\"><a href=\"{{ url('/actualites') }}/{{ actualite.id }}\" style=\"color: #6091ba;\">{{ actualite.title }}</a></h2>
+                                    <h2 class=\"title\"><a href=\"{{ url('/actualites') }}/{{ actualite.id }}\" style=\"color: #6091ba;\">{{ actualite.title|truncate(142, false, \" ...\") }}</a></h2>
                                     <p>
                                         {{ actualite.content|truncate(235, false, \" ...\") }}
                                     </p>

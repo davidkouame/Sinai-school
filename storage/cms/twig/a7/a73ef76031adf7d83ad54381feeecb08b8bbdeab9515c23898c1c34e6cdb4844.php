@@ -19,42 +19,50 @@ class __TwigTemplate_d259afd9a5e9460b02c7c3675c60f9b84cd0edaac038530fabbc6c26927
 
     protected function doDisplay(array $context, array $blocks = [])
     {
-        // line 1
+        $_type = isset($context["type"]) ? $context["type"] : null;        $_message = isset($context["message"]) ? $context["message"] : null;        // line 1
+        $context["type"] = "success"        ;        foreach (Flash::success        () as $message) {
+            $context["message"] = $message;            // line 2
+            echo "    <div class=\"alert alert-success\">";
+            echo twig_escape_filter($this->env, ($context["message"] ?? null), "html", null, true);
+            echo "</div>
+";
+        }
+        $context["type"] = $_type;        $context["message"] = $_message;        // line 4
         echo "<div class=\"page-wrapper\">
     <header class=\"page-heading clearfix\">
         <h1 class=\"heading-title pull-left\">Contact</h1>
-<!--        <div class=\"breadcrumbs pull-right\">
-            <ul class=\"breadcrumbs-list\">
-                <li class=\"breadcrumbs-label\">You are here:</li>
-                <li><a href=\"";
-        // line 7
+        <!--        <div class=\"breadcrumbs pull-right\">
+                    <ul class=\"breadcrumbs-list\">
+                        <li class=\"breadcrumbs-label\">You are here:</li>
+                        <li><a href=\"";
+        // line 10
         echo url("/");
         echo "\">Home</a><i class=\"fa fa-angle-right\"></i></li>
-                <li class=\"current\">Contact</li>
-            </ul>
-        </div>//breadcrumbs-->
+                        <li class=\"current\">Contact</li>
+                    </ul>
+                </div>//breadcrumbs-->
     </header> 
     <div class=\"page-content\">
         <div class=\"row\">
             <article class=\"contact-form col-md-9 col-sm-7  page-row\">                            
                 <h3 class=\"title\">Contactez-nous</h3>
                 <p>We’d love to hear from you. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut erat magna. Aliquam porta sem a lacus imperdiet posuere. Integer semper eget ligula id eleifend. </p>
-                <form>
+                <form data-request=\"onSendmail\"  data-request-files data-request-flash>
                     <div class=\"form-group name\">
                         <label for=\"name\">Nom et prénom</label>
-                        <input id=\"name\" type=\"text\" class=\"form-control\" placeholder=\"Entrez votre nom et prénoms\">
+                        <input id=\"name\" type=\"text\" class=\"form-control\" name=\"nom_prenom\" placeholder=\"Entrez votre nom et prénoms\">
                     </div><!--//form-group-->
                     <div class=\"form-group email\">
                         <label for=\"email\">Email<span class=\"required\">*</span></label>
-                        <input id=\"email\" type=\"email\" class=\"form-control\" placeholder=\"Entrez votre email\">
+                        <input id=\"email\" type=\"email\" class=\"form-control\" name=\"email\" placeholder=\"Entrez votre email\">
                     </div><!--//form-group-->
                     <div class=\"form-group phone\">
                         <label for=\"phone\">Téléphone</label>
-                        <input id=\"phone\" type=\"tel\" class=\"form-control\" placeholder=\"Entrez votre contact\">
+                        <input id=\"phone\" type=\"tel\" class=\"form-control\" name=\"telephone\" placeholder=\"Entrez votre contact\">
                     </div><!--//form-group-->
                     <div class=\"form-group message\">
                         <label for=\"message\">Message<span class=\"required\">*</span></label>
-                        <textarea id=\"message\" class=\"form-control\" rows=\"6\" placeholder=\"Entrez votre message ici ...\"></textarea>
+                        <textarea id=\"message\" class=\"form-control\" rows=\"6\" name=\"message\" placeholder=\"Entrez votre message ici ...\"></textarea>
                     </div><!--//form-group-->
                     <button type=\"submit\" class=\"btn btn-theme\">Envoyer</button>
                 </form>                  
@@ -63,7 +71,10 @@ class __TwigTemplate_d259afd9a5e9460b02c7c3675c60f9b84cd0edaac038530fabbc6c26927
                 <section class=\"widget has-divider\">
                     <h3 class=\"title\">Télécharger le prospectus</h3>
                     <p>Donec pulvinar arcu lacus, vel aliquam libero scelerisque a. Cras mi tellus, vulputate eu eleifend at, consectetur fringilla lacus. Nulla ut purus.</p>
-                    <a class=\"btn btn-theme\" href=\"#\"><i class=\"fa fa-download\"></i>Télécharger</a>
+                    <a class=\"btn btn-theme\" href=\"";
+        // line 44
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["prospectus"] ?? null), "logo", []), "getpath", []), "html", null, true);
+        echo "\" target=\"__blank\"><i class=\"fa fa-download\"></i>Télécharger</a>
                 </section><!--//widget-->   
 
                 <section class=\"widget has-divider\">
@@ -71,15 +82,15 @@ class __TwigTemplate_d259afd9a5e9460b02c7c3675c60f9b84cd0edaac038530fabbc6c26927
                     <p class=\"adr\">
                         <span class=\"adr-group\">       
                             <span class=\"street-address\">";
-        // line 48
+        // line 51
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["nom_ecole"] ?? null), "value", []), "html", null, true);
         echo "</span><br>
-<!--                            <span class=\"region\">56 College Green Road</span><br>-->
+                            <!--                            <span class=\"region\">56 College Green Road</span><br>-->
                             <span class=\"postal-code\">";
-        // line 50
+        // line 53
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["adresse_postale_ecole"] ?? null), "value", []), "html", null, true);
         echo "</span><br>
-<!--                            <span class=\"country-name\">UK</span>-->
+                            <!--                            <span class=\"country-name\">UK</span>-->
                         </span>
                     </p>
                 </section><!--//widget-->     
@@ -87,11 +98,11 @@ class __TwigTemplate_d259afd9a5e9460b02c7c3675c60f9b84cd0edaac038530fabbc6c26927
                 <section class=\"widget\">
                     <h3 class=\"title\">Contacts</h3>
                     <p class=\"tel\"><i class=\"fa fa-phone\"></i>Tel: ";
-        // line 58
+        // line 61
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["tel_ecole"] ?? null), "value", []), "html", null, true);
         echo "</p>
                     <p class=\"email\"><i class=\"fa fa-envelope\"></i>Email: <a href=\"#\">";
-        // line 59
+        // line 62
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["email_ecole"] ?? null), "value", []), "html", null, true);
         echo "</a></p>
                 </section>   
@@ -123,43 +134,46 @@ class __TwigTemplate_d259afd9a5e9460b02c7c3675c60f9b84cd0edaac038530fabbc6c26927
 
     public function getDebugInfo()
     {
-        return array (  95 => 59,  91 => 58,  80 => 50,  75 => 48,  31 => 7,  23 => 1,);
+        return array (  106 => 62,  102 => 61,  91 => 53,  86 => 51,  76 => 44,  39 => 10,  31 => 4,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"page-wrapper\">
+        return new Twig_Source("{% flash success %}
+    <div class=\"alert alert-success\">{{ message }}</div>
+{% endflash %}
+<div class=\"page-wrapper\">
     <header class=\"page-heading clearfix\">
         <h1 class=\"heading-title pull-left\">Contact</h1>
-<!--        <div class=\"breadcrumbs pull-right\">
-            <ul class=\"breadcrumbs-list\">
-                <li class=\"breadcrumbs-label\">You are here:</li>
-                <li><a href=\"{{ url('/') }}\">Home</a><i class=\"fa fa-angle-right\"></i></li>
-                <li class=\"current\">Contact</li>
-            </ul>
-        </div>//breadcrumbs-->
+        <!--        <div class=\"breadcrumbs pull-right\">
+                    <ul class=\"breadcrumbs-list\">
+                        <li class=\"breadcrumbs-label\">You are here:</li>
+                        <li><a href=\"{{ url('/') }}\">Home</a><i class=\"fa fa-angle-right\"></i></li>
+                        <li class=\"current\">Contact</li>
+                    </ul>
+                </div>//breadcrumbs-->
     </header> 
     <div class=\"page-content\">
         <div class=\"row\">
             <article class=\"contact-form col-md-9 col-sm-7  page-row\">                            
                 <h3 class=\"title\">Contactez-nous</h3>
                 <p>We’d love to hear from you. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut erat magna. Aliquam porta sem a lacus imperdiet posuere. Integer semper eget ligula id eleifend. </p>
-                <form>
+                <form data-request=\"onSendmail\"  data-request-files data-request-flash>
                     <div class=\"form-group name\">
                         <label for=\"name\">Nom et prénom</label>
-                        <input id=\"name\" type=\"text\" class=\"form-control\" placeholder=\"Entrez votre nom et prénoms\">
+                        <input id=\"name\" type=\"text\" class=\"form-control\" name=\"nom_prenom\" placeholder=\"Entrez votre nom et prénoms\">
                     </div><!--//form-group-->
                     <div class=\"form-group email\">
                         <label for=\"email\">Email<span class=\"required\">*</span></label>
-                        <input id=\"email\" type=\"email\" class=\"form-control\" placeholder=\"Entrez votre email\">
+                        <input id=\"email\" type=\"email\" class=\"form-control\" name=\"email\" placeholder=\"Entrez votre email\">
                     </div><!--//form-group-->
                     <div class=\"form-group phone\">
                         <label for=\"phone\">Téléphone</label>
-                        <input id=\"phone\" type=\"tel\" class=\"form-control\" placeholder=\"Entrez votre contact\">
+                        <input id=\"phone\" type=\"tel\" class=\"form-control\" name=\"telephone\" placeholder=\"Entrez votre contact\">
                     </div><!--//form-group-->
                     <div class=\"form-group message\">
                         <label for=\"message\">Message<span class=\"required\">*</span></label>
-                        <textarea id=\"message\" class=\"form-control\" rows=\"6\" placeholder=\"Entrez votre message ici ...\"></textarea>
+                        <textarea id=\"message\" class=\"form-control\" rows=\"6\" name=\"message\" placeholder=\"Entrez votre message ici ...\"></textarea>
                     </div><!--//form-group-->
                     <button type=\"submit\" class=\"btn btn-theme\">Envoyer</button>
                 </form>                  
@@ -168,7 +182,7 @@ class __TwigTemplate_d259afd9a5e9460b02c7c3675c60f9b84cd0edaac038530fabbc6c26927
                 <section class=\"widget has-divider\">
                     <h3 class=\"title\">Télécharger le prospectus</h3>
                     <p>Donec pulvinar arcu lacus, vel aliquam libero scelerisque a. Cras mi tellus, vulputate eu eleifend at, consectetur fringilla lacus. Nulla ut purus.</p>
-                    <a class=\"btn btn-theme\" href=\"#\"><i class=\"fa fa-download\"></i>Télécharger</a>
+                    <a class=\"btn btn-theme\" href=\"{{ prospectus.logo.getpath }}\" target=\"__blank\"><i class=\"fa fa-download\"></i>Télécharger</a>
                 </section><!--//widget-->   
 
                 <section class=\"widget has-divider\">
@@ -176,9 +190,9 @@ class __TwigTemplate_d259afd9a5e9460b02c7c3675c60f9b84cd0edaac038530fabbc6c26927
                     <p class=\"adr\">
                         <span class=\"adr-group\">       
                             <span class=\"street-address\">{{ nom_ecole.value }}</span><br>
-<!--                            <span class=\"region\">56 College Green Road</span><br>-->
+                            <!--                            <span class=\"region\">56 College Green Road</span><br>-->
                             <span class=\"postal-code\">{{ adresse_postale_ecole.value }}</span><br>
-<!--                            <span class=\"country-name\">UK</span>-->
+                            <!--                            <span class=\"country-name\">UK</span>-->
                         </span>
                     </p>
                 </section><!--//widget-->     

@@ -22,7 +22,7 @@ class __TwigTemplate_525a29cc5d4460beffcb28910f3cd3f35479fbe45980fa38547e739db50
         // line 1
         echo "<!--Navabar right -> {mot du directeur, majeur de la promotion-->
 <div class=\"row\">
-    <div class=\"col-lg-12 col-12\">
+    <div class=\"col-lg-12 col-12\" style=\"margin-top: 38px;\" id=\"navabar-right\">
     ";
         // line 4
         $context['__cms_partial_params'] = [];
@@ -59,7 +59,7 @@ class __TwigTemplate_525a29cc5d4460beffcb28910f3cd3f35479fbe45980fa38547e739db50
     {
         return new Twig_Source("<!--Navabar right -> {mot du directeur, majeur de la promotion-->
 <div class=\"row\">
-    <div class=\"col-lg-12 col-12\">
+    <div class=\"col-lg-12 col-12\" style=\"margin-top: 38px;\" id=\"navabar-right\">
     {% partial 'site/mot-du-directeur' %}
 
     {% partial 'site/majeur-promotion' %}

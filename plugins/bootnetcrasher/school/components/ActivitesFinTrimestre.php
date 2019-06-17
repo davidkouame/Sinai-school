@@ -30,6 +30,7 @@ class ActivitesFinTrimestre extends ComponentBase
                                 "activite_fin_trimestre" => $activite_fin_trimestre->logo->getPath()
                             ];
             $this->page["parametragesActivitesFinTrimestre"] = $parametrages;
+            $this->page["active"] = 'espaceeleve';
         } catch (Exception $ex) {
             trace_log("Une erreur s'est produite lors de la recuperation des parametres, "
                     . "Raison :".$ex->getMessage());

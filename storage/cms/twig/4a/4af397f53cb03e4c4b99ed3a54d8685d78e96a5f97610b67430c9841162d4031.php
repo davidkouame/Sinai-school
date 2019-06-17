@@ -296,7 +296,12 @@ class __TwigTemplate_26cd687799f4535a93bb3586f2326a49ccb501ebe985ebe2544d31380d2
         echo url("clubs-activites");
         echo "/\" + \$(this).data('idclub');
     });
-
+    
+    \$(\".";
+        // line 164
+        echo twig_escape_filter($this->env, ($context["active"] ?? null), "html", null, true);
+        echo "\").addClass(\"active\");
+    
     /*('.link-mot-directeur').click(function(){
      console.log(\$(this).data('click'))
      
@@ -329,13 +334,13 @@ class __TwigTemplate_26cd687799f4535a93bb3586f2326a49ccb501ebe985ebe2544d31380d2
         itemTemplate:
                 '<li>' +
                 '<a rel=\"prettyPhoto[flickr]\" href=\"";
-        // line 195
+        // line 197
         echo twig_escape_filter($this->env, ($context["image"] ?? null), "html", null, true);
         echo "\" title=\"";
         echo twig_escape_filter($this->env, ($context["title"] ?? null), "html", null, true);
         echo "\">' +
                 '<img src=\"";
-        // line 196
+        // line 198
         echo twig_escape_filter($this->env, ($context["image_s"] ?? null), "html", null, true);
         echo "\" alt=\"";
         echo twig_escape_filter($this->env, ($context["title"] ?? null), "html", null, true);
@@ -373,7 +378,7 @@ class __TwigTemplate_26cd687799f4535a93bb3586f2326a49ccb501ebe985ebe2544d31380d2
 
     public function getDebugInfo()
     {
-        return array (  359 => 16,  339 => 196,  333 => 195,  296 => 161,  289 => 157,  283 => 153,  279 => 152,  264 => 151,  260 => 150,  255 => 147,  251 => 146,  240 => 138,  236 => 136,  232 => 135,  221 => 127,  217 => 126,  213 => 125,  209 => 124,  205 => 123,  201 => 122,  197 => 121,  193 => 120,  187 => 117,  183 => 116,  179 => 115,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  364 => 16,  344 => 198,  338 => 197,  302 => 164,  296 => 161,  289 => 157,  283 => 153,  279 => 152,  264 => 151,  260 => 150,  255 => 147,  251 => 146,  240 => 138,  236 => 136,  232 => 135,  221 => 127,  217 => 126,  213 => 125,  209 => 124,  205 => 123,  201 => 122,  197 => 121,  193 => 120,  187 => 117,  183 => 116,  179 => 115,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
     }
 
     public function getSourceContext()
@@ -540,7 +545,9 @@ class __TwigTemplate_26cd687799f4535a93bb3586f2326a49ccb501ebe985ebe2544d31380d2
     \$(\".carousel-item div.row\").click(function (e) {
         window.location.href = \"{{ url('clubs-activites') }}/\" + \$(this).data('idclub');
     });
-
+    
+    \$(\".{{ active }}\").addClass(\"active\");
+    
     /*('.link-mot-directeur').click(function(){
      console.log(\$(this).data('click'))
      

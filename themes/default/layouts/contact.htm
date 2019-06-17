@@ -163,7 +163,9 @@ $(document).ready(function () {
     $(".carousel-item div.row").click(function (e) {
         window.location.href = "{{ url('clubs-activites') }}/" + $(this).data('idclub');
     });
-
+    
+    $(".{{ active }}").addClass("active");
+    
     /*('.link-mot-directeur').click(function(){
      console.log($(this).data('click'))
      

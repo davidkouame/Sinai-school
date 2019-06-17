@@ -301,10 +301,15 @@ class __TwigTemplate_50354fc95d26a623851b619fc7a1992e00a2ff0b55ff6df9d21259cdcec
         echo url("actualites");
         echo "/\" + \$(this).data('id');
     });
+    
+    \$(\".";
+        // line 162
+        echo twig_escape_filter($this->env, ($context["active"] ?? null), "html", null, true);
+        echo "\").addClass(\"active\");
 
     \$(\".carousel-item div.row\").click(function (e) {
         window.location.href = \"";
-        // line 163
+        // line 165
         echo url("clubs-activites");
         echo "/\" + \$(this).data('idclub');
     });
@@ -341,13 +346,13 @@ class __TwigTemplate_50354fc95d26a623851b619fc7a1992e00a2ff0b55ff6df9d21259cdcec
         itemTemplate:
                 '<li>' +
                 '<a rel=\"prettyPhoto[flickr]\" href=\"";
-        // line 197
+        // line 199
         echo twig_escape_filter($this->env, ($context["image"] ?? null), "html", null, true);
         echo "\" title=\"";
         echo twig_escape_filter($this->env, ($context["title"] ?? null), "html", null, true);
         echo "\">' +
                 '<img src=\"";
-        // line 198
+        // line 200
         echo twig_escape_filter($this->env, ($context["image_s"] ?? null), "html", null, true);
         echo "\" alt=\"";
         echo twig_escape_filter($this->env, ($context["title"] ?? null), "html", null, true);
@@ -385,7 +390,7 @@ class __TwigTemplate_50354fc95d26a623851b619fc7a1992e00a2ff0b55ff6df9d21259cdcec
 
     public function getDebugInfo()
     {
-        return array (  371 => 16,  351 => 198,  345 => 197,  308 => 163,  301 => 159,  295 => 155,  291 => 154,  276 => 153,  272 => 152,  267 => 149,  263 => 148,  250 => 140,  246 => 139,  243 => 138,  239 => 137,  236 => 136,  232 => 135,  221 => 127,  217 => 126,  213 => 125,  209 => 124,  205 => 123,  201 => 122,  197 => 121,  193 => 120,  187 => 117,  183 => 116,  179 => 115,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  376 => 16,  356 => 200,  350 => 199,  313 => 165,  307 => 162,  301 => 159,  295 => 155,  291 => 154,  276 => 153,  272 => 152,  267 => 149,  263 => 148,  250 => 140,  246 => 139,  243 => 138,  239 => 137,  236 => 136,  232 => 135,  221 => 127,  217 => 126,  213 => 125,  209 => 124,  205 => 123,  201 => 122,  197 => 121,  193 => 120,  187 => 117,  183 => 116,  179 => 115,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
     }
 
     public function getSourceContext()
@@ -550,6 +555,8 @@ class __TwigTemplate_50354fc95d26a623851b619fc7a1992e00a2ff0b55ff6df9d21259cdcec
     \$(\".carousel-item div.row\").click(function (e) {
         window.location.href = \"{{ url('actualites') }}/\" + \$(this).data('id');
     });
+    
+    \$(\".{{ active }}\").addClass(\"active\");
 
     \$(\".carousel-item div.row\").click(function (e) {
         window.location.href = \"{{ url('clubs-activites') }}/\" + \$(this).data('idclub');

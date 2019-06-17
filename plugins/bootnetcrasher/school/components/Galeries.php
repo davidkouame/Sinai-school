@@ -22,12 +22,9 @@ class Galeries extends ComponentBase
     }
 
     public function onRun(){
-        
         // recuperation de toutes les galleries
         $galeries = Gallery::paginate(4);
-        
-        // dd($galeries[0]->images[0]->getPath());
-
+        $this->page["active"] = "viescolaire";
         $this->page["galeries"] = $galeries;
     }
 }

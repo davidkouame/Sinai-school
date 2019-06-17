@@ -23,7 +23,8 @@ class ExamensAll extends ComponentBase
 
     public function onRun(){
         // recuperation de touts les examens
-        $examensall = ExamenModel::paginate(5);
+        $examensall = ExamenModel::whereNotNull('published_at')->paginate(5);
         $this->page["examensall"] = $examensall;
+        $this->page["active"] = 'administration';
     }
 }

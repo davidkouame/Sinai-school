@@ -24,8 +24,8 @@ class ActualitesAll extends ComponentBase
     public function onRun(){
         
         // recuperation de toutes les actualites
-        $actualites = ActualiteModel::paginate(4);
-
+        $actualites = ActualiteModel::whereNotNull('published_at')->paginate(4);
+        $this->page["active"] = 'actualites';
         $this->page["actualitesall"] = $actualites;
     }
 }

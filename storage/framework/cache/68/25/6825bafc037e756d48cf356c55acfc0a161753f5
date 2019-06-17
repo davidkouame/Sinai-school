@@ -1,4 +1,4 @@
-1560231039a:1:{s:11:"contact.htm";a:7:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:7323:"description = "Default layout"
+1560730452a:1:{s:11:"contact.htm";a:7:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:7375:"description = "Default layout"
 [parametrages]
 ==
 <!DOCTYPE html>
@@ -163,7 +163,9 @@ $(document).ready(function () {
     $(".carousel-item div.row").click(function (e) {
         window.location.href = "{{ url('clubs-activites') }}/" + $(this).data('idclub');
     });
-
+    
+    $(".{{ active }}").addClass("active");
+    
     /*('.link-mot-directeur').click(function(){
      console.log($(this).data('click'))
      
@@ -210,7 +212,7 @@ $(document).ready(function () {
     </script>
 </body>
 </html>
-";s:5:"mtime";i:1560227813;s:6:"markup";s:7273:"<!DOCTYPE html>
+";s:5:"mtime";i:1560724824;s:6:"markup";s:7325:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -372,7 +374,9 @@ $(document).ready(function () {
     $(".carousel-item div.row").click(function (e) {
         window.location.href = "{{ url('clubs-activites') }}/" + $(this).data('idclub');
     });
-
+    
+    $(".{{ active }}").addClass("active");
+    
     /*('.link-mot-directeur').click(function(){
      console.log($(this).data('click'))
      

@@ -15,24 +15,21 @@
                     <div class="carousel-inner">
 
                         {% for actualite in actualitesall %}
-                        <div class="item carousel-item active">
-                            <div class="row" data-id="{{ actualite.id }}">
-                                <div class="col-lg-3">
-                                    <figure class='jss374' style='background-image: url("{{ actualite.cover.getpath }}");'></figure>
-                                </div>
-                                <div class="col-lg-9">
-                                    <h2 class="title"><a href="{{ url('actualites')}}/{{ actualite.id }}" style="color: #6091ba;">{{ actualite.title|truncate(142, false, " ...") }}</a></h2>
-                                    <p>
-                                        {{ actualite.content|truncate(235, false, " ...") }}
-                                    </p>
+                            <div class="item carousel-item active">
+                                <div class="row" data-id="{{ actualite.id }}">
+                                    <div class="col-lg-3">
+                                        <figure class='jss374' style='background-image: url("{{ actualite.cover.getpath }}");'></figure>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <h2 class="title"><a href="{{ url('actualites')}}/{{ actualite.id }}" style="color: #6091ba;">{{ actualite.title|truncate(142, false, " ...") }}</a></h2>
+                                        <p>
+                                            {{ actualite.content|truncate(235, false, " ...") }}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
                         {% endfor %}
-
                     </div>
-
                     {{ actualitesall|raw }}
                 </div>
 

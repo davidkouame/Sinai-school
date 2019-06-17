@@ -25,7 +25,7 @@ class ClubsActivitesAll extends ComponentBase
         
         // recuperation de touts les clubs activites
         $clubsActivites = ClubModel::paginate(5);
-
+        $this->page["active"] = "viescolaire";
         $this->page["clubsActivites"] = $clubsActivites;
     }
 }

@@ -23,7 +23,9 @@ class Organigrame extends ComponentBase
 
     public function onRun(){
         $this->page["organigrame"] = OrganigrameModel::all();
-        $this->page["premierParent"] = OrganigrameModel::whereNull('parent_organigrame_id')->first();
+        $this->page["premierParent"] = OrganigrameModel::
+                whereNull('parent_organigrame_id')->first();
+        $this->page["active"] = 'administration';
         // dd($this->page["premierParent"]->getChildren());
     }
 }

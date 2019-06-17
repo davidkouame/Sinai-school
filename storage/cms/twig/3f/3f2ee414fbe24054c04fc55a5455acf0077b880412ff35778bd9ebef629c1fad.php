@@ -20,6 +20,11 @@ class __TwigTemplate_7df58c01e7440936090e2ac0e9ac60198d63eb4dfd2800d758e29daa1fd
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
+        echo "<style>
+        margin-top: 28px;
+</style>
+";
+        // line 4
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("actualites"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
@@ -37,11 +42,14 @@ class __TwigTemplate_7df58c01e7440936090e2ac0e9ac60198d63eb4dfd2800d758e29daa1fd
 
     public function getDebugInfo()
     {
-        return array (  23 => 1,);
+        return array (  28 => 4,  23 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% component 'actualites' %}", "/Applications/MAMP/htdocs/Sinai-school/themes/default/pages/home.htm", "");
+        return new Twig_Source("<style>
+        margin-top: 28px;
+</style>
+{% component 'actualites' %}", "/Applications/MAMP/htdocs/Sinai-school/themes/default/pages/home.htm", "");
     }
 }

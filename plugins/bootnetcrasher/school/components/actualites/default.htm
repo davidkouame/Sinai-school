@@ -24,7 +24,7 @@
                                     <figure class='jss374' style='background-image: url("{{ actualite.cover.getpath }}");'></figure>
                                 </div>
                                 <div class="col-lg-9">
-                                    <h2 class="title"><a href="{{ url('/actualites') }}/{{ actualite.id }}" style="color: #6091ba;">{{ actualite.title }}</a></h2>
+                                    <h2 class="title"><a href="{{ url('/actualites') }}/{{ actualite.id }}" style="color: #6091ba;">{{ actualite.title|truncate(142, false, " ...") }}</a></h2>
                                     <p>
                                         {{ actualite.content|truncate(235, false, " ...") }}
                                     </p>

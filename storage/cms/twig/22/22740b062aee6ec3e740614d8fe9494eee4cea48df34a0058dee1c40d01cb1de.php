@@ -101,13 +101,13 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
 
             <div class=\"navbar-collapse collapse\" id=\"navbar-collapse\">
                 <ul class=\"nav navbar-nav\">
-                    <li class=\"nav-item\"><a class=\"active nav-link\" href=\"";
+                    <li class=\"nav-item\"><a class=\"nav-link accueil\" href=\"";
         // line 65
         echo url("/");
         echo "\">Accueil</a></li>
 
                     <li class=\"nav-item dropdown\">
-                        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown-1\" role=\"button\" data-toggle=\"dropdown\"
+                        <a class=\"nav-link dropdown-toggle administration\" href=\"#\" id=\"navbarDropdown-1\" role=\"button\" data-toggle=\"dropdown\"
                             aria-haspopup=\"true\" aria-expanded=\"false\">Administration <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                             <a class=\"dropdown-item\" href=\"";
@@ -122,7 +122,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                         <!--//dropdown-menu-->
                     </li>
                     
-                    <li class=\"nav-item\"><a class=\"nav-link\" href=\"";
+                    <li class=\"nav-item\"><a class=\"nav-link actualites\" href=\"";
         // line 77
         echo url("/actualites");
         echo "\">Actulités</a></li>
@@ -149,7 +149,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
         echo "\">Règlement intérieur</a></li>-->
                                 
                     <li class=\"nav-item dropdown\">
-                        <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
+                        <a class=\"nav-link dropdown-toggle espaceeleve\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
                             data-close-others=\"false\" href=\"#\">Espace Elèves <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"";
@@ -175,7 +175,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                     </li>
                     
                     <li class=\"nav-item dropdown\">
-                        <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
+                        <a class=\"nav-link dropdown-toggle viescolaire\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
                             data-close-others=\"false\" href=\"#\">Vie scolaire <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"";
@@ -203,7 +203,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                         </div>
                     </li>-->
 
-                    <li class=\"nav-item\"><a class=\"nav-link\" href=\"";
+                    <li class=\"nav-item\"><a class=\"nav-link contact\" href=\"";
         // line 125
         echo url("/contact");
         echo "\">Contact</a></li>
@@ -300,10 +300,10 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
 
             <div class=\"navbar-collapse collapse\" id=\"navbar-collapse\">
                 <ul class=\"nav navbar-nav\">
-                    <li class=\"nav-item\"><a class=\"active nav-link\" href=\"{{ url('/') }}\">Accueil</a></li>
+                    <li class=\"nav-item\"><a class=\"nav-link accueil\" href=\"{{ url('/') }}\">Accueil</a></li>
 
                     <li class=\"nav-item dropdown\">
-                        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown-1\" role=\"button\" data-toggle=\"dropdown\"
+                        <a class=\"nav-link dropdown-toggle administration\" href=\"#\" id=\"navbarDropdown-1\" role=\"button\" data-toggle=\"dropdown\"
                             aria-haspopup=\"true\" aria-expanded=\"false\">Administration <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                             <a class=\"dropdown-item\" href=\"{{ url('/organigrame') }}\">Organigrame</a>
@@ -312,7 +312,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                         <!--//dropdown-menu-->
                     </li>
                     
-                    <li class=\"nav-item\"><a class=\"nav-link\" href=\"{{ url('/actualites') }}\">Actulités</a></li>
+                    <li class=\"nav-item\"><a class=\"nav-link actualites\" href=\"{{ url('/actualites') }}\">Actulités</a></li>
                     
 <!--                    <li class=\"nav-item dropdown\">
                         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown-2\" role=\"button\" data-toggle=\"dropdown\"
@@ -327,7 +327,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
 <!--                    <li class=\"nav-item\"><a class=\"nav-link\" href=\"{{ url('/reglement-interieur') }}\">Règlement intérieur</a></li>-->
                                 
                     <li class=\"nav-item dropdown\">
-                        <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
+                        <a class=\"nav-link dropdown-toggle espaceeleve\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
                             data-close-others=\"false\" href=\"#\">Espace Elèves <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"{{ url('/reglement-interieur') }}\">Règlement intérieur</a>
@@ -341,7 +341,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                     </li>
                     
                     <li class=\"nav-item dropdown\">
-                        <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
+                        <a class=\"nav-link dropdown-toggle viescolaire\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-delay=\"0\"
                             data-close-others=\"false\" href=\"#\">Vie scolaire <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"{{ url('clubs-activites')}}\">Clubs d'activités</a>
@@ -360,7 +360,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                         </div>
                     </li>-->
 
-                    <li class=\"nav-item\"><a class=\"nav-link\" href=\"{{ url('/contact') }}\">Contact</a></li>
+                    <li class=\"nav-item\"><a class=\"nav-link contact\" href=\"{{ url('/contact') }}\">Contact</a></li>
                 </ul>
                 <!--//nav-->
             </div>
