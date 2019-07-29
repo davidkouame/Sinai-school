@@ -1,39 +1,53 @@
+<div class="page-wrapper">
 
-<section class="news">
-    <div class='section-header clearfix'>
-        <div class="col-md-12">
-            <div class="row" style="padding-bottom: 5px;border-bottom: 2px #e2e2e2 solid;margin-bottom: 20px;">
-                <div class="col-lg-10" style="padding-left: 0px;">
-                    <h1 class="section-title title col-md-12" style="font-size: 1.2rem;padding-left: 0px;margin-bottom: 0px;">Clubs d'activités</h1>
-                </div>
-            </div>
+    <header class="page-heading clearfix">
+        <h1 class="heading-title float-left" style="margin-top: 12px; margin-bottom: 0px">Clubs d'activités</h1>
+        <div class="breadcrumbs float-right">
+            <ul class="breadcrumbs-list">
+                <li>
+                    <a href="{{ url('/') }}">Accueil</a><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true"
+                        focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                    </svg>
+                </li>
+                <li class="current">Clubs d'activités</li>
+            </ul>
         </div>
-    </div>
-    <div class="section-content clearfix" style='padding-left: 0px;'>
-        <div id="news-carousel" class="news-carousel carousel slide">
-            <div class="carousel-inner">
+    </header>
 
-                {% for clubActivite in clubsActivites %}
-                <div class="item carousel-item active">
-                    <div class="row" data-idclub="{{ clubActivite.id }}">
-                        <div class="col-lg-3">
-                            <figure class='jss374' style='background-image: url("{{ clubActivite.logo.getpath }}");'></figure>
-                        </div>
-                        <div class="col-lg-9">
-                            <h2 class="title"><a href="{{ url('clubs-activites') }}/{{ clubActivite.id }}" style="color: #6091ba;">{{ clubActivite.name }}</a></h2>
-                            <p>
-                                {{ clubActivite.description|truncate(235, false, " ...") }}
-                            </p>
+    <div class="page-content">
+        <div class="row page-row">
+            <div class="col-md-12">
+                <section class="news">
+                    <div class="section-content clearfix" style='padding-left: 0px;'>
+                        <div id="news-carousel" class="news-carousel carousel slide">
+                            <div class="carousel-inner">
+
+                                {% for clubActivite in clubsActivites %}
+                                <div class="item carousel-item active">
+                                    <div class="row clubactivite" data-idclub="{{ clubActivite.id }}">
+                                        <div class="col-lg-3">
+                                            <figure class='jss374' style='background-image: url("{{ clubActivite.logo.getpath }}");'></figure>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <h2 class="title"><a href="{{ url('clubs-activites') }}/{{ clubActivite.id }}"
+                                                    style="color: #6091ba;">{{
+                                                    clubActivite.name }}</a></h2>
+                                            <p>
+                                                {{ clubActivite.description|truncate(235, false, " ...") }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+
+                                {{ clubsActivites|raw }}
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                {% endfor %}
-
-                {{ clubsActivites|raw }}
-
+                </section>
             </div>
         </div>
-
     </div>
-</section>
+</div>

@@ -23,79 +23,81 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
         // line 1
         echo "<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset=\"utf-8\">
-        <!--<title>October CMS - ";
-        // line 5
+
+<head>
+    <meta charset=\"utf-8\">
+    <!--<title>October CMS - ";
+        // line 6
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", []), "title", []), "html", null, true);
         echo "</title>
         <meta name=\"description\" content=\"";
-        // line 6
+        // line 7
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", []), "meta_description", []), "html", null, true);
         echo "\">
         <meta name=\"title\" content=\"Sinai-School}\">
         <meta name=\"author\" content=\"OctoberCMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">-->
-        <!--<link rel=\"icon\" type=\"image/png\" href=\"";
-        // line 11
+    <!--<link rel=\"icon\" type=\"image/png\" href=\"";
+        // line 12
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/october.png");
         echo "\">
         <link href=\"";
-        // line 12
+        // line 13
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/vendor.css");
         echo "\" rel=\"stylesheet\">
         <link href=\"";
-        // line 13
+        // line 14
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/theme.css");
         echo "\" rel=\"stylesheet\">-->
 
 
-        <!-- <title>";
-        // line 16
+    <!-- <title>";
+        // line 17
         $this->displayBlock('title', $context, $blocks);
         echo "</title> -->
-        <title>Sinai-School</title>
-        <!-- Meta -->
-        <meta charset=\"utf-8\">
-        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <meta name=\"description\" content=\"\">
-        <meta name=\"author\" content=\"\">    
-        <link rel=\"shortcut icon\" href=\"favicon.ico\">  
-        <!--x<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>-->
-        <!-- FontAwesome JS-->
-        <script defer src=\"";
-        // line 27
+    <title>Sinai-School</title>
+    <!-- Meta -->
+    <meta charset=\"utf-8\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta name=\"description\" content=\"\">
+    <meta name=\"author\" content=\"\">
+    <link rel=\"shortcut icon\" href=\"favicon.ico\">
+    <!--x<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>-->
+    <!-- FontAwesome JS-->
+    <script defer src=\"";
+        // line 28
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/all.js");
-        echo "\" integrity=\"sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9\" crossorigin=\"anonymous\"></script>
+        echo "\" integrity=\"sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9\"
+        crossorigin=\"anonymous\"></script>
 
-        <!-- Global CSS -->
-        <link href=\"";
-        // line 30
+    <!-- Global CSS -->
+    <link href=\"";
+        // line 32
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/bootstrap/css/bootstrap.css");
         echo "\" rel=\"stylesheet\">
-        <!-- Plugins CSS -->
-        <link href=\"";
-        // line 32
+    <!-- Plugins CSS -->
+    <link href=\"";
+        // line 34
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/flexslider/css/flexslider.css");
         echo "\" rel=\"stylesheet\">
-        <!-- Theme CSS -->  
-        <link id=\"theme-style\" rel=\"stylesheet\" href=\"./static/assets/css/theme-1.css\">
-        <link href=\"";
-        // line 35
+    <!-- Theme CSS -->
+    <link id=\"theme-style\" rel=\"stylesheet\" href=\"./static/assets/css/theme-1.css\">
+    <link href=\"";
+        // line 37
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/theme-1.css");
         echo "\" rel=\"stylesheet\">
 
-        <!-- APP css-->
-        <link rel=\"stylesheet\" href=\"";
-        // line 38
+    <!-- APP css-->
+    <link rel=\"stylesheet\" href=\"";
+        // line 40
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/app.css");
         echo "\">
 
 
-        <!-- Facebook Pixel Code -->
-        <!--<script>
+    <!-- Facebook Pixel Code -->
+    <!--<script>
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -107,9 +109,7 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
           fbq('init', '1506230579705064');
           fbq('track', 'PageView');
         </script>-->
-    <noscript><img height=\"1\" width=\"1\" style=\"display:none\"
-                   src=\"https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1\"
-                   /></noscript>
+    <noscript><img height=\"1\" width=\"1\" style=\"display:none\" src=\"https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1\" /></noscript>
     <!-- End Facebook Pixel Code -->
 
     <!-- css add -->
@@ -134,7 +134,7 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
             background-position: center;
         }
 
-        .item.carousel-item.active{
+        .item.carousel-item.active {
             margin-bottom: 2%;
         }
 
@@ -150,78 +150,78 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
         }*/
 
-        .profile:hover{
+        .profile:hover {
             box-shadow: initial;
         }
 
-        .item.carousel-item{
+        .item.carousel-item {
             cursor: pointer
         }
 
-        .no-padding-left-and-right{
+        .no-padding-left-and-right {
             padding-left: 0px !important;
             padding-right: 0px !important;
         }
-
     </style>
     ";
-        // line 111
+        // line 110
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 112
+        // line 111
         echo "    <script src=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/popover/popper.min.js");
         echo "\"></script>
 
     <!-- Scripts -->
     <script src=\"";
-        // line 115
+        // line 114
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
     <script src=\"";
-        // line 116
+        // line 115
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
     <script src=\"";
-        // line 117
+        // line 116
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
         echo "\"></script>
 
-    <!-- JS --> 
+    <!-- JS -->
     <!--    <script src=\"";
-        // line 120
+        // line 119
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/jquery/jquery-3.3.1.min.js");
         echo "\"></script>-->
     <script src=\"";
-        // line 121
+        // line 120
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/bootstrap/js/bootstrap.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 122
+        // line 121
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/back-to-top.js");
         echo "\"></script>
     <script src=\"";
-        // line 123
+        // line 122
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/jquery-placeholder/jquery.placeholder.js");
         echo "\"></script>
     <script src=\"";
-        // line 124
+        // line 123
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/pretty-photo/js/jquery.prettyPhoto.js");
         echo "\"></script>
     <script src=\"";
-        // line 125
+        // line 124
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/flexslider/js/jquery.flexslider-min.js");
         echo "\"></script>
     <script src=\"";
-        // line 126
+        // line 125
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jflickrfeed.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 127
+        // line 126
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.js");
         echo "\"></script>
 
 </head>
+
 <body class=\"home-page\">
 
     <!-- Content -->
@@ -288,82 +288,81 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
         // line 154
         echo "
     <script type=\"text/javascript\">
-\$(document).ready(function () {
-    \$(\".carousel-item div.row\").click(function (e) {
-        window.location.href = \"";
+        \$(document).ready(function () {
+            \$(\".carousel-item div.row\").click(function (e) {
+                window.location.href = \"";
         // line 158
         echo url("actualites");
         echo "/\" + \$(this).data('id');
-    });
-    
-    
+            });
 
-    \$(\".carousel-item div.row\").click(function (e) {
-        window.location.href = \"";
-        // line 164
+            \$(\".carousel-item div.row\").click(function (e) {
+                window.location.href = \"";
+        // line 162
         echo url("clubs-activites");
         echo "/\" + \$(this).data('idclub');
-    });
+            });
 
-    /*('.link-mot-directeur').click(function(){
-     console.log(\$(this).data('click'))
-     
-     });*/
+            /*('.link-mot-directeur').click(function(){
+             console.log(\$(this).data('click'))
+             
+             });*/
 
-    // alert(\"dsds\");
+            // alert(\"dsds\");
 
-    /* ======= Flexslider ======= */
-    \$('.flexslider').flexslider({
-        animation: \"fade\"
-    });
+            /* ======= Flexslider ======= */
+            \$('.flexslider').flexslider({
+                animation: \"fade\"
+            });
 
-    /* ======= jQuery Placeholder ======= */
-    \$('input, textarea').placeholder();
-
-
-    /* ======= Carousels ======= */
-    \$('#news-carousel').carousel({interval: false});
-    \$('#videos-carousel').carousel({interval: false});
-    \$('#testimonials-carousel').carousel({interval: 6000, pause: \"hover\"});
-    \$('#awards-carousel').carousel({interval: false});
+            /* ======= jQuery Placeholder ======= */
+            \$('input, textarea').placeholder();
 
 
-    /* ======= Flickr PhotoStream ======= */
-    \$('#flickr-photos').jflickrfeed({
-        limit: 12,
-        qstrings: {
-            id: '32104790@N02' /* Use idGettr.com to find the flickr user id */
-        },
-        itemTemplate:
-                '<li>' +
-                '<a rel=\"prettyPhoto[flickr]\" href=\"";
-        // line 198
+            /* ======= Carousels ======= */
+            \$('#news-carousel').carousel({ interval: false });
+            \$('#videos-carousel').carousel({ interval: false });
+            \$('#testimonials-carousel').carousel({ interval: 6000, pause: \"hover\" });
+            \$('#awards-carousel').carousel({ interval: false });
+
+
+            /* ======= Flickr PhotoStream ======= */
+            \$('#flickr-photos').jflickrfeed({
+                limit: 12,
+                qstrings: {
+                    id: '32104790@N02' /* Use idGettr.com to find the flickr user id */
+                },
+                itemTemplate:
+                    '<li>' +
+                    '<a rel=\"prettyPhoto[flickr]\" href=\"";
+        // line 196
         echo twig_escape_filter($this->env, ($context["image"] ?? null), "html", null, true);
         echo "\" title=\"";
         echo twig_escape_filter($this->env, ($context["title"] ?? null), "html", null, true);
         echo "\">' +
-                '<img src=\"";
-        // line 199
+                    '<img src=\"";
+        // line 197
         echo twig_escape_filter($this->env, ($context["image_s"] ?? null), "html", null, true);
         echo "\" alt=\"";
         echo twig_escape_filter($this->env, ($context["title"] ?? null), "html", null, true);
         echo "\" />' +
-                '</a>' +
-                '</li>'
+                    '</a>' +
+                    '</li>'
 
-    }, function (data) {
-        \$('#flickr-photos a').prettyPhoto();
-    });
+            }, function (data) {
+                \$('#flickr-photos a').prettyPhoto();
+            });
 
-    /* ======= Pretty Photo ======= */
-    \$('a.prettyphoto').prettyPhoto();
-});
+            /* ======= Pretty Photo ======= */
+            \$('a.prettyphoto').prettyPhoto();
+        });
     </script>
 </body>
+
 </html>";
     }
 
-    // line 16
+    // line 17
     public function block_title($context, array $blocks = [])
     {
         echo "This is my new project home page";
@@ -381,53 +380,55 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
 
     public function getDebugInfo()
     {
-        return array (  367 => 16,  347 => 199,  341 => 198,  304 => 164,  295 => 158,  289 => 154,  285 => 153,  270 => 152,  266 => 151,  261 => 148,  257 => 147,  244 => 139,  240 => 138,  236 => 136,  232 => 135,  221 => 127,  217 => 126,  213 => 125,  209 => 124,  205 => 123,  201 => 122,  197 => 121,  193 => 120,  187 => 117,  183 => 116,  179 => 115,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  366 => 17,  345 => 197,  339 => 196,  302 => 162,  295 => 158,  289 => 154,  285 => 153,  270 => 152,  266 => 151,  261 => 148,  257 => 147,  244 => 139,  240 => 138,  236 => 136,  232 => 135,  220 => 126,  216 => 125,  212 => 124,  208 => 123,  204 => 122,  200 => 121,  196 => 120,  192 => 119,  186 => 116,  182 => 115,  178 => 114,  171 => 111,  168 => 110,  95 => 40,  89 => 37,  83 => 34,  78 => 32,  71 => 28,  57 => 17,  51 => 14,  47 => 13,  43 => 12,  35 => 7,  31 => 6,  24 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset=\"utf-8\">
-        <!--<title>October CMS - {{ this.page.title }}</title>
+
+<head>
+    <meta charset=\"utf-8\">
+    <!--<title>October CMS - {{ this.page.title }}</title>
         <meta name=\"description\" content=\"{{ this.page.meta_description }}\">
         <meta name=\"title\" content=\"Sinai-School}\">
         <meta name=\"author\" content=\"OctoberCMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">-->
-        <!--<link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
+    <!--<link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
         <link href=\"{{ 'assets/css/vendor.css'|theme }}\" rel=\"stylesheet\">
         <link href=\"{{ 'assets/css/theme.css'|theme }}\" rel=\"stylesheet\">-->
 
 
-        <!-- <title>{% block title %}This is my new project home page{% endblock title %}</title> -->
-        <title>Sinai-School</title>
-        <!-- Meta -->
-        <meta charset=\"utf-8\">
-        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <meta name=\"description\" content=\"\">
-        <meta name=\"author\" content=\"\">    
-        <link rel=\"shortcut icon\" href=\"favicon.ico\">  
-        <!--x<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>-->
-        <!-- FontAwesome JS-->
-        <script defer src=\"{{ 'assets/js/all.js'|theme }}\" integrity=\"sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9\" crossorigin=\"anonymous\"></script>
+    <!-- <title>{% block title %}This is my new project home page{% endblock title %}</title> -->
+    <title>Sinai-School</title>
+    <!-- Meta -->
+    <meta charset=\"utf-8\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta name=\"description\" content=\"\">
+    <meta name=\"author\" content=\"\">
+    <link rel=\"shortcut icon\" href=\"favicon.ico\">
+    <!--x<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>-->
+    <!-- FontAwesome JS-->
+    <script defer src=\"{{ 'assets/js/all.js'|theme }}\" integrity=\"sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9\"
+        crossorigin=\"anonymous\"></script>
 
-        <!-- Global CSS -->
-        <link href=\"{{ 'assets/plugins/bootstrap/css/bootstrap.css'|theme }}\" rel=\"stylesheet\">
-        <!-- Plugins CSS -->
-        <link href=\"{{ 'assets/plugins/flexslider/css/flexslider.css'|theme }}\" rel=\"stylesheet\">
-        <!-- Theme CSS -->  
-        <link id=\"theme-style\" rel=\"stylesheet\" href=\"./static/assets/css/theme-1.css\">
-        <link href=\"{{ 'assets/css/theme-1.css'|theme }}\" rel=\"stylesheet\">
+    <!-- Global CSS -->
+    <link href=\"{{ 'assets/plugins/bootstrap/css/bootstrap.css'|theme }}\" rel=\"stylesheet\">
+    <!-- Plugins CSS -->
+    <link href=\"{{ 'assets/plugins/flexslider/css/flexslider.css'|theme }}\" rel=\"stylesheet\">
+    <!-- Theme CSS -->
+    <link id=\"theme-style\" rel=\"stylesheet\" href=\"./static/assets/css/theme-1.css\">
+    <link href=\"{{ 'assets/css/theme-1.css'|theme }}\" rel=\"stylesheet\">
 
-        <!-- APP css-->
-        <link rel=\"stylesheet\" href=\"{{ 'assets/css/app.css'|theme }}\">
+    <!-- APP css-->
+    <link rel=\"stylesheet\" href=\"{{ 'assets/css/app.css'|theme }}\">
 
 
-        <!-- Facebook Pixel Code -->
-        <!--<script>
+    <!-- Facebook Pixel Code -->
+    <!--<script>
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -439,9 +440,7 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
           fbq('init', '1506230579705064');
           fbq('track', 'PageView');
         </script>-->
-    <noscript><img height=\"1\" width=\"1\" style=\"display:none\"
-                   src=\"https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1\"
-                   /></noscript>
+    <noscript><img height=\"1\" width=\"1\" style=\"display:none\" src=\"https://www.facebook.com/tr?id=1506230579705064&ev=PageView&noscript=1\" /></noscript>
     <!-- End Facebook Pixel Code -->
 
     <!-- css add -->
@@ -466,7 +465,7 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
             background-position: center;
         }
 
-        .item.carousel-item.active{
+        .item.carousel-item.active {
             margin-bottom: 2%;
         }
 
@@ -482,19 +481,18 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
         }*/
 
-        .profile:hover{
+        .profile:hover {
             box-shadow: initial;
         }
 
-        .item.carousel-item{
+        .item.carousel-item {
             cursor: pointer
         }
 
-        .no-padding-left-and-right{
+        .no-padding-left-and-right {
             padding-left: 0px !important;
             padding-right: 0px !important;
         }
-
     </style>
     {% styles %}
     <script src=\"{{ 'assets/plugins/popover/popper.min.js'|theme }}\"></script>
@@ -504,7 +502,7 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
     <script src=\"{{ 'assets/vendor/bootstrap.js'|theme }}\"></script>
     <script src=\"{{ 'assets/javascript/app.js'|theme }}\"></script>
 
-    <!-- JS --> 
+    <!-- JS -->
     <!--    <script src=\"{{ 'assets/plugins/jquery/jquery-3.3.1.min.js'|theme }}\"></script>-->
     <script src=\"{{ 'assets/plugins/bootstrap/js/bootstrap.min.js'|theme }}\"></script>
     <script src=\"{{ 'assets/js/back-to-top.js'|theme }}\"></script>
@@ -515,6 +513,7 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
     <script src=\"{{ 'assets/js/main.js'|theme }}\"></script>
 
 </head>
+
 <body class=\"home-page\">
 
     <!-- Content -->
@@ -541,62 +540,61 @@ class __TwigTemplate_671b7b440a145a87753d0e69fd699b8ea665bd9bd0771e2939120f18cc6
     {% scripts %}
 
     <script type=\"text/javascript\">
-\$(document).ready(function () {
-    \$(\".carousel-item div.row\").click(function (e) {
-        window.location.href = \"{{ url('actualites') }}/\" + \$(this).data('id');
-    });
-    
-    
+        \$(document).ready(function () {
+            \$(\".carousel-item div.row\").click(function (e) {
+                window.location.href = \"{{ url('actualites') }}/\" + \$(this).data('id');
+            });
 
-    \$(\".carousel-item div.row\").click(function (e) {
-        window.location.href = \"{{ url('clubs-activites') }}/\" + \$(this).data('idclub');
-    });
+            \$(\".carousel-item div.row\").click(function (e) {
+                window.location.href = \"{{ url('clubs-activites') }}/\" + \$(this).data('idclub');
+            });
 
-    /*('.link-mot-directeur').click(function(){
-     console.log(\$(this).data('click'))
-     
-     });*/
+            /*('.link-mot-directeur').click(function(){
+             console.log(\$(this).data('click'))
+             
+             });*/
 
-    // alert(\"dsds\");
+            // alert(\"dsds\");
 
-    /* ======= Flexslider ======= */
-    \$('.flexslider').flexslider({
-        animation: \"fade\"
-    });
+            /* ======= Flexslider ======= */
+            \$('.flexslider').flexslider({
+                animation: \"fade\"
+            });
 
-    /* ======= jQuery Placeholder ======= */
-    \$('input, textarea').placeholder();
+            /* ======= jQuery Placeholder ======= */
+            \$('input, textarea').placeholder();
 
 
-    /* ======= Carousels ======= */
-    \$('#news-carousel').carousel({interval: false});
-    \$('#videos-carousel').carousel({interval: false});
-    \$('#testimonials-carousel').carousel({interval: 6000, pause: \"hover\"});
-    \$('#awards-carousel').carousel({interval: false});
+            /* ======= Carousels ======= */
+            \$('#news-carousel').carousel({ interval: false });
+            \$('#videos-carousel').carousel({ interval: false });
+            \$('#testimonials-carousel').carousel({ interval: 6000, pause: \"hover\" });
+            \$('#awards-carousel').carousel({ interval: false });
 
 
-    /* ======= Flickr PhotoStream ======= */
-    \$('#flickr-photos').jflickrfeed({
-        limit: 12,
-        qstrings: {
-            id: '32104790@N02' /* Use idGettr.com to find the flickr user id */
-        },
-        itemTemplate:
-                '<li>' +
-                '<a rel=\"prettyPhoto[flickr]\" href=\"{{image}}\" title=\"{{title}}\">' +
-                '<img src=\"{{image_s}}\" alt=\"{{title}}\" />' +
-                '</a>' +
-                '</li>'
+            /* ======= Flickr PhotoStream ======= */
+            \$('#flickr-photos').jflickrfeed({
+                limit: 12,
+                qstrings: {
+                    id: '32104790@N02' /* Use idGettr.com to find the flickr user id */
+                },
+                itemTemplate:
+                    '<li>' +
+                    '<a rel=\"prettyPhoto[flickr]\" href=\"{{image}}\" title=\"{{title}}\">' +
+                    '<img src=\"{{image_s}}\" alt=\"{{title}}\" />' +
+                    '</a>' +
+                    '</li>'
 
-    }, function (data) {
-        \$('#flickr-photos a').prettyPhoto();
-    });
+            }, function (data) {
+                \$('#flickr-photos a').prettyPhoto();
+            });
 
-    /* ======= Pretty Photo ======= */
-    \$('a.prettyphoto').prettyPhoto();
-});
+            /* ======= Pretty Photo ======= */
+            \$('a.prettyphoto').prettyPhoto();
+        });
     </script>
 </body>
+
 </html>", "/Applications/MAMP/htdocs/Sinai-school/themes/default/layouts/app.htm", "");
     }
 }

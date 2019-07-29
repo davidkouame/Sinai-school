@@ -1,17 +1,26 @@
-1560730453a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:4701:"==
+1564407679a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:5275:"==
 <div class="footer-content">
     <div class="container">
         <div class="row">
-            <div class="footer-col col-lg-3 col-md-4 col-12 no-padding-left-and-right about">
+            <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about">
                 <div class="footer-col-inner no-padding-left-and-right">
                     <h3>Administration</h3>
                     <ul>
+                        <li><a href="{{ url('/mot-du-directeur') }}"><i class="fas fa-caret-right"></i>Mot du directeur</a></li>
                         <li><a href="{{ url('/organigrame') }}"><i class="fas fa-caret-right"></i>Organigrame</a></li>
                         <li><a href="{{ url('/examens') }}"><i class="fas fa-caret-right"></i>Resultats et examens</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-col col-lg-3 col-md-4 col-12 no-padding-left-and-right about">
+            <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about">
+                <div class="footer-col-inner no-padding-left-and-right">
+                    <h3>Actualités</h3>
+                    <ul>
+                        <li><a href="{{ url('/actualites') }}"><i class="fas fa-caret-right"></i>Actualités</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about">
                 <div class="footer-col-inner no-padding-left-and-right">
                     <h3>Espace Elèves</h3>
                     <ul>
@@ -21,7 +30,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-col col-lg-3 col-md-4 col-12 no-padding-left-and-right about">
+            <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about">
                 <div class="footer-col-inner no-padding-left-and-right">
                     <h3>Vie scolaire</h3>
                     <ul>
@@ -35,7 +44,7 @@
                     <div class="footer-col-inner">
                         <h3 style="margin-bottom: 12px;">Contactez-nous</h3>
                         <div class="row">
-                            <p class="tel col-lg-12 col-md-4 col-12" style="margin-bottom: 4px;"><i class="fas fa-phone"></i>{{ parametrages.number_front }}</p>
+                            <p class="tel col-lg-12 col-md-4 col-12" style="margin-bottom: 4px;padding-top: 8px;"><i class="fas fa-phone"></i>{{ parametrages.number_front }}</p>
                             <p class="email col-lg-12 col-md-4 col-12" style="margin-bottom: 14px;"><i class="fas fa-envelope"></i><a href="#">{{ parametrages.email_front }}</a></p>  
                         </div>
                     </div>            
@@ -74,19 +83,28 @@
             </ul><!--//social-->
         </div><!--//row-->
     </div><!--//container-->
-</div><!--//bottom-bar-->";s:5:"mtime";i:1560727837;s:6:"markup";s:4697:"<div class="footer-content">
+</div><!--//bottom-bar-->";s:5:"mtime";i:1564236732;s:6:"markup";s:5271:"<div class="footer-content">
     <div class="container">
         <div class="row">
-            <div class="footer-col col-lg-3 col-md-4 col-12 no-padding-left-and-right about">
+            <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about">
                 <div class="footer-col-inner no-padding-left-and-right">
                     <h3>Administration</h3>
                     <ul>
+                        <li><a href="{{ url('/mot-du-directeur') }}"><i class="fas fa-caret-right"></i>Mot du directeur</a></li>
                         <li><a href="{{ url('/organigrame') }}"><i class="fas fa-caret-right"></i>Organigrame</a></li>
                         <li><a href="{{ url('/examens') }}"><i class="fas fa-caret-right"></i>Resultats et examens</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-col col-lg-3 col-md-4 col-12 no-padding-left-and-right about">
+            <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about">
+                <div class="footer-col-inner no-padding-left-and-right">
+                    <h3>Actualités</h3>
+                    <ul>
+                        <li><a href="{{ url('/actualites') }}"><i class="fas fa-caret-right"></i>Actualités</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about">
                 <div class="footer-col-inner no-padding-left-and-right">
                     <h3>Espace Elèves</h3>
                     <ul>
@@ -96,7 +114,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-col col-lg-3 col-md-4 col-12 no-padding-left-and-right about">
+            <div class="footer-col col-lg-2 col-md-4 col-12 no-padding-left-and-right about">
                 <div class="footer-col-inner no-padding-left-and-right">
                     <h3>Vie scolaire</h3>
                     <ul>
@@ -110,7 +128,7 @@
                     <div class="footer-col-inner">
                         <h3 style="margin-bottom: 12px;">Contactez-nous</h3>
                         <div class="row">
-                            <p class="tel col-lg-12 col-md-4 col-12" style="margin-bottom: 4px;"><i class="fas fa-phone"></i>{{ parametrages.number_front }}</p>
+                            <p class="tel col-lg-12 col-md-4 col-12" style="margin-bottom: 4px;padding-top: 8px;"><i class="fas fa-phone"></i>{{ parametrages.number_front }}</p>
                             <p class="email col-lg-12 col-md-4 col-12" style="margin-bottom: 14px;"><i class="fas fa-envelope"></i><a href="#">{{ parametrages.email_front }}</a></p>  
                         </div>
                     </div>            

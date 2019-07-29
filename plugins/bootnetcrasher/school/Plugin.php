@@ -25,7 +25,8 @@ class Plugin extends PluginBase
             '\Bootnetcrasher\School\Components\FilAriane' => 'filAriane',
             '\Bootnetcrasher\School\Components\Galeries' => 'galeriesAll',
             '\Bootnetcrasher\School\Components\DetailGalerie' => 'detailGalerie',
-            '\Bootnetcrasher\School\Components\ActivitesFinTrimestre' => 'activitesFinTrimestre'
+            '\Bootnetcrasher\School\Components\ActivitesFinTrimestre' => 'activitesFinTrimestre',
+            '\Bootnetcrasher\School\Components\ReglementInterieur' => 'reglementinterieur'
         ];
     }
 

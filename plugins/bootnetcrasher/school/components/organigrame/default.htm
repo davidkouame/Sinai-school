@@ -1,39 +1,61 @@
-
 <link href="{{ 'assets/css/organigrame.css'|theme }}" rel="stylesheet">
 
 <style>
-    .organizational-chart div{
-            color: #fff;
-    font-weight: bold;
+    .organizational-chart div {
+        color: #fff;
+        font-weight: bold;
     }
 </style>
 
-<ol class="organizational-chart">
-    <li>
-        <div>
-            {{ premierParent.libelle }}
+
+
+<div class="page-wrapper">
+
+    <header class="page-heading clearfix">
+        <h1 class="heading-title float-left" style="margin-top: 12px; margin-bottom: 0px">Organigrame</h1>
+        <div class="breadcrumbs float-right">
+            <ul class="breadcrumbs-list">
+                <!-- <li class="breadcrumbs-label">You are here:</li> -->
+                <li><a href="{{ url('/') }}">Accueil</a><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true"
+                        focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                    </svg><!-- <i class="fas fa-angle-right"></i> -->
+                </li>
+                <li class="current">Organigrame</li>
+            </ul>
         </div>
-        <ol>
-            {% for premierEnfant in premierParent.getChildren %}
-            <li>
-                <div>
-                    {{ premierEnfant.libelle }}
-                </div>
-                {% if premierEnfant.getChildren|length > 0 %}
-                    <ol>
-                        {% for deuxiemeEnfant in premierEnfant.getChildren %}
+    </header>
+
+    <div class="page-content">
+        <div class="row page-row">
+            <div class="col-md-12">
+                <ol class="organizational-chart">
+                    <li>
+                        <div>
+                            {{ premierParent.libelle }}
+                        </div>
+                        <ol>
+                            {% for premierEnfant in premierParent.getChildren %}
                             <li>
                                 <div>
-                                    {{ deuxiemeEnfant.libelle }}
+                                    {{ premierEnfant.libelle }}
                                 </div>
-                                {% if deuxiemeEnfant.getChildren|length > 0 %}
-                                    <ol>
-                                        {% for troisiemeEnfant in deuxiemeEnfant.getChildren %}
-                                        <li>
-                                            <div>
-                                                {{ troisiemeEnfant.libelle }}
-                                            </div>
-                                            {% if troisiemeEnfant.getChildren|length > 0 %}
+                                {% if premierEnfant.getChildren|length > 0 %}
+                                <ol>
+                                    {% for deuxiemeEnfant in premierEnfant.getChildren %}
+                                    <li>
+                                        <div>
+                                            {{ deuxiemeEnfant.libelle }}
+                                        </div>
+                                        {% if deuxiemeEnfant.getChildren|length > 0 %}
+                                        <ol>
+                                            {% for troisiemeEnfant in deuxiemeEnfant.getChildren %}
+                                            <li>
+                                                <div>
+                                                    {{ troisiemeEnfant.libelle }}
+                                                </div>
+                                                {% if troisiemeEnfant.getChildren|length > 0 %}
                                                 <ol>
                                                     {% for quatriemeEnfant in troisiemeEnfant.getChildren %}
                                                     <li>
@@ -43,17 +65,21 @@
                                                     </li>
                                                     {% endfor %}
                                                 </ol>
-                                            {% endif %}
-                                        </li>
-                                        {% endfor %}
-                                    </ol>
+                                                {% endif %}
+                                            </li>
+                                            {% endfor %}
+                                        </ol>
+                                        {% endif %}
+                                    </li>
+                                    {% endfor %}
+                                </ol>
                                 {% endif %}
                             </li>
-                        {% endfor %}
-                    </ol>
-                {% endif %}
-            </li>
-            {% endfor %}
-        </ol>
-    </li>
-</ol>
+                            {% endfor %}
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

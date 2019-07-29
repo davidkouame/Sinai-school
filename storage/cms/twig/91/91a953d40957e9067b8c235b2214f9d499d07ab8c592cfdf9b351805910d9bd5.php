@@ -55,7 +55,10 @@ class __TwigTemplate_50354fc95d26a623851b619fc7a1992e00a2ff0b55ff6df9d21259cdcec
         // line 16
         $this->displayBlock('title', $context, $blocks);
         echo "</title> -->
-        <title>Sinai-School</title>
+        <title>";
+        // line 17
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", []), "title", []), "html", null, true);
+        echo " - Sinai School</title>
         <!-- Meta -->
         <meta charset=\"utf-8\">
         <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
@@ -390,7 +393,7 @@ class __TwigTemplate_50354fc95d26a623851b619fc7a1992e00a2ff0b55ff6df9d21259cdcec
 
     public function getDebugInfo()
     {
-        return array (  376 => 16,  356 => 200,  350 => 199,  313 => 165,  307 => 162,  301 => 159,  295 => 155,  291 => 154,  276 => 153,  272 => 152,  267 => 149,  263 => 148,  250 => 140,  246 => 139,  243 => 138,  239 => 137,  236 => 136,  232 => 135,  221 => 127,  217 => 126,  213 => 125,  209 => 124,  205 => 123,  201 => 122,  197 => 121,  193 => 120,  187 => 117,  183 => 116,  179 => 115,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  379 => 16,  359 => 200,  353 => 199,  316 => 165,  310 => 162,  304 => 159,  298 => 155,  294 => 154,  279 => 153,  275 => 152,  270 => 149,  266 => 148,  253 => 140,  249 => 139,  246 => 138,  242 => 137,  239 => 136,  235 => 135,  224 => 127,  220 => 126,  216 => 125,  212 => 124,  208 => 123,  204 => 122,  200 => 121,  196 => 120,  190 => 117,  186 => 116,  182 => 115,  175 => 112,  172 => 111,  96 => 38,  90 => 35,  84 => 32,  79 => 30,  73 => 27,  60 => 17,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
     }
 
     public function getSourceContext()
@@ -411,7 +414,7 @@ class __TwigTemplate_50354fc95d26a623851b619fc7a1992e00a2ff0b55ff6df9d21259cdcec
 
 
         <!-- <title>{% block title %}This is my new project home page{% endblock title %}</title> -->
-        <title>Sinai-School</title>
+        <title>{{ this.page.title }} - Sinai School</title>
         <!-- Meta -->
         <meta charset=\"utf-8\">
         <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">

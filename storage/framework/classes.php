@@ -184,4 +184,6 @@
   'Indikator\\News\\Classes\\Logger' => 'plugins/indikator/news/classes/Logger.php',
   'Indikator\\News\\Classes\\SendNews' => 'plugins/indikator/news/classes/SendNews.php',
   'Indikator\\News\\Classes\\NewsletterMail' => 'plugins/indikator/news/classes/NewsletterMail.php',
+  'RainLab\\Blog\\FormWidgets\\BlogMarkdown' => 'plugins/rainlab/blog/formwidgets/BlogMarkdown.php',
+  'Bootnetcrasher\\School\\Components\\ReglementInterieur' => 'plugins/bootnetcrasher/school/components/ReglementInterieur.php',
 );

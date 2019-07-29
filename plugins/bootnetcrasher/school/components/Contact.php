@@ -47,14 +47,16 @@ class Contact extends ComponentBase {
                         "nomprenom" => post("nom_prenom")
                     ];
             $rules = [
-                        "body" => "required", 
+                        "nomprenom" => "required",
+                        "email" => "required|email",
                         "telephone" => "required",
-                        "email" => "required|email", 
-                        "nomprenom" => "required"
+                        "body" => "required",    
             ];
             
             $message = [
-                        "body.required" => "le champ message est obligatoire"
+                        "body.required" => "le champ message est obligatoire",
+                        "nomprenom.required" => "le champ nom et prénoms est obligatoire",
+                        "telephone.required" => "le téléphone est obligatoire",
             ];
             
             $validation = \Validator::make($vars, $rules, $message);

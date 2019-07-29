@@ -1,4 +1,4 @@
-1560730453a:1:{s:16:"site/header1.htm";a:5:{s:8:"fileName";s:16:"site/header1.htm";s:7:"content";s:7830:"<header class="header">
+1564407679a:1:{s:16:"site/header1.htm";a:5:{s:8:"fileName";s:16:"site/header1.htm";s:7:"content";s:7942:"<header class="header">
     <div class="top-bar">
         <div class="container">
             <div class="row">
@@ -68,8 +68,9 @@
                         <a class="nav-link dropdown-toggle administration" href="#" id="navbarDropdown-1" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Administration <i class="fas fa-angle-down"></i></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ url('/mot-du-directeur') }}">Mot du directeur</a>
                             <a class="dropdown-item" href="{{ url('/organigrame') }}">Organigrame</a>
-                            <a class="dropdown-item" href="{{ url('/examens') }}">Resultats et Examens</a>
+                            <a class="dropdown-item" href="{{ url('/examens') }}">Examens et resultats</a>
                         </div>
                         <!--//dropdown-menu-->
                     </li>
@@ -132,7 +133,7 @@
         <!--//main-nav-->
     </div>
     <!--//container-->
-</div>";s:5:"mtime";i:1560724916;s:6:"markup";s:7830:"<header class="header">
+</div>";s:5:"mtime";i:1564385489;s:6:"markup";s:7942:"<header class="header">
     <div class="top-bar">
         <div class="container">
             <div class="row">
@@ -202,8 +203,9 @@
                         <a class="nav-link dropdown-toggle administration" href="#" id="navbarDropdown-1" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Administration <i class="fas fa-angle-down"></i></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ url('/mot-du-directeur') }}">Mot du directeur</a>
                             <a class="dropdown-item" href="{{ url('/organigrame') }}">Organigrame</a>
-                            <a class="dropdown-item" href="{{ url('/examens') }}">Resultats et Examens</a>
+                            <a class="dropdown-item" href="{{ url('/examens') }}">Examens et resultats</a>
                         </div>
                         <!--//dropdown-menu-->
                     </li>

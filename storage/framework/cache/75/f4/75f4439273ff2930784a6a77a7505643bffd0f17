@@ -1,4 +1,4 @@
-1560730523a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7513:"description = "Home layout"
+1564407676a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7537:"description = "Home layout"
 [parametrages]
 [SlideShow]
 ==
@@ -18,7 +18,7 @@
 
 
         <!-- <title>{% block title %}This is my new project home page{% endblock title %}</title> -->
-        <title>Sinai-School</title>
+        <title>{{ this.page.title }} - Sinai School</title>
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -215,7 +215,7 @@ $(document).ready(function () {
     </script>
 </body>
 </html>
-";s:5:"mtime";i:1560722480;s:6:"markup";s:7454:"<!DOCTYPE html>
+";s:5:"mtime";i:1564204202;s:6:"markup";s:7478:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -231,7 +231,7 @@ $(document).ready(function () {
 
 
         <!-- <title>{% block title %}This is my new project home page{% endblock title %}</title> -->
-        <title>Sinai-School</title>
+        <title>{{ this.page.title }} - Sinai School</title>
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">

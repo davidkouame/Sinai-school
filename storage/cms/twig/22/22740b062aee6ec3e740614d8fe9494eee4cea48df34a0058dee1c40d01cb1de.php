@@ -112,18 +112,22 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                             <a class=\"dropdown-item\" href=\"";
         // line 71
+        echo url("/mot-du-directeur");
+        echo "\">Mot du directeur</a>
+                            <a class=\"dropdown-item\" href=\"";
+        // line 72
         echo url("/organigrame");
         echo "\">Organigrame</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 72
+        // line 73
         echo url("/examens");
-        echo "\">Resultats et Examens</a>
+        echo "\">Examens et resultats</a>
                         </div>
                         <!--//dropdown-menu-->
                     </li>
                     
                     <li class=\"nav-item\"><a class=\"nav-link actualites\" href=\"";
-        // line 77
+        // line 78
         echo url("/actualites");
         echo "\">Actulités</a></li>
                     
@@ -132,11 +136,11 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                             aria-haspopup=\"true\" aria-expanded=\"false\">Enseignants <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown-2\">
                             <a class=\"dropdown-item\" href=\"";
-        // line 83
+        // line 84
         echo url("/professeurs");
         echo "\">Infos aux Enseignants</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 84
+        // line 85
         echo url("/activites-fin-trimestre");
         echo "\" style=\"width: 109%;\">Activités de
                                 fin de trimestre</a>
@@ -144,7 +148,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                     </li>-->
                     
 <!--                    <li class=\"nav-item\"><a class=\"nav-link\" href=\"";
-        // line 89
+        // line 90
         echo url("/reglement-interieur");
         echo "\">Règlement intérieur</a></li>-->
                                 
@@ -153,22 +157,22 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                             data-close-others=\"false\" href=\"#\">Espace Elèves <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"";
-        // line 95
+        // line 96
         echo url("/reglement-interieur");
         echo "\">Règlement intérieur</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 96
+        // line 97
         echo url("/activites-fin-trimestre");
         echo "\">Activités de
                                 fin de trimestre</a>
 <!--                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Infos aux élèves</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 99
+        // line 100
         echo url("/emplois-du-temps");
         echo "\">Emplois du temps eleve</a>
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Devoirs de niveau</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 101
+        // line 102
         echo url("/sujets");
         echo "\">Bibliothèque numérique</a>-->
                         </div>
@@ -179,12 +183,12 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                             data-close-others=\"false\" href=\"#\">Vie scolaire <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"";
-        // line 109
+        // line 110
         echo url("clubs-activites");
         echo "\">Clubs d'activités</a>
 <!--                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Conseil scolaire</a>-->
                             <a class=\"dropdown-item\" href=\"";
-        // line 111
+        // line 112
         echo url("galeries");
         echo "\">Galerie</a>
                         </div>
@@ -195,7 +199,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                             data-close-others=\"false\" href=\"#\">Parents d'Elèves <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"";
-        // line 119
+        // line 120
         echo url("/suivre-mes-eleves");
         echo "\">Suivre mon élèves </a>
                              c'est programme qui a pour de suivre les moyennes de son enfant 
@@ -204,7 +208,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                     </li>-->
 
                     <li class=\"nav-item\"><a class=\"nav-link contact\" href=\"";
-        // line 125
+        // line 126
         echo url("/contact");
         echo "\">Contact</a></li>
                 </ul>
@@ -231,7 +235,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
 
     public function getDebugInfo()
     {
-        return array (  208 => 125,  199 => 119,  188 => 111,  183 => 109,  172 => 101,  167 => 99,  161 => 96,  157 => 95,  148 => 89,  140 => 84,  136 => 83,  127 => 77,  119 => 72,  115 => 71,  106 => 65,  79 => 41,  75 => 40,  67 => 35,  62 => 33,  51 => 27,  23 => 1,);
+        return array (  212 => 126,  203 => 120,  192 => 112,  187 => 110,  176 => 102,  171 => 100,  165 => 97,  161 => 96,  152 => 90,  144 => 85,  140 => 84,  131 => 78,  123 => 73,  119 => 72,  115 => 71,  106 => 65,  79 => 41,  75 => 40,  67 => 35,  62 => 33,  51 => 27,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -306,8 +310,9 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                         <a class=\"nav-link dropdown-toggle administration\" href=\"#\" id=\"navbarDropdown-1\" role=\"button\" data-toggle=\"dropdown\"
                             aria-haspopup=\"true\" aria-expanded=\"false\">Administration <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                            <a class=\"dropdown-item\" href=\"{{ url('/mot-du-directeur') }}\">Mot du directeur</a>
                             <a class=\"dropdown-item\" href=\"{{ url('/organigrame') }}\">Organigrame</a>
-                            <a class=\"dropdown-item\" href=\"{{ url('/examens') }}\">Resultats et Examens</a>
+                            <a class=\"dropdown-item\" href=\"{{ url('/examens') }}\">Examens et resultats</a>
                         </div>
                         <!--//dropdown-menu-->
                     </li>

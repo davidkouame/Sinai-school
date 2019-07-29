@@ -26,5 +26,6 @@ class Galeries extends ComponentBase
         $galeries = Gallery::paginate(4);
         $this->page["active"] = "viescolaire";
         $this->page["galeries"] = $galeries;
+        $this->page["galerieswithoutpaginate"] = Gallery::all();
     }
 }

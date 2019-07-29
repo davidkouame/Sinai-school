@@ -1,4 +1,4 @@
-1560730452a:1:{s:21:"suivre-mes-eleves.htm";a:9:{s:8:"fileName";s:21:"suivre-mes-eleves.htm";s:7:"content";s:1292:"title = "suivre-mes-eleves"
+1564407675a:1:{s:21:"suivre-mes-eleves.htm";a:9:{s:8:"fileName";s:21:"suivre-mes-eleves.htm";s:7:"content";s:1293:"title = "Suivre mes elèves"
 url = "/suivre-mes-eleves"
 layout = "default"
 is_hidden = 0
@@ -30,7 +30,7 @@ is_hidden = 0
             {% partial 'site/navabar-right' %}
         </div>
     </div>
-</div>";s:5:"mtime";i:1559894972;s:6:"markup";s:1200:"<div class="wrapper">
+</div>";s:5:"mtime";i:1564204696;s:6:"markup";s:1200:"<div class="wrapper">
     {% partial 'site/header' %}
 
     <div class="content container">
@@ -56,4 +56,4 @@ is_hidden = 0
             {% partial 'site/navabar-right' %}
         </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:17:"suivre-mes-eleves";s:3:"url";s:18:"/suivre-mes-eleves";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+</div>";s:4:"code";N;s:5:"title";s:18:"Suivre mes elèves";s:3:"url";s:18:"/suivre-mes-eleves";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

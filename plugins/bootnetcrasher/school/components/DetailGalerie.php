@@ -77,6 +77,7 @@ class DetailGalerie extends ComponentBase {
             }
             // dd(count($galerie->images));
             $this->page["galerie"] = $galerie;
+            // dd($galerie->slug);
             $this->page["column"] = $column;
         } catch (\Exception $e) {
             trace_log("Une erreur s'est produite lors de la recuperation des informations d'une galerie, error:" . $e->getMessage());

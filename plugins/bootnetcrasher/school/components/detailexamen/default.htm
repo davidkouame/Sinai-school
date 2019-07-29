@@ -3,58 +3,97 @@
         list-style: none;
         margin-top: 12px;
     }
-    
-    .key{
+
+    .key {
         font-size: 15px;
         font-weight: bold;
     }
-    
-    .value{
+
+    .value {
         font-size: 14px;
     }
-    
-    .detail{
-        
+
+    .detail {}
+
+    ul {
+        padding-left: 0px;
     }
-    
-    ul{padding-left: 0px;}
 </style>
-<div class="row">
-    <div class="col-lg-12">
-        <img src="{{'assets/images/slide-2.jpg' | theme }}" class="img-fluid" alt="Responsive image">
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-12 col-12">
-        <section class="news">
-            <div class="section-content clearfix" style='padding-left: 0px;'>
-                <div id="news-carousel" class="news-carousel carousel slide">
-                    <div class="carousel-inner">
-                        <ul>
-                            <li class="detail">
-                                <span class="key">Nom :</span> 
-                                <span class="value">{{ examen.name }}</span></li>
-                            <li>
-                                <span class="key">Date de début :</span> 
-                                <span class="value">{{ examen.datedebut }}</span>
-                            </li>
-                            <li>
-                                <span class="key">Date de fin :</span> 
-                                <span class="value">{{ examen.datefin }}</span>
-                            </li>
-                            <li>
-                                <span class="key">Description :</span>
-                                <span class="value">{{ examen.description|raw }}</span>
-                            </li>
-                            <li>
-                                {% if(examen.sujets) %} <a href="{{ examen.sujets.getpath }}" target="_blank">Télécharger les Sujets</a> /{% endif %}
-                                {% if(examen.corrections) %} <a href="{{ examen.corrections.getpath }}" target="_blank">Télécharger les Corrections</a> /{% endif %}
-                                {% if(examen.resultats) %} <a href="{{ examen.resultats.getpath }}" target="_blank">Télécharger Resultats</a>{% endif %}
-                            </li>
-                        </ul>
+
+
+<div class="page-wrapper">
+
+    <header class="page-heading clearfix">
+        <h1 class="heading-title float-left" style="margin-top: 12px; margin-bottom: 0px">Examens et resultats</h1>
+        <div class="breadcrumbs float-right">
+            <ul class="breadcrumbs-list">
+                <li>
+                    <a href="{{ url('/') }}">Accueil</a><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true"
+                        focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                    </svg>
+                </li>
+                <li>
+                        <a href="{{ url('/examens') }}">Examens et resultats</a><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true"
+                            focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 512" data-fa-i2svg="">
+                            <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                        </svg>
+                    </li>
+                <li class="current">{{ examen.name }}</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="row page-row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="{{'assets/images/slide-2.jpg' | theme }}" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+                        <section class="news">
+                            <div class="section-content clearfix" style='padding-left: 0px;'>
+                                <div id="news-carousel" class="news-carousel carousel slide">
+                                    <div class="carousel-inner">
+                                        <ul>
+                                            <li class="detail">
+                                                <span class="key">Nom :</span>
+                                                <span class="value">{{ examen.name }}</span></li>
+                                            <li>
+                                                <span class="key">Date de début :</span>
+                                                <span class="value">{{ examen.datedebut }}</span>
+                                            </li>
+                                            <li>
+                                                <span class="key">Date de fin :</span>
+                                                <span class="value">{{ examen.datefin }}</span>
+                                            </li>
+                                            <li>
+                                                <span class="key">Description :</span>
+                                                <span class="value">{{ examen.description|raw }}</span>
+                                            </li>
+                                            <li>
+                                                {% if(examen.sujets) %} <a href="{{ examen.sujets.getpath }}" target="_blank">Télécharger
+                                                    les sujets</a> /{% endif %}
+                                                {% if(examen.corrections) %} <a href="{{ examen.corrections.getpath }}"
+                                                    target="_blank">Télécharger
+                                                    les corrections</a> /{% endif %}
+                                                {% if(examen.resultats) %} <a href="{{ examen.resultats.getpath }}"
+                                                    target="_blank">Télécharger
+                                                    les resultats</a>{% endif %}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
-1560730452a:1:{s:23:"reglement-interieur.htm";a:7:{s:8:"fileName";s:23:"reglement-interieur.htm";s:7:"content";s:4245:"[viewBag]
+1564407674a:1:{s:23:"reglement-interieur.htm";a:7:{s:8:"fileName";s:23:"reglement-interieur.htm";s:7:"content";s:5367:"[viewBag]
 title = "Réglement intérieur"
-url = "/reglement-interieur"
+url = "/reglement-interieuddddr"
 layout = "app"
 is_hidden = 0
 navigation_hidden = 0
@@ -22,7 +22,31 @@ navigation_hidden = 0
         $(document).ready(function(){
             $(".espaceeleve").addClass("active");
         })
-</script>";s:5:"mtime";i:1560726866;s:6:"markup";s:4120:"<p>
+</script>
+
+
+<!-- <div class="page-wrapper">
+
+    <header class="page-heading clearfix">
+        <h1 class="heading-title float-left" style="margin-top: 12px; margin-bottom: 0px">Réglement intérieur</h1>
+        <div class="breadcrumbs float-right">
+            <ul class="breadcrumbs-list">
+                <li><a href="{{ url('/') }}">Accueil</a><svg class="svg-inline--fa fa-angle-right fa-w-8"
+                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                    </svg>
+                </li>
+                <li class="current">Réglement intérieur</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="row page-row">
+        </div>
+    </div>
+</div> -->";s:5:"mtime";i:1564388493;s:6:"markup";s:5238:"<p>
 	<br>
 </p>
 
@@ -39,7 +63,31 @@ navigation_hidden = 0
         $(document).ready(function(){
             $(".espaceeleve").addClass("active");
         })
-</script>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:21:"Réglement intérieur";s:3:"url";s:20:"/reglement-interieur";s:6:"layout";s:3:"app";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:4120:"<p>
+</script>
+
+
+<!-- <div class="page-wrapper">
+
+    <header class="page-heading clearfix">
+        <h1 class="heading-title float-left" style="margin-top: 12px; margin-bottom: 0px">Réglement intérieur</h1>
+        <div class="breadcrumbs float-right">
+            <ul class="breadcrumbs-list">
+                <li><a href="{{ url('/') }}">Accueil</a><svg class="svg-inline--fa fa-angle-right fa-w-8"
+                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                    </svg>
+                </li>
+                <li class="current">Réglement intérieur</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="row page-row">
+        </div>
+    </div>
+</div> -->";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:21:"Réglement intérieur";s:3:"url";s:24:"/reglement-interieuddddr";s:6:"layout";s:3:"app";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:5238:"<p>
 	<br>
 </p>
 
@@ -56,4 +104,28 @@ navigation_hidden = 0
         $(document).ready(function(){
             $(".espaceeleve").addClass("active");
         })
-</script>";}}
+</script>
+
+
+<!-- <div class="page-wrapper">
+
+    <header class="page-heading clearfix">
+        <h1 class="heading-title float-left" style="margin-top: 12px; margin-bottom: 0px">Réglement intérieur</h1>
+        <div class="breadcrumbs float-right">
+            <ul class="breadcrumbs-list">
+                <li><a href="{{ url('/') }}">Accueil</a><svg class="svg-inline--fa fa-angle-right fa-w-8"
+                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                    </svg>
+                </li>
+                <li class="current">Réglement intérieur</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="row page-row">
+        </div>
+    </div>
+</div> -->";}}

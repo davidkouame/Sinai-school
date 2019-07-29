@@ -1,21 +1,53 @@
-{% for examen in examensall %}
-    <div class="item carousel2-item active">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="title" style="margin-bottom: 0rem;"><a href="{{ url('examens')}}/{{ examen.id }}">{{ examen.name }}</a></h2>
-                <p style="margin-bottom: 0rem;">
-                    {{ examen.description|truncate(400, false, " ...") }}
-                </p>
-            </div>
-            <div class="col-lg-12">
-                {% if(examen.sujets) %} <a href="{{ examen.sujets.getpath }}" target="_blank">Sujets</a>/ {% endif %}
-                {% if(examen.corrections) %} <a href="{{ examen.corrections.getpath }}" target="_blank">Corrections</a>/ {% endif %}
-                {% if(examen.resultats) %} <a href="{{ examen.resultats.getpath }}" target="_blank">Resultats</a> {% endif %}
+<div class="page-wrapper">
+
+    <header class="page-heading clearfix">
+        <h1 class="heading-title float-left" style="margin-top: 12px; margin-bottom: 0px">Examens et resultats</h1>
+        <div class="breadcrumbs float-right">
+            <ul class="breadcrumbs-list">
+                <!-- <li class="breadcrumbs-label">You are here:</li> -->
+                <li><a href="{{ url('/') }}">Accueil</a><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true"
+                        focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                    </svg><!-- <i class="fas fa-angle-right"></i> -->
+                </li>
+                <li class="current">Examens et resultats</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="row page-row">
+            <div class="col-md-12">
+                {% for examen in examensall %}
+                <div class="item carousel2-item active">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="title" style="margin-bottom: 0rem;"><a href="{{ url('examens')}}/{{ examen.id }}">{{
+                                    examen.name
+                                    }}</a></h2>
+                            <p style="margin-bottom: 0rem;">
+                                {{ examen.description|truncate(400, false, " ...") }}
+                            </p>
+                        </div>
+                        <div class="col-lg-12">
+                            {% if(examen.sujets) %} <a href="{{ examen.sujets.getpath }}" target="_blank">Sujets</a>/
+                            {% endif %}
+                            {% if(examen.corrections) %} <a href="{{ examen.corrections.getpath }}" target="_blank">Corrections</a>/
+                            {%
+                            endif %}
+                            {% if(examen.resultats) %} <a href="{{ examen.resultats.getpath }}" target="_blank">Resultats</a>
+                            {% endif
+                            %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="pagination">
+                    {{ examensall|raw }}
+                </div>
             </div>
         </div>
     </div>
-{% endfor %}
-
-<div class="pagination">
-    {{ examensall|raw }}
 </div>
