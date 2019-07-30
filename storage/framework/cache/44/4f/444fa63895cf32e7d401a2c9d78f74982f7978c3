@@ -1,14 +1,15 @@
-1564407679a:1:{s:16:"site/header1.htm";a:5:{s:8:"fileName";s:16:"site/header1.htm";s:7:"content";s:7942:"<header class="header">
+1564466705a:1:{s:16:"site/header1.htm";a:5:{s:8:"fileName";s:16:"site/header1.htm";s:7:"content";s:8206:"<header class="header">
     <div class="top-bar">
         <div class="container">
             <div class="row">
                 <ul class="social-icons col-md-6 col-12 d-none d-md-block">
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="{{ reseauxsociaux.reseauxsociauxtwiter }}" target="__blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="{{ reseauxsociaux.reseauxsociauxfacebook }}" target="__blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="{{ reseauxsociaux.reseauxsociauxlinkedin }}" target="__blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    <li class="row-end"><a href="#"><i class="fas fa-rss"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li> 
+                    <li class="row-end"><a href="#"><i class="fas fa-rss"></i></a></li>-->
                 </ul>
                 <form class="col-md-6 col-12 search-form" role="search">
                     <div class="form-group">
@@ -133,17 +134,18 @@
         <!--//main-nav-->
     </div>
     <!--//container-->
-</div>";s:5:"mtime";i:1564385489;s:6:"markup";s:7942:"<header class="header">
+</div>";s:5:"mtime";i:1564466103;s:6:"markup";s:8206:"<header class="header">
     <div class="top-bar">
         <div class="container">
             <div class="row">
                 <ul class="social-icons col-md-6 col-12 d-none d-md-block">
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="{{ reseauxsociaux.reseauxsociauxtwiter }}" target="__blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="{{ reseauxsociaux.reseauxsociauxfacebook }}" target="__blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="{{ reseauxsociaux.reseauxsociauxlinkedin }}" target="__blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    <li class="row-end"><a href="#"><i class="fas fa-rss"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li> 
+                    <li class="row-end"><a href="#"><i class="fas fa-rss"></i></a></li>-->
                 </ul>
                 <form class="col-md-6 col-12 search-form" role="search">
                     <div class="form-group">

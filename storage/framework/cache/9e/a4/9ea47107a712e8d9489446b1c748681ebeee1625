@@ -1,8 +1,9 @@
-1564407675a:1:{s:20:"mot-du-directeur.htm";a:9:{s:8:"fileName";s:20:"mot-du-directeur.htm";s:7:"content";s:7097:"title = "Mot Du Directeur"
+1564466864a:1:{s:20:"mot-du-directeur.htm";a:10:{s:8:"fileName";s:20:"mot-du-directeur.htm";s:7:"content";s:7118:"title = "Mot Du Directeur"
 url = "/mot-du-directeur"
 layout = "default"
 is_hidden = 0
 
+[loadreseauxsociaux]
 ==
 
 
@@ -110,7 +111,7 @@ is_hidden = 0
             </div>
         </div>
     </div>
-</div>";s:5:"mtime";i:1564389182;s:6:"markup";s:7005:"<div class="page-wrapper">
+</div>";s:5:"mtime";i:1564466245;s:6:"markup";s:7005:"<div class="page-wrapper">
 
     <header class="page-heading clearfix">
         <h1 class="heading-title float-left" style="margin-top: 12px; margin-bottom: 0px">Mot du Directeur</h1>
@@ -214,4 +215,4 @@ is_hidden = 0
             </div>
         </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:16:"Mot Du Directeur";s:3:"url";s:17:"/mot-du-directeur";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+</div>";s:4:"code";N;s:5:"title";s:16:"Mot Du Directeur";s:3:"url";s:17:"/mot-du-directeur";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:18:"loadreseauxsociaux";a:0:{}}}

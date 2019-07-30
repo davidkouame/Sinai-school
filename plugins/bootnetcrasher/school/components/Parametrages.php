@@ -29,6 +29,9 @@ class Parametrages extends ComponentBase
         $email_front = ParametrageModel::where('key', 'email_front')->first();
         $nom_du_directeur = ParametrageModel::where('key', 'nom_du_directeur')->first();
         $email_front = ParametrageModel::where('key', 'email_front')->first();
+        $reseauxsociauxtwiter = ParametrageModel::where('key', 'reseaux-sociaux-twiter')->first();
+        $reseauxsociauxlinkedin = ParametrageModel::where('key', 'reseaux-sociaux-linkedin')->first();
+        $reseauxsociauxfacebook = ParametrageModel::where('key', 'reseaux-sociaux-facebook')->first();
         $description_du_directeur = ParametrageModel::
                                     where('key', 'description_du_directeur')->first();
         // $nom_du_directeur = ParametrageModel::where('key', 'nom_du_directeur')->first();
@@ -38,7 +41,9 @@ class Parametrages extends ComponentBase
                             "number_front" => $number_front->value,
                             "nom_du_directeur" => $nom_du_directeur->value,
                             "email_front" => $email_front->value,
-                            "description_du_directeur" => $description_du_directeur->value
+                            "description_du_directeur" => $description_du_directeur->value,
+                            "reseauxsociauxtwiter" => $reseauxsociauxtwiter->value,
+                            "reseauxsociauxfacebook" => $reseauxsociauxfacebook->value,
                         ];
 
         $this->page["parametrages"] = $parametrages;

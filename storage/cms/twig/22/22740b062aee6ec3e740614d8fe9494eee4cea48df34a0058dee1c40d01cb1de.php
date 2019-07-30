@@ -25,12 +25,22 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
         <div class=\"container\">
             <div class=\"row\">
                 <ul class=\"social-icons col-md-6 col-12 d-none d-md-block\">
-                    <li><a href=\"#\"><i class=\"fab fa-twitter\"></i></a></li>
-                    <li><a href=\"#\"><i class=\"fab fa-facebook-f\"></i></a></li>
-                    <li><a href=\"#\"><i class=\"fab fa-youtube\"></i></a></li>
+                    <li><a href=\"";
+        // line 6
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["reseauxsociaux"] ?? null), "reseauxsociauxtwiter", []), "html", null, true);
+        echo "\" target=\"__blank\"><i class=\"fab fa-twitter\"></i></a></li>
+                    <li><a href=\"";
+        // line 7
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["reseauxsociaux"] ?? null), "reseauxsociauxfacebook", []), "html", null, true);
+        echo "\" target=\"__blank\"><i class=\"fab fa-facebook-f\"></i></a></li>
+                    <li><a href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["reseauxsociaux"] ?? null), "reseauxsociauxlinkedin", []), "html", null, true);
+        echo "\" target=\"__blank\"><i class=\"fab fa-linkedin-in\"></i></a></li>
+                    <!-- <li><a href=\"#\"><i class=\"fab fa-youtube\"></i></a></li>
                     <li><a href=\"#\"><i class=\"fab fa-linkedin-in\"></i></a></li>
-                    <li><a href=\"#\"><i class=\"fab fa-google-plus-g\"></i></a></li>
-                    <li class=\"row-end\"><a href=\"#\"><i class=\"fas fa-rss\"></i></a></li>
+                    <li><a href=\"#\"><i class=\"fab fa-google-plus-g\"></i></a></li> 
+                    <li class=\"row-end\"><a href=\"#\"><i class=\"fas fa-rss\"></i></a></li>-->
                 </ul>
                 <form class=\"col-md-6 col-12 search-form\" role=\"search\">
                     <div class=\"form-group\">
@@ -47,7 +57,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
         <div class=\"row\">
             <h1 class=\"logo col-md-4 col-12\">
                 <a href=\"";
-        // line 27
+        // line 28
         echo url("/");
         echo "\"><img id=\"logo\" style=\"width: 245px;height: 40px;\" src=\"";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["parametrages"] ?? null), "logo", []), "html", null, true);
@@ -58,12 +68,12 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
             <div class=\"info col-md-8 col-12\">
                 <ul class=\"menu-top float-right d-none d-md-block\">
                     <li class=\"divider\"><a href=\"";
-        // line 33
+        // line 34
         echo url("/");
         echo "\">Accueil</a></li>
                     <!-- <li class=\"divider\"><a href=\"faq.html\">FAQ</a></li> -->
                     <li><a href=\"";
-        // line 35
+        // line 36
         echo url("/contact");
         echo "\">Contact</a></li>
                 </ul>
@@ -71,11 +81,11 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                 <br />
                 <div class=\"contact float-right\">
                     <p class=\"phone\"><i class=\"fas fa-phone\"></i>Appelez nous aujourd'hui au ";
-        // line 40
+        // line 41
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["parametrages"] ?? null), "number_front", []), "html", null, true);
         echo "</p>
                     <p class=\"email\"><i class=\"fas fa-envelope\"></i><a href=\"#\">";
-        // line 41
+        // line 42
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["parametrages"] ?? null), "email_front", []), "html", null, true);
         echo "</a></p>
                 </div>
@@ -102,7 +112,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
             <div class=\"navbar-collapse collapse\" id=\"navbar-collapse\">
                 <ul class=\"nav navbar-nav\">
                     <li class=\"nav-item\"><a class=\"nav-link accueil\" href=\"";
-        // line 65
+        // line 66
         echo url("/");
         echo "\">Accueil</a></li>
 
@@ -111,15 +121,15 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                             aria-haspopup=\"true\" aria-expanded=\"false\">Administration <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                             <a class=\"dropdown-item\" href=\"";
-        // line 71
+        // line 72
         echo url("/mot-du-directeur");
         echo "\">Mot du directeur</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 72
+        // line 73
         echo url("/organigrame");
         echo "\">Organigrame</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 73
+        // line 74
         echo url("/examens");
         echo "\">Examens et resultats</a>
                         </div>
@@ -127,7 +137,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                     </li>
                     
                     <li class=\"nav-item\"><a class=\"nav-link actualites\" href=\"";
-        // line 78
+        // line 79
         echo url("/actualites");
         echo "\">Actulités</a></li>
                     
@@ -136,11 +146,11 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                             aria-haspopup=\"true\" aria-expanded=\"false\">Enseignants <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown-2\">
                             <a class=\"dropdown-item\" href=\"";
-        // line 84
+        // line 85
         echo url("/professeurs");
         echo "\">Infos aux Enseignants</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 85
+        // line 86
         echo url("/activites-fin-trimestre");
         echo "\" style=\"width: 109%;\">Activités de
                                 fin de trimestre</a>
@@ -148,7 +158,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                     </li>-->
                     
 <!--                    <li class=\"nav-item\"><a class=\"nav-link\" href=\"";
-        // line 90
+        // line 91
         echo url("/reglement-interieur");
         echo "\">Règlement intérieur</a></li>-->
                                 
@@ -157,22 +167,22 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                             data-close-others=\"false\" href=\"#\">Espace Elèves <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"";
-        // line 96
+        // line 97
         echo url("/reglement-interieur");
         echo "\">Règlement intérieur</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 97
+        // line 98
         echo url("/activites-fin-trimestre");
         echo "\">Activités de
                                 fin de trimestre</a>
 <!--                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Infos aux élèves</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 100
+        // line 101
         echo url("/emplois-du-temps");
         echo "\">Emplois du temps eleve</a>
                             <a class=\"dropdown-item\" href=\"javascript:void(0)\">Devoirs de niveau</a>
                             <a class=\"dropdown-item\" href=\"";
-        // line 102
+        // line 103
         echo url("/sujets");
         echo "\">Bibliothèque numérique</a>-->
                         </div>
@@ -183,12 +193,12 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                             data-close-others=\"false\" href=\"#\">Vie scolaire <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"";
-        // line 110
+        // line 111
         echo url("clubs-activites");
         echo "\">Clubs d'activités</a>
 <!--                            <a class=\"dropdown-item\" href=\"javascript:void(0)\">Conseil scolaire</a>-->
                             <a class=\"dropdown-item\" href=\"";
-        // line 112
+        // line 113
         echo url("galeries");
         echo "\">Galerie</a>
                         </div>
@@ -199,7 +209,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                             data-close-others=\"false\" href=\"#\">Parents d'Elèves <i class=\"fas fa-angle-down\"></i></a>
                         <div class=\"dropdown-menu\">
                             <a class=\"dropdown-item\" href=\"";
-        // line 120
+        // line 121
         echo url("/suivre-mes-eleves");
         echo "\">Suivre mon élèves </a>
                              c'est programme qui a pour de suivre les moyennes de son enfant 
@@ -208,7 +218,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
                     </li>-->
 
                     <li class=\"nav-item\"><a class=\"nav-link contact\" href=\"";
-        // line 126
+        // line 127
         echo url("/contact");
         echo "\">Contact</a></li>
                 </ul>
@@ -235,7 +245,7 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
 
     public function getDebugInfo()
     {
-        return array (  212 => 126,  203 => 120,  192 => 112,  187 => 110,  176 => 102,  171 => 100,  165 => 97,  161 => 96,  152 => 90,  144 => 85,  140 => 84,  131 => 78,  123 => 73,  119 => 72,  115 => 71,  106 => 65,  79 => 41,  75 => 40,  67 => 35,  62 => 33,  51 => 27,  23 => 1,);
+        return array (  222 => 127,  213 => 121,  202 => 113,  197 => 111,  186 => 103,  181 => 101,  175 => 98,  171 => 97,  162 => 91,  154 => 86,  150 => 85,  141 => 79,  133 => 74,  129 => 73,  125 => 72,  116 => 66,  89 => 42,  85 => 41,  77 => 36,  72 => 34,  61 => 28,  38 => 8,  34 => 7,  30 => 6,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -245,12 +255,13 @@ class __TwigTemplate_c2be1fc2e3a3c2357d48c9cfafc8e4a1c798906553c4e504599ee0350de
         <div class=\"container\">
             <div class=\"row\">
                 <ul class=\"social-icons col-md-6 col-12 d-none d-md-block\">
-                    <li><a href=\"#\"><i class=\"fab fa-twitter\"></i></a></li>
-                    <li><a href=\"#\"><i class=\"fab fa-facebook-f\"></i></a></li>
-                    <li><a href=\"#\"><i class=\"fab fa-youtube\"></i></a></li>
+                    <li><a href=\"{{ reseauxsociaux.reseauxsociauxtwiter }}\" target=\"__blank\"><i class=\"fab fa-twitter\"></i></a></li>
+                    <li><a href=\"{{ reseauxsociaux.reseauxsociauxfacebook }}\" target=\"__blank\"><i class=\"fab fa-facebook-f\"></i></a></li>
+                    <li><a href=\"{{ reseauxsociaux.reseauxsociauxlinkedin }}\" target=\"__blank\"><i class=\"fab fa-linkedin-in\"></i></a></li>
+                    <!-- <li><a href=\"#\"><i class=\"fab fa-youtube\"></i></a></li>
                     <li><a href=\"#\"><i class=\"fab fa-linkedin-in\"></i></a></li>
-                    <li><a href=\"#\"><i class=\"fab fa-google-plus-g\"></i></a></li>
-                    <li class=\"row-end\"><a href=\"#\"><i class=\"fas fa-rss\"></i></a></li>
+                    <li><a href=\"#\"><i class=\"fab fa-google-plus-g\"></i></a></li> 
+                    <li class=\"row-end\"><a href=\"#\"><i class=\"fas fa-rss\"></i></a></li>-->
                 </ul>
                 <form class=\"col-md-6 col-12 search-form\" role=\"search\">
                     <div class=\"form-group\">

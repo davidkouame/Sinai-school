@@ -186,4 +186,5 @@
   'Indikator\\News\\Classes\\NewsletterMail' => 'plugins/indikator/news/classes/NewsletterMail.php',
   'RainLab\\Blog\\FormWidgets\\BlogMarkdown' => 'plugins/rainlab/blog/formwidgets/BlogMarkdown.php',
   'Bootnetcrasher\\School\\Components\\ReglementInterieur' => 'plugins/bootnetcrasher/school/components/ReglementInterieur.php',
+  'Bootnetcrasher\\School\\Components\\LoadReseauxSociaux' => 'plugins/bootnetcrasher/school/components/LoadReseauxSociaux.php',
 );

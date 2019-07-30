@@ -1,9 +1,10 @@
-1564407674a:1:{s:11:"examens.htm";a:10:{s:8:"fileName";s:11:"examens.htm";s:7:"content";s:114:"title = "Examens"
+1564466893a:1:{s:11:"examens.htm";a:11:{s:8:"fileName";s:11:"examens.htm";s:7:"content";s:135:"title = "Examens"
 url = "/examens"
 layout = "default"
 is_hidden = 0
 
 [examensall]
+[loadreseauxsociaux]
 ==
 
-{% component 'examensall' %}";s:5:"mtime";i:1564204337;s:6:"markup";s:28:"{% component 'examensall' %}";s:4:"code";N;s:5:"title";s:7:"Examens";s:3:"url";s:8:"/examens";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"examensall";a:0:{}}}
+{% component 'examensall' %}";s:5:"mtime";i:1564466291;s:6:"markup";s:28:"{% component 'examensall' %}";s:4:"code";N;s:5:"title";s:7:"Examens";s:3:"url";s:8:"/examens";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"examensall";a:0:{}s:18:"loadreseauxsociaux";a:0:{}}}
