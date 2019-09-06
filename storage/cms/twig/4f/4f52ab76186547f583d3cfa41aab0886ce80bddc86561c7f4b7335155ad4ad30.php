@@ -172,6 +172,47 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         echo "        <script src=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/popover/popper.min.js");
         echo "\"></script>
+        
+        <!-- Scripts -->
+        <script src=\"";
+        // line 115
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
+        echo "\"></script>
+        <script src=\"";
+        // line 116
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap.js");
+        echo "\"></script>
+        <script src=\"";
+        // line 117
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
+        echo "\"></script>
+
+       <!-- JS --> 
+       <script src=\"";
+        // line 120
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/jquery/jquery-3.3.1.min.js");
+        echo "\"></script>
+       <script src=\"";
+        // line 121
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/bootstrap/js/bootstrap.min.js");
+        echo "\"></script>
+       <script src=\"";
+        // line 122
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/back-to-top.js");
+        echo "\"></script>
+       <script src=\"";
+        // line 123
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/flexslider/js/jquery.flexslider-min.js");
+        echo "\"></script>
+       <script src=\"";
+        // line 124
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jflickrfeed.min.js");
+        echo "\"></script>
+       <script src=\"";
+        // line 125
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.js");
+        echo "\"></script>
+       
     </head>
     <body class=\"home-page\">
 
@@ -179,68 +220,30 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         <section id=\"layout-content\">
           
             ";
-        // line 119
+        // line 133
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 120
+        // line 134
         echo "        </section>
 
         <!-- Footer -->
         <footer class=\"footer\">
             ";
-        // line 124
+        // line 138
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 125
+        // line 139
         echo "        </footer>
 
-        <!-- Scripts -->
-        <script src=\"";
-        // line 128
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
-        echo "\"></script>
-        <script src=\"";
-        // line 129
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap.js");
-        echo "\"></script>
-        <script src=\"";
-        // line 130
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
-        echo "\"></script>
-
-       <!-- JS --> 
-       <script src=\"";
-        // line 133
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/jquery/jquery-3.3.1.min.js");
-        echo "\"></script>
-       <script src=\"";
-        // line 134
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/bootstrap/js/bootstrap.min.js");
-        echo "\"></script>
-       <script src=\"";
-        // line 135
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/back-to-top.js");
-        echo "\"></script>
-       <script src=\"";
-        // line 136
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/plugins/flexslider/js/jquery.flexslider-min.js");
-        echo "\"></script>
-       <script src=\"";
-        // line 137
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jflickrfeed.min.js");
-        echo "\"></script>
-       <script src=\"";
-        // line 138
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.js");
-        echo "\"></script>
+        
     
     <!-- Theme Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
     <script src=\"";
-        // line 141
+        // line 144
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/theme-switcher.js");
         echo "\"></script>
         ";
-        // line 142
+        // line 145
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="'. Request::getBasePath()
@@ -255,24 +258,24 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 143
+        // line 146
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 144
+        // line 147
         echo "
         <script type=\"text/javascript\">
           \$(document).ready(function(){
             \$(\".carousel-item div.row\").click(function(e){
               window.location.href = \"";
-        // line 148
+        // line 151
         echo url("actualites");
         echo "/\"+\$(this).data('id');
             });
             
             \$(\".carousel-item div.row\").click(function(e){
               window.location.href = \"";
-        // line 152
+        // line 155
         echo url("clubs-activites");
         echo "/\"+\$(this).data('idclub');
             })
@@ -300,7 +303,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
 
     public function getDebugInfo()
     {
-        return array (  286 => 16,  276 => 152,  269 => 148,  263 => 144,  259 => 143,  244 => 142,  240 => 141,  234 => 138,  230 => 137,  226 => 136,  222 => 135,  218 => 134,  214 => 133,  208 => 130,  204 => 129,  200 => 128,  195 => 125,  191 => 124,  185 => 120,  183 => 119,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
+        return array (  289 => 16,  279 => 155,  272 => 151,  266 => 147,  262 => 146,  247 => 145,  243 => 144,  236 => 139,  232 => 138,  226 => 134,  224 => 133,  213 => 125,  209 => 124,  205 => 123,  201 => 122,  197 => 121,  193 => 120,  187 => 117,  183 => 116,  179 => 115,  172 => 112,  169 => 111,  93 => 38,  87 => 35,  81 => 32,  76 => 30,  70 => 27,  56 => 16,  50 => 13,  46 => 12,  42 => 11,  34 => 6,  30 => 5,  24 => 1,);
     }
 
     public function getSourceContext()
@@ -417,6 +420,20 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
         </style>
         {% styles %}
         <script src=\"{{ 'assets/plugins/popover/popper.min.js'|theme }}\"></script>
+        
+        <!-- Scripts -->
+        <script src=\"{{ 'assets/vendor/jquery.js'|theme }}\"></script>
+        <script src=\"{{ 'assets/vendor/bootstrap.js'|theme }}\"></script>
+        <script src=\"{{ 'assets/javascript/app.js'|theme }}\"></script>
+
+       <!-- JS --> 
+       <script src=\"{{ 'assets/plugins/jquery/jquery-3.3.1.min.js'|theme }}\"></script>
+       <script src=\"{{ 'assets/plugins/bootstrap/js/bootstrap.min.js'|theme }}\"></script>
+       <script src=\"{{ 'assets/js/back-to-top.js'|theme }}\"></script>
+       <script src=\"{{ 'assets/plugins/flexslider/js/jquery.flexslider-min.js'|theme }}\"></script>
+       <script src=\"{{ 'assets/js/jflickrfeed.min.js'|theme }}\"></script>
+       <script src=\"{{ 'assets/js/main.js'|theme }}\"></script>
+       
     </head>
     <body class=\"home-page\">
 
@@ -431,18 +448,7 @@ class __TwigTemplate_3910e96255a0b0d0e0438b92eb835951d4c32d5d10d6b22f19544519ec6
             {% partial 'site/footer' %}
         </footer>
 
-        <!-- Scripts -->
-        <script src=\"{{ 'assets/vendor/jquery.js'|theme }}\"></script>
-        <script src=\"{{ 'assets/vendor/bootstrap.js'|theme }}\"></script>
-        <script src=\"{{ 'assets/javascript/app.js'|theme }}\"></script>
-
-       <!-- JS --> 
-       <script src=\"{{ 'assets/plugins/jquery/jquery-3.3.1.min.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/plugins/bootstrap/js/bootstrap.min.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/js/back-to-top.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/plugins/flexslider/js/jquery.flexslider-min.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/js/jflickrfeed.min.js'|theme }}\"></script>
-       <script src=\"{{ 'assets/js/main.js'|theme }}\"></script>
+        
     
     <!-- Theme Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
     <script src=\"{{ 'assets/js/theme-switcher.js'|theme }}\"></script>
