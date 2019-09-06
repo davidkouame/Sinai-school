@@ -1,27 +1,10 @@
-title = "Demonstration"
+title = "Organigrame"
 url = "/organigrame"
 layout = "default"
 is_hidden = 0
 
 [Organigrame]
+[loadreseauxsociaux]
 ==
 
-<link href="{{ 'assets/css/organigrame.css'|theme }}" rel="stylesheet">
-
-<div class="wrapper">
-    {% partial 'site/header' %}
-
-    <div class="content container">
-
-        <div class="row cols-wrapper">
-            <div class="col-lg-9 col-12">
-                {% component 'Organigrame' %}
-            </div>
-            <div class="col-lg-3 col-12">
-                {% content 'mot_du_directeur' %}
-
-                {% content 'majeur_promotion' %}
-            </div>
-        </div>
-    </div>
-</div>
+{% component 'Organigrame' %}

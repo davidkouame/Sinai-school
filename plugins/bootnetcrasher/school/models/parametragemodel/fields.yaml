@@ -6,7 +6,7 @@ fields:
     value:
         label: Valeur
         span: auto
-        type: text
+        type: textarea
     logo:
         label: Logo
         mode: file

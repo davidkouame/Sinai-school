@@ -22,6 +22,7 @@ class Galeries extends ComponentBase
     }
 
     public function onRun(){
+<<<<<<< HEAD
         
         // recuperation de toutes les galleries
         $galeries = Gallery::paginate(4);
@@ -29,5 +30,12 @@ class Galeries extends ComponentBase
         // dd($galeries[0]->images[0]->getPath());
 
         $this->page["galeries"] = $galeries;
+=======
+        // recuperation de toutes les galleries
+        $galeries = Gallery::paginate(4);
+        $this->page["active"] = "viescolaire";
+        $this->page["galeries"] = $galeries;
+        $this->page["galerieswithoutpaginate"] = Gallery::all();
+>>>>>>> b45d59062f1b73834ed82e44239664cc7acdff26
     }
 }

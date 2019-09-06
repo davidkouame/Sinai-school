@@ -23,6 +23,7 @@ class ParametrageModel extends Model
      * @var array Validation rules
      */
     public $rules = [
+        "key" => "required|max:100"
     ];
 
     public $attachOne = [

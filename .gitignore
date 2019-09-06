@@ -2,7 +2,6 @@
 *.log
 /nbproject/private/
 /nbproject/
-/config/database.php
 /config/app.php
 
 # Editor directories and files

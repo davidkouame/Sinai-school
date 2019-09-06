@@ -1,28 +1,10 @@
-title = "Demonstration"
+title = "Détails Clubs Activités"
 url = "/clubs-activites/:club_activite_id"
 layout = "default"
 is_hidden = 0
 
 [detailClubsActivites]
 [filAriane]
+[loadreseauxsociaux]
 ==
-
-<div class="wrapper">
-    {% partial 'site/header' %}
-
-    <div class="content container">
-
-        {% component 'filAriane' %}
-
-        <div class="row cols-wrapper">
-            <div class="col-lg-9 col-12">
-                {% component 'detailClubsActivites' %}
-            </div>
-            <div class="col-lg-3 col-12">
-                {% content 'mot_du_directeur' %}
-
-                {% content 'majeur_promotion' %}
-            </div>
-        </div>
-    </div>
-</div>
+{% component 'detailClubsActivites' %}

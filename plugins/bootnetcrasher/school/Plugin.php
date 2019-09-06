@@ -24,7 +24,14 @@ class Plugin extends PluginBase
             '\Bootnetcrasher\School\Components\Organigrame' => 'Organigrame',
             '\Bootnetcrasher\School\Components\FilAriane' => 'filAriane',
             '\Bootnetcrasher\School\Components\Galeries' => 'galeriesAll',
+<<<<<<< HEAD
             '\Bootnetcrasher\School\Components\DetailGalerie' => 'detailGalerie'
+=======
+            '\Bootnetcrasher\School\Components\DetailGalerie' => 'detailGalerie',
+            '\Bootnetcrasher\School\Components\ActivitesFinTrimestre' => 'activitesFinTrimestre',
+            '\Bootnetcrasher\School\Components\ReglementInterieur' => 'reglementinterieur',
+            '\Bootnetcrasher\School\Components\LoadReseauxSociaux' => 'loadreseauxsociaux',
+>>>>>>> b45d59062f1b73834ed82e44239664cc7acdff26
         ];
     }
 

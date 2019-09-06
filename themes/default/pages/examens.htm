@@ -1,25 +1,10 @@
-title = "Demonstration"
+title = "Examens"
 url = "/examens"
 layout = "default"
 is_hidden = 0
 
 [examensall]
+[loadreseauxsociaux]
 ==
 
-<div class="wrapper">
-    {% partial 'site/header' %}
-
-    <div class="content container">
-
-        <div class="row cols-wrapper">
-            <div class="col-lg-9 col-12">
-                {% component 'examensall' %}
-            </div>
-            <div class="col-lg-3 col-12">
-                {% content 'mot_du_directeur' %}
-
-                {% content 'majeur_promotion' %}
-            </div>
-        </div>
-    </div>
-</div>
+{% component 'examensall' %}

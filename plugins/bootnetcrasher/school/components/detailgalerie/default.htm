@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <style>
     body {
@@ -249,15 +250,78 @@
 <script>
     function openModal() {
         document.getElementById("myModal").style.display = "block";
+=======
+{% put styles %}
+<link href="{{ 'assets/css/app-lightbox.css'|theme }}" rel="stylesheet" />
+{% endput %}
+
+<div class="lightbox">
+    <header class="page-heading clearfix">
+        <h1 class="heading-title pull-left" style="margin-top: 12px; margin-bottom: 0px">Détail de la galerie</h1>
+        <div class="breadcrumbs pull-right">
+            <ul class="breadcrumbs-list">
+                <li><a href="{{ url('/') }}">Accueil</a><i class="fa fa-angle-right"></i></li>
+                <li><a href="{{ url('/galeries') }}">Gallerie</a><i class="fa fa-angle-right"></i></li>
+                <li class="current">{{ galerie.name }}</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="row">
+        {% for image in galerie.images %}
+        <div class="prettyphoto col-md-3 col-sm-3 col-xs-6">
+            <img src="{{ image.getpath }}" style="width:100%" onclick="openModal(); currentSlide({{ loop.index }})"
+                class="img-responsive img-thumbnail hover-shadow cursor">
+        </div>
+        {% endfor %}
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            {% for image in galerie.images %}
+            <div class="mySlides">
+                <div class="numbertext">{{ loop.index }} / {{ loop.length }}</div>
+                <img src="{{ image.getpath }}" style="width:100%">
+            </div>
+            {% endfor %}
+            <a class="prev" onclick="plusSlides( - 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            {% for image in galerie.images %}
+            <div class="{{ column }}">
+                <img class="demo cursor" src="{{ image.getpath }}" style="width:100%" onclick="currentSlide({{ loop.index }})">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("main-nav-wrapper").style.display = "none";
+>>>>>>> b45d59062f1b73834ed82e44239664cc7acdff26
     }
 
     function closeModal() {
         document.getElementById("myModal").style.display = "none";
+<<<<<<< HEAD
+=======
+        document.getElementById("main-nav-wrapper").style.display = "block";
+>>>>>>> b45d59062f1b73834ed82e44239664cc7acdff26
     }
 
     var slideIndex = 1;
     showSlides(slideIndex);
+<<<<<<< HEAD
 
+=======
+>>>>>>> b45d59062f1b73834ed82e44239664cc7acdff26
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
@@ -287,9 +351,13 @@
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
     }
+<<<<<<< HEAD
     
     $(document).ready(function(){
         $("#exampleModalCenter").modal();
     });
 </script>
 
+=======
+</script>
+>>>>>>> b45d59062f1b73834ed82e44239664cc7acdff26
